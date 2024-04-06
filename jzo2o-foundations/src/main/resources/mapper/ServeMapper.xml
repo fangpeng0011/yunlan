@@ -18,7 +18,6 @@
                serve.price,
                serve.id,
                serve.is_hot
-
         from serve
                  inner join serve_item si on serve.serve_item_id = si.id
                  inner join serve_type st on si.serve_type_id = st.id
