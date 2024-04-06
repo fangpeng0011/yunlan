@@ -15,7 +15,12 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import org.apache.http.HttpHost;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestClientBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -43,7 +48,12 @@ public class EsConfiguration {
 
     @Bean
     public ElasticsearchClient esClient(EsProperties esProperties) {
-        RestClient restClient = RestClient.builder(new HttpHost(esProperties.getHost(), esProperties.getPort())).build();
+        RestClientBuilder builder = RestClient.builder(new HttpHost(esProperties.getHost(), esProperties.getPort()));
+        //开始设置用户名和密码
+        CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
+        credentialsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials(esProperties.getUsername(), esProperties.getPassword()));
+        builder.setHttpClientConfigCallback(f -> f.setDefaultCredentialsProvider(credentialsProvider));
+        RestClient restClient = builder.build();
         // Create the transport with a Jackson mapper
         // 使用自定义json序列化
         JacksonJsonpMapper jacksonJsonpMapper = new JacksonJsonpMapper(MAPPER);

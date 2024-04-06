@@ -31,4 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
-/project-xzb-pc-admin-vue3-java/dist/
+/project-xzb-pc-admin-vue3-java/node_modules/

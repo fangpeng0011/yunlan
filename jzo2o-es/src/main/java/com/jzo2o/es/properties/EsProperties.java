@@ -16,4 +16,14 @@ public class EsProperties {
      * es 端口
      */
     private Integer port;
+
+    /**
+     * es 用户名
+     */
+    private String username;
+
+    /**
+     * es 密码
+     */
+    private String password;
 }

@@ -3,12 +3,12 @@ spring:
     nacos:
       username: nacos
       password: nacos
-      server-addr: 172.17.0.170:8848
+      server-addr: 192.168.231.25:8848
       config:
-        namespace: 75a593f5-33e6-4c65-b2a0-18c403d20f63
+        namespace: 0feba030-b9d4-415b-b83e-e6fdd5e2a641
         file-extension: yaml
       discovery:
-        namespace: 75a593f5-33e6-4c65-b2a0-18c403d20f63
+        namespace: 0feba030-b9d4-415b-b83e-e6fdd5e2a641
 logging:
   level:
     com.jzo2o: debug
