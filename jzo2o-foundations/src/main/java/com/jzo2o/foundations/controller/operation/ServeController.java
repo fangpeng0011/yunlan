@@ -62,6 +62,13 @@ public class ServeController {
         serveService.onSale(id);
     }
 
+    @PutMapping("/offSale/{id}")
+    @ApiOperation("服务下架")
+    @ApiImplicitParam(name = "id", value = "服务id", required = true, dataTypeClass = Long.class)
+    public void offSale(@PathVariable Long id) {
+        serveService.offSale(id);
+    }
+
     @DeleteMapping("/{id}")
     @ApiOperation("删除区域服务")
     @ApiImplicitParam(name = "id", value = "服务id", required = true, dataTypeClass = Long.class)
@@ -69,10 +76,17 @@ public class ServeController {
         serveService.delete(id);
     }
 
-    @PutMapping("/offSale/{id}")
-    @ApiOperation("服务下架")
-    @ApiImplicitParam(name = "id", value = "服务id", required = true, dataTypeClass = String.class)
-    public void offSale(@PathVariable String id) {
-        serveService.offSale(id);
+    @PutMapping("/onHot/{id}")
+    @ApiOperation("设置热门开发")
+    @ApiImplicitParam(name = "id", value = "服务id", required = true, dataTypeClass = Long.class)
+    public void onHot(@PathVariable Long id){
+        serveService.onHot(id);
+    }
+
+    @PutMapping("/offHot/{id}")
+    @ApiOperation("设置热门开发")
+    @ApiImplicitParam(name = "id", value = "服务id", required = true, dataTypeClass = Long.class)
+    public void offHot(@PathVariable Long id){
+        serveService.offHot(id);
     }
 }

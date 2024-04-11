@@ -62,8 +62,25 @@ public interface IServeService extends IService<Serve> {
 
     /**
      * 服务下架
+     *
      * @param id
      * @return
      */
-    Serve offSale(String id);
+    Serve offSale(Long id);
+
+    /**
+     * 设置热门开发
+     *
+     * @param id
+     * @return
+     */
+    Serve onHot(Long id);
+
+    /**
+     * 取消热门开发
+     *
+     * @param id
+     * @return
+     */
+    Serve offHot(Long id);
 }
