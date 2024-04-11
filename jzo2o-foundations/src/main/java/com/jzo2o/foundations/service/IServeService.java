@@ -59,4 +59,11 @@ public interface IServeService extends IService<Serve> {
      * @return 服务
      */
     Boolean delete(Long id);
+
+    /**
+     * 服务下架
+     * @param id
+     * @return
+     */
+    Serve offSale(String id);
 }

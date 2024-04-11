@@ -68,4 +68,11 @@ public class ServeController {
     public void delete(@PathVariable Long id) {
         serveService.delete(id);
     }
+
+    @PutMapping("/offSale/{id}")
+    @ApiOperation("服务下架")
+    @ApiImplicitParam(name = "id", value = "服务id", required = true, dataTypeClass = String.class)
+    public void offSale(@PathVariable String id) {
+        serveService.offSale(id);
+    }
 }

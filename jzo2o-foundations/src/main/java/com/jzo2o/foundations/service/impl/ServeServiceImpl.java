@@ -141,4 +141,9 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
         }
         return true;
     }
+
+    @Override
+    public Serve offSale(String id) {
+        return null;
+    }
 }
