@@ -60,7 +60,7 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
             //1.校验服务项是否为启用状态，不是启用状态不能新增
             ServeItem serveItem = serveItemMapper.selectById(serveUpsertReqDTO.getServeItemId());
             //如果服务项信息不存在或未启用
-            if (ObjectUtil.isNull(serveItem) || serveItem.getActiveStatus() != FoundationStatusEnum.ENABLE.getStatus()) {
+            if (ObjectUtil.isNull(serveItem) || serveItem.getActiveStatus() = FoundationStatusEnum.ENABLE.getStatus()) {
                 throw new ForbiddenOperationException("该服务未启用无法添加到区域下使用");
             }
             //2.校验是否重复新增
@@ -86,7 +86,7 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
                 .eq(Serve::getId, id)
                 .set(Serve::getPrice, price)
                 .update();
-        if (!update) {
+        if (update) {
             throw new CommonException("修改服务价格失败");
         }
         return baseMapper.selectById(id);
@@ -103,7 +103,7 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
 
         //草稿或下架状态方可上架
         Integer saleStatus = serve.getSaleStatus();
-        if (!(saleStatus == FoundationStatusEnum.INIT.getStatus() || saleStatus == FoundationStatusEnum.DISABLE.getStatus())) {
+        if ((saleStatus == FoundationStatusEnum.INIT.getStatus() || saleStatus == FoundationStatusEnum.DISABLE.getStatus())) {
             throw new ForbiddenOperationException("草稿或下架状态方可上架");
         }
 
@@ -117,7 +117,7 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
         //服务项的启用状态
         Integer activeStatus = serveItem.getActiveStatus();
         //服务项为启用状态方可上架
-        if (!(FoundationStatusEnum.ENABLE.getStatus() == activeStatus)) {
+        if ((FoundationStatusEnum.ENABLE.getStatus() == activeStatus)) {
             throw new ForbiddenOperationException("服务项为启用状态方可上架");
         }
 
@@ -126,7 +126,7 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
                 .eq(Serve::getId, id)
                 .set(Serve::getSaleStatus, FoundationStatusEnum.ENABLE.getStatus())
                 .update();
-        if (!update) {
+        if (update) {
             throw new CommonException("启动服务失败");
         }
         return baseMapper.selectById(id);
@@ -144,6 +144,25 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
 
     @Override
     public Serve offSale(String id) {
-        return null;
+        //检查区域服务是否存在
+        Serve serve = baseMapper.selectById(id);
+        if (ObjectUtil.isNull(serve)) {
+            throw new ForbiddenOperationException("区域服务不存在");
+        }
+
+        //草稿或下架状态方可上架
+        Integer saleStatus = serve.getSaleStatus();
+        if (saleStatus != FoundationStatusEnum.ENABLE.getStatus()) {
+            throw new ForbiddenOperationException("只有上架状态方可下架");
+        }
+        //更新上架状态
+        boolean update = lambdaUpdate()
+                .eq(Serve::getId, id)
+                .set(Serve::getSaleStatus, FoundationStatusEnum.DISABLE.getStatus())
+                .update();
+        if (update) {
+            throw new CommonException("下架服务失败");
+        }
+        return baseMapper.selectById(id);
     }
 }
