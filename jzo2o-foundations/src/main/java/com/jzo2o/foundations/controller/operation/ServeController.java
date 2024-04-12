@@ -89,4 +89,7 @@ public class ServeController {
     public void offHot(@PathVariable Long id){
         serveService.offHot(id);
     }
+
+
+
 }

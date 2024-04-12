@@ -83,4 +83,8 @@ public interface IServeService extends IService<Serve> {
      * @return
      */
     Serve offHot(Long id);
+
+    int queryServeCountByRegionIdAndSaleStatus(Long regionId, Integer saleStatus);
+
+    int queryServeCountByServeItemIdAndSaleStatus(Long serveItemId, Integer saleStatus);
 }

@@ -2,6 +2,8 @@ package com.jzo2o.foundations.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.ObjectUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
 import com.jzo2o.common.expcetions.CommonException;
 import com.jzo2o.common.expcetions.ForbiddenOperationException;
@@ -44,8 +46,7 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
 
     @Autowired
     private RegionMapper regionMapper;
-    @Autowired
-    private ServeMapper serveMapper;
+
 
     @Override
     public PageResult<ServeResDTO> page(ServePageQueryReqDTO servePageQueryReqDTO) {
@@ -122,6 +123,8 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
         if ((FoundationStatusEnum.ENABLE.getStatus() == activeStatus)) {
             throw new ForbiddenOperationException("服务项为启用状态方可上架");
         }
+
+
 
         //更新上架状态
         boolean update = lambdaUpdate()
@@ -206,5 +209,35 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
             throw new CommonException("设置热门服务失败");
         }
         return baseMapper.selectById(id);
+    }
+
+
+    /**
+     * 根据区域id和售卖状态查询关联服务数量
+     *
+     * @param regionId   区域id
+     * @param saleStatus 售卖状态，0：草稿，1下架，2上架。可传null，即查询所有状态
+     * @return 服务数量
+     */
+    @Override
+    public int queryServeCountByRegionIdAndSaleStatus(Long regionId, Integer saleStatus) {
+        LambdaQueryWrapper<Serve> queryWrapper = Wrappers.<Serve>lambdaQuery()
+                .eq(Serve::getRegionId, regionId)
+                .eq(ObjectUtil.isNotEmpty(saleStatus), Serve::getSaleStatus, saleStatus);
+        return baseMapper.selectCount(queryWrapper);
+    }
+    /**
+     * 根据服务项id和售卖状态查询关联服务数量
+     *
+     * @param  serveItemId  服务项id
+     * @param saleStatus 售卖状态，0：草稿，1下架，2上架。可传null，即查询所有状态
+     * @return 服务数量
+     */
+    @Override
+    public int queryServeCountByServeItemIdAndSaleStatus(Long serveItemId, Integer saleStatus) {
+        LambdaQueryWrapper<Serve> queryWrapper = Wrappers.<Serve>lambdaQuery()
+                .eq(Serve::getServeItemId, serveItemId)
+                .eq(ObjectUtil.isNotEmpty(saleStatus), Serve::getSaleStatus, saleStatus);
+        return baseMapper.selectCount(queryWrapper);
     }
 }

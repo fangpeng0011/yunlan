@@ -20,7 +20,7 @@
         <module>../jzo2o-canal-sync</module>
         <module>../jzo2o-seata</module>
         <module>../jzo2o-sentinel</module>
-        <module>jzo2o-foundations</module>
+        <module>../jzo2o-foundations</module>
     </modules>
 
     <groupId>com.jzo2o</groupId>
