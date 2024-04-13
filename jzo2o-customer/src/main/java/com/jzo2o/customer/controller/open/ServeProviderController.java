@@ -24,12 +24,5 @@ import javax.annotation.Resource;
 @RequestMapping("/open/serve-provider")
 @Api(tags = "白名单接口 - 服务人员或机构相关接口")
 public class ServeProviderController {
-    @Resource
-    private IServeProviderService serveProviderService;
 
-    @PostMapping("/institution/register")
-    @ApiOperation("机构注册接口")
-    public void institutionRegister(@RequestBody InstitutionRegisterReqDTO institutionRegisterReqDTO) {
-        serveProviderService.registerInstitution(institutionRegisterReqDTO);
-    }
 }

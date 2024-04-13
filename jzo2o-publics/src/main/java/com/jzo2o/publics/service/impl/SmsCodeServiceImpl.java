@@ -39,8 +39,9 @@ public class SmsCodeServiceImpl implements ISmsCodeService {
     public boolean verify(String phone, SmsBussinessTypeEnum bussinessType, String verifyCode) {
         // 1.验证前准备
         String redisKey = String.format(CommonRedisConstants.RedisKey.VERIFY_CODE, phone, bussinessType.getType());
-        String verifyCodeInRedis = redisTemplate.opsForValue().get(redisKey);
-
+        //直接写死123456
+//        String verifyCodeInRedis = redisTemplate.opsForValue().get(redisKey);
+        String verifyCodeInRedis = "123456";
         // 2.短验验证，验证通过后删除code，code只能使用一次
         boolean verifyResult = StringUtils.isNotEmpty(verifyCode) && verifyCode.equals(verifyCodeInRedis);
         if(verifyResult) {
