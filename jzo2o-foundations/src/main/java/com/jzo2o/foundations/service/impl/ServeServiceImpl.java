@@ -3,6 +3,7 @@ package com.jzo2o.foundations.service.impl;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
 import com.jzo2o.common.expcetions.CommonException;
@@ -85,13 +86,10 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
     @Override
     public Serve update(Long id, BigDecimal price) {
         //1.更新服务价格
-        boolean update = lambdaUpdate()
+        LambdaUpdateWrapper<Serve> updateWrapper = Wrappers.<Serve>lambdaUpdate()
                 .eq(Serve::getId, id)
-                .set(Serve::getPrice, price)
-                .update();
-        if (update) {
-            throw new CommonException("修改服务价格失败");
-        }
+                .set(Serve::getPrice, price);
+        super.update(updateWrapper);
         return baseMapper.selectById(id);
     }
 
@@ -106,7 +104,7 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
 
         //草稿或下架状态方可上架
         Integer saleStatus = serve.getSaleStatus();
-        if ((saleStatus == FoundationStatusEnum.INIT.getStatus() || saleStatus == FoundationStatusEnum.DISABLE.getStatus())) {
+            if (!(saleStatus == FoundationStatusEnum.INIT.getStatus() || saleStatus == FoundationStatusEnum.DISABLE.getStatus())) {
             throw new ForbiddenOperationException("草稿或下架状态方可上架");
         }
 
@@ -120,20 +118,17 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
         //服务项的启用状态
         Integer activeStatus = serveItem.getActiveStatus();
         //服务项为启用状态方可上架
-        if ((FoundationStatusEnum.ENABLE.getStatus() == activeStatus)) {
+        if (!(FoundationStatusEnum.ENABLE.getStatus() == activeStatus)) {
             throw new ForbiddenOperationException("服务项为启用状态方可上架");
         }
 
 
 
         //更新上架状态
-        boolean update = lambdaUpdate()
+        LambdaUpdateWrapper<Serve> updateWrapper = Wrappers.<Serve>lambdaUpdate()
                 .eq(Serve::getId, id)
-                .set(Serve::getSaleStatus, FoundationStatusEnum.ENABLE.getStatus())
-                .update();
-        if (update) {
-            throw new CommonException("启动服务失败");
-        }
+                .set(Serve::getSaleStatus, FoundationStatusEnum.ENABLE.getStatus());
+        super.update(updateWrapper);
         return baseMapper.selectById(id);
 
     }
@@ -160,14 +155,11 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
         if (saleStatus != FoundationStatusEnum.ENABLE.getStatus()) {
             throw new ForbiddenOperationException("只有上架状态方可下架");
         }
-        //更新上架状态
-        boolean update = lambdaUpdate()
+
+        LambdaUpdateWrapper<Serve> updateWrapper = Wrappers.<Serve>lambdaUpdate()
                 .eq(Serve::getId, id)
-                .set(Serve::getSaleStatus, FoundationStatusEnum.DISABLE.getStatus())
-                .update();
-        if (update) {
-            throw new CommonException("下架服务失败");
-        }
+                .set(Serve::getSaleStatus, FoundationStatusEnum.DISABLE.getStatus());
+        super.update(updateWrapper);
         return baseMapper.selectById(id);
     }
 
@@ -177,17 +169,11 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
         if (ObjectUtil.isNull(serve)) {
             throw new ForbiddenOperationException("区域服务不存在");
         }
-        Integer isHot = serve.getIsHot();
-
         //更新设置热门
-        boolean update = lambdaUpdate()
+        LambdaUpdateWrapper<Serve> updateWrapper = Wrappers.<Serve>lambdaUpdate()
                 .eq(Serve::getId, id)
-                .set(Serve::getSaleStatus, FoundationHotEnum.HOT.getStatus())
-                .update();
-
-        if (update) {
-            throw new CommonException("设置热门服务失败");
-        }
+                .set(Serve::getIsHot, FoundationHotEnum.HOT.getStatus());
+        super.update(updateWrapper);
         return baseMapper.selectById(id);
     }
 
@@ -197,17 +183,11 @@ public class ServeServiceImpl extends ServiceImpl<ServeMapper, Serve> implements
         if (ObjectUtil.isNull(serve)) {
             throw new ForbiddenOperationException("区域服务不存在");
         }
-        Integer isHot = serve.getIsHot();
-
         //更新设置热门
-        boolean update = lambdaUpdate()
+        LambdaUpdateWrapper<Serve> updateWrapper = Wrappers.<Serve>lambdaUpdate()
                 .eq(Serve::getId, id)
-                .set(Serve::getSaleStatus, FoundationHotEnum.OFFHOT.getStatus())
-                .update();
-
-        if (update) {
-            throw new CommonException("设置热门服务失败");
-        }
+                .set(Serve::getIsHot, FoundationHotEnum.OFFHOT.getStatus());
+        super.update(updateWrapper);
         return baseMapper.selectById(id);
     }
 
