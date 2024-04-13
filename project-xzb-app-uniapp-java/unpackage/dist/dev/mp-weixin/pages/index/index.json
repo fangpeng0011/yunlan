@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "云岚到家",
+  "usingComponents": {
+    "uni-nav-bar": "../../uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "uni-nav": "../../components/uni-home-nav/index",
+    "uni-footer": "../../components/uni-footer/index",
+    "empty": "../../components/empty/index",
+    "home-filter": "./components/homeFilter",
+    "home-list": "./components/homeList"
+  }
+}

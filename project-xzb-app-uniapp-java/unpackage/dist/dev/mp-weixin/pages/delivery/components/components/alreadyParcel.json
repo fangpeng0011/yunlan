@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "reach-bottom": "../../../../components/reach-bottom/index",
+    "empty-page": "../../../../components/uni-empty-page/index"
+  }
+}

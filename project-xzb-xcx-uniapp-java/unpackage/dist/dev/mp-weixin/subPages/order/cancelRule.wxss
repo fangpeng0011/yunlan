@@ -1,0 +1,32 @@
+/* 水平间距 */
+/* 水平间距 */
+.scroll-view-content.data-v-452e4489 {
+  background-color: #fff;
+  min-height: 100vh;
+}
+.scroll-view-content .cardBox.data-v-452e4489 {
+  padding: 9px 16px;
+}
+.scroll-view-content .cardBox .card.data-v-452e4489 {
+  margin-bottom: 40rpx;
+}
+.scroll-view-content .cardBox .card .title.data-v-452e4489 {
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  font-size: 32rpx;
+  color: #151515;
+  margin-bottom: 40rpx;
+}
+.scroll-view-content .cardBox .card .content.data-v-452e4489 {
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 30rpx;
+  color: #888888;
+  letter-spacing: 0.58rpx;
+}
+.mb-20.data-v-452e4489 {
+  margin-bottom: 40rpx;
+}
+.mb-15.data-v-452e4489 {
+  margin-bottom: 30rpx;
+}

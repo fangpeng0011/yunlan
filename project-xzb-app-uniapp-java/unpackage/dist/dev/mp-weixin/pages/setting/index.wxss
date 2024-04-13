@@ -1,0 +1,80 @@
+/* 水平间距 */
+/* 水平间距 */
+.setting {
+  background-color: var(--neutral-color-white);
+  height: 100vh;
+}
+.setting .uni-navbar__header {
+  height: 0rpx !important;
+}
+.setting .guide {
+  text-align: center;
+  margin-bottom: 66rpx;
+}
+.setting .guide image {
+  width: 574rpx;
+  height: 280rpx;
+  margin-top: 60rpx;
+  margin-bottom: 23rpx;
+}
+.setting .guide .content {
+  font-size: 32rpx;
+  color: var(--color-black-19);
+}
+.setting .step {
+  padding: 0 30rpx 68rpx 41rpx;
+}
+.setting .step .stepItem {
+  display: flex;
+  align-items: center;
+}
+.setting .step .stepItem image {
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 39rpx;
+  margin-bottom: 35rpx;
+}
+.setting .step .stepItem .stepBox {
+  border-top: 2rpx solid var(--color-gray-e8);
+  display: flex;
+  padding: 30rpx 0;
+  width: 574rpx;
+  justify-content: space-between;
+}
+.setting .step .stepItem .stepBox .stepContent .setpTitle {
+  font-size: 32rpx;
+  color: var(--color-black-19);
+  margin-bottom: 8rpx;
+}
+.setting .step .stepItem .stepBox .stepContent .setpIntroduce {
+  font-size: 28rpx;
+  color: var(--color-gray-9);
+}
+.setting .step .stepItem .stepBox .btn {
+  border-radius: 32rpx;
+  width: 146rpx;
+  height: 56rpx;
+  text-align: center;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.setting .step .stepItem .stepBox uni-switch {
+  position: relative;
+  left: 20rpx;
+}
+.setting .step .stepItem:last-child .stepBox {
+  border-bottom: 2rpx solid var(--color-gray-e8);
+}
+.setting .footerBtn {
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  width: 408rpx;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-bottom: 68rpx;
+}
+.setting .notSetting {
+  background-color: var(--color-red-ffdbdc);
+}

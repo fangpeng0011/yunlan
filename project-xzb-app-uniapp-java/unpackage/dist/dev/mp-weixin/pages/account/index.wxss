@@ -1,0 +1,161 @@
+/* 水平间距 */
+/* 水平间距 */
+.account.data-v-3c1b446f {
+  background-color: var(--neutral-color-white);
+  min-height: 100vh;
+}
+.account .idCard.data-v-3c1b446f {
+  margin-top: 20rpx;
+}
+.account .bankAccount .label.data-v-3c1b446f {
+  margin-right: 35rpx !important;
+}
+.account .name.data-v-3c1b446f, .account .idCard.data-v-3c1b446f, .account .idCardPhoto.data-v-3c1b446f, .account .data.data-v-3c1b446f {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid var(--color-gray-e8);
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+}
+.account .name.data-v-3c1b446f .uni-easyinput__content, .account .idCard.data-v-3c1b446f .uni-easyinput__content, .account .idCardPhoto.data-v-3c1b446f .uni-easyinput__content, .account .data.data-v-3c1b446f .uni-easyinput__content {
+  border: none;
+}
+.account .name .citySelect.data-v-3c1b446f, .account .idCard .citySelect.data-v-3c1b446f, .account .idCardPhoto .citySelect.data-v-3c1b446f, .account .data .citySelect.data-v-3c1b446f {
+  width: 100%;
+  height: 72rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.account .name .citySelect image.data-v-3c1b446f, .account .idCard .citySelect image.data-v-3c1b446f, .account .idCardPhoto .citySelect image.data-v-3c1b446f, .account .data .citySelect image.data-v-3c1b446f {
+  width: 34rpx;
+  height: 32rpx;
+}
+.account .name .citySelect .bankName.data-v-3c1b446f, .account .idCard .citySelect .bankName.data-v-3c1b446f, .account .idCardPhoto .citySelect .bankName.data-v-3c1b446f, .account .data .citySelect .bankName.data-v-3c1b446f {
+  position: absolute;
+  left: 20rpx;
+}
+.account .name .citySelect .area.data-v-3c1b446f, .account .idCard .citySelect .area.data-v-3c1b446f, .account .idCardPhoto .citySelect .area.data-v-3c1b446f, .account .data .citySelect .area.data-v-3c1b446f {
+  position: absolute;
+  left: -13rpx;
+}
+.account .name .placeholder.data-v-3c1b446f, .account .idCard .placeholder.data-v-3c1b446f, .account .idCardPhoto .placeholder.data-v-3c1b446f, .account .data .placeholder.data-v-3c1b446f {
+  font-size: 16px;
+  color: var(--color-gray-9);
+  font-weight: 200;
+}
+.account .name .label.data-v-3c1b446f, .account .idCard .label.data-v-3c1b446f, .account .idCardPhoto .label.data-v-3c1b446f, .account .data .label.data-v-3c1b446f {
+  margin-right: 100rpx;
+  font-size: 32rpx;
+  color: var(--color-black-19);
+  white-space: nowrap;
+}
+.account .name .label.data-v-3c1b446f::before, .account .idCard .label.data-v-3c1b446f::before, .account .idCardPhoto .label.data-v-3c1b446f::before, .account .data .label.data-v-3c1b446f::before {
+  content: "*";
+  color: var(--color-red-bg);
+  display: inline-block;
+  vertical-align: middle;
+}
+.account .name.data-v-3c1b446f .uni-input-input, .account .idCard.data-v-3c1b446f .uni-input-input, .account .idCardPhoto.data-v-3c1b446f .uni-input-input, .account .data.data-v-3c1b446f .uni-input-input {
+  font-size: 32rpx;
+}
+.account .name.data-v-3c1b446f .uniui-clear:before, .account .idCard.data-v-3c1b446f .uniui-clear:before, .account .idCardPhoto.data-v-3c1b446f .uniui-clear:before, .account .data.data-v-3c1b446f .uniui-clear:before {
+  font-size: 36rpx;
+}
+.account .active.data-v-3c1b446f {
+  border-bottom-color: var(--color-black-19) !important;
+}
+.account .idCardPhoto.data-v-3c1b446f, .account .countryPhoto.data-v-3c1b446f, .account .data.data-v-3c1b446f {
+  border-bottom: none;
+  margin-top: 72rpx;
+  display: block;
+}
+.account .idCardPhoto .label.data-v-3c1b446f, .account .countryPhoto .label.data-v-3c1b446f, .account .data .label.data-v-3c1b446f {
+  white-space: nowrap;
+  margin-bottom: 67rpx;
+}
+.account .idCardPhoto .content.data-v-3c1b446f, .account .countryPhoto .content.data-v-3c1b446f, .account .data .content.data-v-3c1b446f {
+  display: flex;
+}
+.account .idCardPhoto .content .photoItem.data-v-3c1b446f, .account .countryPhoto .content .photoItem.data-v-3c1b446f, .account .data .content .photoItem.data-v-3c1b446f {
+  flex: 1;
+  margin-left: 19rpx;
+}
+.account .idCardPhoto .content .photoItem .image.data-v-3c1b446f, .account .countryPhoto .content .photoItem .image.data-v-3c1b446f, .account .data .content .photoItem .image.data-v-3c1b446f {
+  height: 198rpx;
+  width: 200rpx;
+  position: relative;
+  bottom: 2rpx;
+}
+.account .idCardPhoto .content .photoItem.data-v-3c1b446f .uni-file-picker .icon-add, .account .countryPhoto .content .photoItem.data-v-3c1b446f .uni-file-picker .icon-add, .account .data .content .photoItem.data-v-3c1b446f .uni-file-picker .icon-add {
+  background-color: var(--color-gray-96);
+  height: 4rpx;
+  width: 60rpx;
+}
+.account .idCardPhoto .content .photoItem.data-v-3c1b446f .uni-file-picker__container, .account .countryPhoto .content .photoItem.data-v-3c1b446f .uni-file-picker__container, .account .data .content .photoItem.data-v-3c1b446f .uni-file-picker__container {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0px;
+}
+.account .idCardPhoto .content .photoItem.data-v-3c1b446f .file-picker__box-content, .account .countryPhoto .content .photoItem.data-v-3c1b446f .file-picker__box-content, .account .data .content .photoItem.data-v-3c1b446f .file-picker__box-content {
+  background-color: var(--color-gray-eb);
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0px;
+  border-radius: 8rpx !important;
+}
+.account .idCardPhoto .content .photoItem.data-v-3c1b446f .file-count, .account .countryPhoto .content .photoItem.data-v-3c1b446f .file-count, .account .data .content .photoItem.data-v-3c1b446f .file-count {
+  display: none;
+}
+.account .idCardPhoto .content .photoItem .photoLabel.data-v-3c1b446f, .account .countryPhoto .content .photoItem .photoLabel.data-v-3c1b446f, .account .data .content .photoItem .photoLabel.data-v-3c1b446f {
+  font-size: 28rpx;
+  color: var(--color-gray-59);
+  text-align: center;
+  margin-top: 20rpx;
+}
+.account .idCardPhoto .content .forImg.data-v-3c1b446f, .account .countryPhoto .content .forImg.data-v-3c1b446f, .account .data .content .forImg.data-v-3c1b446f {
+  width: 316rpx;
+  height: 200rpx;
+  display: block;
+  margin-right: 64rpx;
+}
+.account .idCardPhoto .content .photoItem:last-child .photoLabel.data-v-3c1b446f, .account .countryPhoto .content .photoItem:last-child .photoLabel.data-v-3c1b446f, .account .data .content .photoItem:last-child .photoLabel.data-v-3c1b446f {
+  margin-right: 64rpx;
+}
+.account .countryPhoto.data-v-3c1b446f {
+  margin-top: 40rpx;
+}
+.account .data.data-v-3c1b446f {
+  padding-bottom: 44rpx;
+}
+.account .data .label.data-v-3c1b446f {
+  margin-bottom: 32rpx;
+}
+.account .data .content .photoLabel.data-v-3c1b446f {
+  text-align: left !important;
+  margin-left: 44rpx;
+}
+.account .footer.data-v-3c1b446f {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 186rpx;
+  background: #ffffff;
+  box-shadow: 0 0 12rpx 0 #0000001a;
+  display: flex;
+  font-size: 32rpx;
+  justify-content: center;
+  left: 0;
+}
+.account .footer .btn-red.data-v-3c1b446f {
+  height: 88rpx;
+  width: 408rpx;
+  background-color: var(--color-red-bg);
+  color: var(--neutral-color-white);
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin-top: 30rpx;
+}

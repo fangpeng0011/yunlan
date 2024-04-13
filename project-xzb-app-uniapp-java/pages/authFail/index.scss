@@ -1,0 +1,26 @@
+.authFail{
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--neutral-color-white);
+  .bImg{
+    width: 280rpx;
+    height: 280rpx;
+    margin-top: 146rpx;
+    margin-bottom: 36rpx;
+  }
+  .content{
+    font-size: 28rpx;
+    color: var(--color-black-19);
+  }
+  .btn-red {
+    height: 88rpx;
+    width: 408rpx;
+    background-color: var(--color-red-bg);
+    color: var(--neutral-color-white);
+    border-radius: 50rpx;
+    text-align: center;
+    line-height: 88rpx;
+    margin: 0 auto;
+    margin-top: 74rpx;
+  }
+}

@@ -1,0 +1,19 @@
+.serviceSkill{
+  .switchBox{
+    background-color:var(--neutral-color-white) ;
+    margin:36rpx 30rpx 0 30rpx;
+    height: 120rpx;
+    border-radius: 8px;
+    line-height: 120rpx;
+    display: flex;
+    justify-content: space-between;
+    text{
+      margin-left: 40rpx;
+      font-size: 32rpx;
+      color: var(--color-black-19);
+    }
+    switch{
+      margin-right: 30rpx;
+    }
+  }
+}

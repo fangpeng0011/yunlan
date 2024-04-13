@@ -1,0 +1,43 @@
+/* 水平间距 */
+/* 水平间距 */
+.NavBar.data-v-e4fdf528 {
+  position: relative;
+  background-color: transparent;
+  z-index: 10;
+}
+.NavBar .title.data-v-e4fdf528 {
+  font-weight: bold;
+  font-size: 36rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NavBar .back.data-v-e4fdf528 {
+  width: 90rpx;
+  height: 64rpx;
+  display: flex;
+  line-height: 64rpx;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+}
+.NavBar .back image.data-v-e4fdf528 {
+  width: 18rpx;
+  height: 36rpx;
+}
+.NavBar .history.data-v-e4fdf528 {
+  width: 90rpx;
+  height: 64rpx;
+  display: flex;
+  line-height: 64rpx;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 200rpx;
+}
+.NavBar .history image.data-v-e4fdf528 {
+  width: 42rpx;
+  height: 44rpx;
+}

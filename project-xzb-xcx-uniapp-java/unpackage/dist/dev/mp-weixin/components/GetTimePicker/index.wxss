@@ -1,0 +1,69 @@
+/* 水平间距 */
+/* 水平间距 */
+.getTimePicker.data-v-0b5be12f .uni-popup__wrapper {
+  height: 680rpx;
+  background-color: white !important;
+  border-radius: 24rpx 24rpx 0 0;
+}
+.getTimePicker .header.data-v-0b5be12f {
+  display: flex;
+  height: 56rpx;
+  padding: 47rpx 38rpx 20rpx;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 24rpx 24rpx 0 0;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 32rpx;
+}
+.getTimePicker .header view.data-v-0b5be12f {
+  color: #f74145;
+}
+.getTimePicker .time-select.data-v-0b5be12f {
+  display: flex;
+  justify-content: space-between;
+}
+.getTimePicker .time-select .select-day.data-v-0b5be12f {
+  width: 296rpx;
+}
+.getTimePicker .time-select .select-day .select-day-item.data-v-0b5be12f {
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.getTimePicker .time-select .select-day .select-day-item.active.data-v-0b5be12f {
+  color: #f74145;
+}
+.getTimePicker .time-select .select-day.data-v-0b5be12f scroll-view {
+  height: 500rpx;
+}
+.getTimePicker .time-select .select-day.data-v-0b5be12f ::-webkit-scrollbar {
+  display: none;
+}
+.getTimePicker .time-select .select-time .time-item.data-v-0b5be12f {
+  display: flex;
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.getTimePicker .time-select .select-time .time-item .time-value.data-v-0b5be12f {
+  padding-right: 108rpx;
+}
+.getTimePicker .time-select .select-time .time-item .time-select.data-v-0b5be12f {
+  width: 40rpx;
+  height: 40rpx;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../../static/gouxuan.png");
+}
+.getTimePicker .time-select .select-time .active.time-item .time-value.data-v-0b5be12f {
+  color: #f74145;
+}
+.getTimePicker .time-select .select-time.data-v-0b5be12f scroll-view {
+  height: 500rpx;
+}
+.getTimePicker .time-select .select-time.data-v-0b5be12f ::-webkit-scrollbar {
+  display: none;
+}

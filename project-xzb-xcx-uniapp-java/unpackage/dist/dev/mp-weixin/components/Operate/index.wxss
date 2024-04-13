@@ -1,0 +1,22 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-e23ecdf6:root {
+	--essential-color-red:#F74346; 
+	--assist-color-green:#1DC779; 
+	--assist-color-orange:#FFB302; 
+	--assist-color-error:#F56C6C; 
+	--neutral-color-main:#151515; 
+	--neutral-color-border:#E5E4E4; 
+	--neutral-color-font:#888888; 
+	--neutral-color-segmentation:#EEEEEE; 
+	--neutral-color-white:#FFFFFF; 
+  --neutral-color-black:#000000; 
+	--neutral-color-placeholder:#888; 
+	--neutral-color-background:#F8F8F8; 
+  --neutral-color-line:#F4F4F4; 
+  --neutral-color-font2:#BDBDBD; 
+	--font-size-16:32rpx;
+	--font-size-14:28rpx;
+	--font-size-13:26rpx;
+	--font-size-12:24rpx;
+}

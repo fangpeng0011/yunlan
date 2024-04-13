@@ -1,0 +1,12 @@
+{
+  "id": "Luke-UniappAddressSelector",
+  "name": "省市区街道三级四级联动选择器（支持APP、H5、小程序）内附demo",
+  "version": "1.0.2",
+  "description": "uniapp（APP、H5、小程序）省市区街道三级四级联动、支持默认地区显示 、数据来源可包括高德地图api、公司封装接口返回",
+  "keywords": [
+    "省市区三级联动",
+    "省市区街道四级联动",
+    "地区选择",
+    "街道"
+  ]
+}

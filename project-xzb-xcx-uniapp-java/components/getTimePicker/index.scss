@@ -1,0 +1,78 @@
+.getTimePicker {
+  ::v-deep .uni-popup__wrapper {
+    height: 680rpx;
+    background-color: white !important;
+    border-radius: 24rpx 24rpx 0 0;
+  }
+
+  .header {
+    display: flex;
+    height: 56rpx;
+    padding: 47rpx 38rpx 20rpx;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24rpx 24rpx 0 0;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    font-size: 32rpx;
+    view{
+      color: #f74145;
+    }
+  }
+  .time-select {
+    display: flex;
+    justify-content: space-between;
+    .select-day {
+      width: 296rpx;
+      .select-day-item {
+        height: 108rpx;
+        line-height: 108rpx;
+        text-align: center;
+        font-size: 32rpx;
+      }
+      .select-day-item.active {
+        color: #f74145;
+      }
+      ::v-deep scroll-view {
+        height: 500rpx;
+      }
+
+      //隐藏滚动条
+      ::v-deep ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .select-time {
+      .time-item {
+        display: flex;
+        height: 108rpx;
+        line-height: 108rpx;
+        text-align: center;
+        font-size: 32rpx;
+        .time-value {
+          padding-right: 108rpx;
+        }
+        .time-select {
+          width: 40rpx;
+          height: 40rpx;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-image: url('../../../static/gouxuan.png');
+        }
+      }
+      .active.time-item {
+        .time-value{
+          color: #f74145;
+        }
+      }
+      ::v-deep scroll-view {
+        height: 500rpx;
+      }
+
+      //隐藏滚动条
+      ::v-deep ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

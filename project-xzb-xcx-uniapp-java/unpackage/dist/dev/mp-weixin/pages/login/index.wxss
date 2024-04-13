@@ -1,0 +1,134 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-d08ef7d4:root {
+	--essential-color-red:#F74346; 
+	--assist-color-green:#1DC779; 
+	--assist-color-orange:#FFB302; 
+	--assist-color-error:#F56C6C; 
+	--neutral-color-main:#151515; 
+	--neutral-color-border:#E5E4E4; 
+	--neutral-color-font:#888888; 
+	--neutral-color-segmentation:#EEEEEE; 
+	--neutral-color-white:#FFFFFF; 
+  --neutral-color-black:#000000; 
+	--neutral-color-placeholder:#888; 
+	--neutral-color-background:#F8F8F8; 
+  --neutral-color-line:#F4F4F4; 
+  --neutral-color-font2:#BDBDBD; 
+	--font-size-16:32rpx;
+	--font-size-14:28rpx;
+	--font-size-13:26rpx;
+	--font-size-12:24rpx;
+}
+.loginBox.data-v-d08ef7d4 {
+  background-color: var(--neutral-color-white);
+  height: 100vh;
+}
+.loginBox .logo-box.data-v-d08ef7d4 {
+  text-align: center;
+  margin-top: 204rpx;
+}
+.loginBox .logo-box image.data-v-d08ef7d4 {
+  width: 288rpx;
+  height: 264rpx;
+}
+.loginBox .logo-box .title.data-v-d08ef7d4 {
+  font-size: 32rpx;
+  color: var(--neutral-color-main);
+  font-weight: bold;
+}
+.loginBox .open-dialog.data-v-d08ef7d4 {
+  height: 88rpx;
+  background: var(--essential-color-red);
+  border-radius: 44rpx;
+  color: var(--neutral-color-white);
+  text-align: center;
+  line-height: 88rpx;
+  margin: 228rpx 46rpx 0;
+}
+.loginBox .servicePop.data-v-d08ef7d4 .uni-popup__wrapper {
+  height: 500rpx;
+  background-color: var(--neutral-color-white) !important;
+  border-radius: 24rpx 24rpx 0 0;
+  padding: 65rpx 33rpx 180rpx 39rpx;
+}
+.loginBox .servicePop .header.data-v-d08ef7d4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 24rpx 24rpx 0 0;
+}
+.loginBox .servicePop .header image.data-v-d08ef7d4 {
+  height: 35rpx;
+  width: 35rpx;
+}
+.loginBox .servicePop .header .title.data-v-d08ef7d4 {
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: var(--neutral-color-main);
+  font-size: 30rpx;
+  margin: 0 auto;
+}
+.loginBox .servicePop .content.data-v-d08ef7d4 {
+  font-size: 28rpx;
+  font-family: PingFangSC;
+  margin-top: 35rpx;
+}
+.loginBox .servicePop .content .tips.data-v-d08ef7d4 {
+  margin-top: 50rpx;
+  color: var(--neutral-color-main);
+}
+.loginBox .servicePop .content text.data-v-d08ef7d4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.loginBox .servicePop .footer.data-v-d08ef7d4 {
+  display: flex;
+  padding: 90rpx 46rpx 45rpx 40rpx;
+  justify-content: space-between;
+}
+.loginBox .servicePop .footer .btn.data-v-d08ef7d4 {
+  width: 276rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 2rpx solid var(--essential-color-red);
+  border-radius: 44rpx;
+  font-size: 30rpx;
+}
+.loginBox .freeze .dialog.data-v-d08ef7d4 {
+  width: 556rpx;
+  background-color: var(--neutral-color-white);
+  border-radius: 24rpx;
+  position: relative;
+}
+.loginBox .freeze .dialog .content.data-v-d08ef7d4 {
+  text-align: center;
+  font-size: 32rpx;
+  color: var(--neutral-color-main);
+  padding-top: 38rpx;
+  padding-bottom: 40rpx;
+}
+.loginBox .freeze .dialog .reason.data-v-d08ef7d4 {
+  font-size: 28rpx;
+  padding-bottom: 20rpx;
+  color: #595959;
+  padding-left: 63rpx;
+}
+.loginBox .freeze .dialog .phone.data-v-d08ef7d4 {
+  font-size: 28rpx;
+  padding-bottom: 29rpx;
+  color: #595959;
+  padding-left: 63rpx;
+}
+.loginBox .freeze .dialog .phoneLabel.data-v-d08ef7d4 {
+  font-size: 28rpx;
+  color: #595959;
+  padding-left: 63rpx;
+}
+.loginBox .freeze .dialog .footer.data-v-d08ef7d4 {
+  font-size: 32rpx;
+  color: var(--essential-color-red);
+  text-align: center;
+  border-top: 2rpx solid var(--neutral-color-border);
+  line-height: 99rpx;
+}

@@ -1,0 +1,119 @@
+@import url('@/styles/theme.scss');
+.loginBox {
+  background-color: var(--neutral-color-white);
+  height: 100vh;
+  .logo-box {
+    text-align: center;
+    margin-top: 204rpx;
+    image {
+      width: 288rpx;
+      height: 264rpx;
+    }
+    .title {
+      font-size: 32rpx;
+      color: var(--neutral-color-main);
+      font-weight: bold;
+    }
+  }
+  .open-dialog {
+    height: 88rpx;
+    background: var(--essential-color-red);
+    border-radius: 44rpx;
+    color: var(--neutral-color-white);
+    text-align: center;
+    line-height: 88rpx;
+    margin: 228rpx 46rpx 0;
+  }
+  .servicePop {
+    :deep(.uni-popup__wrapper) {
+      height: 500rpx;
+      background-color: var(--neutral-color-white) !important;
+      border-radius: 24rpx 24rpx 0 0;
+      padding: 65rpx 33rpx 180rpx 39rpx;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border-radius: 24rpx 24rpx 0 0;
+      image {
+        height: 35rpx;
+        width: 35rpx;
+      }
+      .title {
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: var(--neutral-color-main);
+        font-size: 30rpx;
+        margin: 0 auto;
+      }
+    }
+    .content {
+      font-size: 28rpx;
+      font-family: PingFangSC;
+      margin-top: 35rpx;
+      .tips {
+        margin-top: 50rpx;
+        color: var(--neutral-color-main);
+      }
+      text {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    .footer {
+      display: flex;
+      padding: 90rpx 46rpx 45rpx 40rpx;
+      justify-content: space-between;
+      .btn {
+        width: 276rpx;
+        height: 88rpx;
+        line-height: 88rpx;
+        border: 2rpx solid var(--essential-color-red);
+        border-radius: 44rpx;
+        font-size: 30rpx;
+      }
+    }
+  }
+  //冻结弹窗提示
+  .freeze {
+    .dialog {
+      width: 556rpx;
+      background-color: var(--neutral-color-white);
+      border-radius: 24rpx;
+      position: relative;
+      .content {
+        // height: 225rpx;
+        text-align: center;
+        font-size: 32rpx;
+        color: var(--neutral-color-main);
+        padding-top: 38rpx;
+        padding-bottom: 40rpx;
+      }
+      .reason {
+        font-size: 28rpx;
+        padding-bottom: 20rpx;
+        color: #595959;
+        padding-left: 63rpx;
+      }
+      .phone {
+        font-size: 28rpx;
+        padding-bottom: 29rpx;
+        color: #595959;
+        padding-left: 63rpx;
+      }
+      .phoneLabel {
+        font-size: 28rpx;
+        color: #595959;
+        padding-left: 63rpx;
+      }
+      .footer {
+        font-size: 32rpx;
+        color: var(--essential-color-red);
+        text-align: center;
+        border-top: 2rpx solid var(--neutral-color-border);
+        line-height: 99rpx;
+      }
+    }
+  }
+}

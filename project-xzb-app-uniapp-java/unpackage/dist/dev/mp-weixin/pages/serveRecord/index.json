@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "服务记录",
+  "usingComponents": {
+    "uni-file-picker": "../../uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker",
+    "uni-nav": "../../components/uni-nav/index"
+  }
+}

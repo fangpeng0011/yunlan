@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "优惠券",
+  "usingComponents": {
+    "list": "./components/list"
+  }
+}

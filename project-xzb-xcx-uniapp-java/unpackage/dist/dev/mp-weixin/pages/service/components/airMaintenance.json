@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "服务详情",
+  "usingComponents": {
+    "uni-number-box": "../../../uni_modules/uni-number-box/components/uni-number-box/uni-number-box",
+    "uni-rate": "../../../uni_modules/uni-rate/components/uni-rate/uni-rate",
+    "uni-popup": "../../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "get-time-picker": "../../../components/GetTimePicker/index",
+    "coupon-select": "../../../components/couponSelect/index",
+    "empty-page": "../../../components/EmptyPage/index"
+  }
+}

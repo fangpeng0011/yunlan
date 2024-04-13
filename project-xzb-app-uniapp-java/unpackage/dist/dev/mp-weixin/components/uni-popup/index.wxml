@@ -1,0 +1,1 @@
+<uni-popup wx:if="{{e}}" u-s="{{['d']}}" u-r="message" class="commDialog r" u-i="6aa05432-0" bind:__l="__l" u-p="{{e}}"><uni-popup-dialog wx:if="{{c}}" bindconfirm="{{a}}" bindclose="{{b}}" u-i="6aa05432-1,6aa05432-0" bind:__l="__l" u-p="{{c}}"></uni-popup-dialog></uni-popup>

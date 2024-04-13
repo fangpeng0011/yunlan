@@ -1,0 +1,1 @@
+<view class="filtrateBox"><view wx:for="{{a}}" wx:for-item="item" wx:key="g" bindtap="{{item.f}}" class="{{['item', item.h]}}"><text>{{item.a}}</text><icon wx:if="{{item.b}}" class="{{['up', item.c]}}"></icon><icon wx:if="{{item.d}}" class="{{['down', item.e]}}"></icon></view></view>

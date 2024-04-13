@@ -1,0 +1,1 @@
+<view><view class="myMenu"><view class="item"><view bindtap="{{a}}">我的地址</view><icon class="nextIcon"></icon></view><view class="item"><view bindtap="{{b}}">我的评价</view><icon class="nextIcon"></icon></view><view class="item"><view bindtap="{{c}}">我的优惠券</view><icon class="nextIcon"></icon></view></view></view>

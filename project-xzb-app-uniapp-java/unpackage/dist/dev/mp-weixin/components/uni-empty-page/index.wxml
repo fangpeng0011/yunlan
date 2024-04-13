@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="emptyBox data-v-10597487">{{b}}</view><view wx:else class="empty data-v-10597487"><view class="{{['image', 'data-v-10597487', c]}}"></view>{{d}}</view>

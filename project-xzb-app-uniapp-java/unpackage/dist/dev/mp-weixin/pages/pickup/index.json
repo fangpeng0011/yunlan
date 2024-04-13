@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "订单",
+  "usingComponents": {
+    "empty": "../../components/empty/index",
+    "home-list": "./components/homeList",
+    "uni-footer": "../../components/uni-footer/index",
+    "uni-tab": "../../components/uni-tab/index"
+  }
+}

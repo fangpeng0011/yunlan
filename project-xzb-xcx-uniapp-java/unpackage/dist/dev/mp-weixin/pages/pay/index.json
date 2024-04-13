@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "支付订单",
+  "usingComponents": {
+    "uni-data-checkbox": "../../uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox",
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup"
+  }
+}

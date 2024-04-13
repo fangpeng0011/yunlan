@@ -1,0 +1,86 @@
+.setting{
+  .guide{
+    text-align: center;
+    margin-bottom: 44px;
+    img{
+      width: 513px;
+      height: 218px;
+      margin-top: 73px;
+    }
+    .content{
+      font-size: 16px;
+      color: var(--color-bk1);
+    }
+  }
+  .step{
+    padding: 0 15px 70px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 798px;
+    margin:0 auto;
+    justify-content: space-around;
+
+    .stepItem{
+      display: flex;
+      align-items: center;
+      border:1px solid var(--color-border);
+      width: 357.5px;
+      height:88px ;
+      justify-content: space-between;
+      padding: 18px 20px 22px 16px;
+      img{
+        width: 28px;
+        height: 28px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .stepBox{
+        display: flex;
+        padding: 15px 0;
+        justify-content: space-between;
+        flex: 1;
+        .stepContent{
+          .setpTitle{
+            font-size: 14px;
+            color: var(--color-bk1);
+            margin-bottom: 4px;
+          }
+          .setpIntroduce{
+            font-size: 12px;
+            color: var(--color-bk4);
+          }
+        }
+        .btn{
+          border-radius: 2px;
+          width: 73px;
+          height: 32px;
+          text-align: center;
+          line-height: 32px;
+          font-size: 12px;
+          margin: 0;
+          margin-top: 10px;
+        }
+        .btn-successGreen:hover{
+          background-color: white!important;
+        }
+        :deep(.t-switch){
+          margin-top: 13px;
+        }
+      }
+
+    }
+    .stepOne,.stepTwo  {
+      margin-bottom: 20px;
+    }
+  }
+  .bt{
+    width: 404px;
+    margin: 0 auto;
+    height: 40px;
+  }
+  .fail{
+    background-color:#FFDBDC ;
+    cursor: default;
+  }
+}

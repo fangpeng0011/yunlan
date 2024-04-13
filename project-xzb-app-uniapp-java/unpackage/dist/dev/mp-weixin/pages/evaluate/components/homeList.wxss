@@ -1,0 +1,184 @@
+/* 水平间距 */
+/* 水平间距 */
+.evaluate .uni-badge {
+  bottom: 32rpx;
+  top: 4rpx !important;
+  background-color: transparent;
+  color: var(--color-red-bg);
+  font-size: 28rpx;
+  transform: scale(1);
+  color: var(--color-black-19);
+}
+.evaluate .badge-act .uni-badge {
+  color: var(--color-red-bg);
+}
+.evaluate .homeList .card {
+  background-color: var(--neutral-color-white);
+  padding: 34rpx;
+  margin-top: 30rpx;
+}
+.evaluate .homeList .reply {
+  margin-top: 20rpx;
+  background-color: var(--color-gray-f8);
+  padding: 10rpx 20rpx 20rpx 20rpx;
+}
+.evaluate .homeList .reply .content {
+  font-size: 28rpx;
+  color: var(--color-gray-59);
+  margin-bottom: 16rpx;
+}
+.evaluate .homeList .reply .foot text:first-child {
+  color: var(--color-gray-9);
+  font-size: 24rpx;
+  margin-right: 32rpx;
+}
+.evaluate .homeList .reply .foot text:last-child {
+  color: var(--color-gray-59);
+  font-size: 24rpx;
+}
+.evaluate .homeList .order {
+  background-color: var(--color-gray-f8);
+  padding: 20rpx;
+  font-size: 24rpx;
+  color: var(--color-black-19);
+  display: flex;
+}
+.evaluate .homeList .order .right .num text:first-child, .evaluate .homeList .order .right .time text:first-child {
+  color: var(--color-gray-8);
+  margin-right: 22rpx;
+}
+.evaluate .homeList .order .right .num {
+  margin-top: 8rpx;
+  margin-bottom: 8rpx;
+}
+.evaluate .homeList .order .right .time {
+  margin-bottom: 16rpx;
+}
+.evaluate .homeList .order .right .time text {
+  color: var(--color-black-19);
+}
+.evaluate .homeList .order .left image {
+  width: 112rpx;
+  height: 92rpx;
+  border-radius: 6rpx;
+  margin-right: 20rpx;
+}
+.evaluate .homeList .img {
+  margin-top: 30rpx;
+}
+.evaluate .homeList .img image {
+  height: 100rpx;
+  width: 100rpx;
+  margin-right: 22rpx;
+}
+.evaluate .homeList .time {
+  color: var(--color-gray-9);
+  font-size: 24rpx;
+}
+.evaluate .homeList .time .replys {
+  color: var(--color-gray-59);
+  margin-left: 36rpx;
+}
+.evaluate .homeList .content {
+  font-size: 28rpx;
+  color: var(--color-gray-59);
+  margin-bottom: 20rpx;
+}
+.evaluate .homeList .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.evaluate .homeList .header .left {
+  display: flex;
+  align-items: center;
+}
+.evaluate .homeList .header .left image {
+  height: 52rpx;
+  width: 52rpx;
+  border-radius: 50%;
+}
+.evaluate .homeList .header .left .nickName {
+  font-size: 28rpx;
+  color: var(--color-gray-59);
+  font-weight: 600;
+  margin-left: 20rpx;
+}
+.evaluate .homeList .header .right {
+  display: flex;
+  align-items: center;
+  color: var(--color-black-19);
+}
+.evaluate .homeList .header .right text {
+  margin-left: 6rpx;
+}
+.evaluate .homeList .footer {
+  font-size: 24rpx;
+  color: var(--color-gray-9);
+  text-align: center;
+  padding-bottom: 130rpx;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper {
+  width: 100%;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .content {
+  background-color: var(--neutral-color-white);
+  padding: 26rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0rpx;
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .content .placeholder {
+  color: red;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .content .uni-input {
+  background-color: var(--color-gray-f8);
+  border-radius: 18rpx;
+  width: 466rpx;
+  padding-left: 20rpx;
+  padding-top: 14rpx;
+  padding-bottom: 14rpx;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .content .right {
+  display: flex;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .content .right image {
+  height: 72rpx;
+  width: 72rpx;
+  margin-left: 10rpx;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .content .right .disabled {
+  background-color: #FFDBDC;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .content .right .submitBtn {
+  margin-left: 10rpx;
+  width: 132rpx;
+  height: 80rpx;
+  background: #F74346;
+  border-radius: 44rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: var(--neutral-color-white);
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .emoji-picker {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 999;
+  background-color: #D0D2D6;
+}
+.evaluate .homeList .uni-popup .uni-popup__wrapper .emoji-picker .emoji-picker-item {
+  margin: 4px;
+  font-size: 60rpx;
+  cursor: pointer;
+}
+.evaluate .scrollList {
+  height: calc(100vh - 250rpx);
+}

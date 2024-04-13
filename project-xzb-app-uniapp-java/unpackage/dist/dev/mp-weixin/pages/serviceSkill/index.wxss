@@ -1,0 +1,120 @@
+/* 水平间距 */
+/* 水平间距 */
+.serviceSkill .servicePage.data-v-6ade5948 {
+  display: flex;
+  height: calc(100vh - 144rpx);
+  border-top: 2rpx solid var(--color-gray-e8);
+}
+.serviceSkill .servicePage .left.data-v-6ade5948 {
+  width: 236rpx;
+  font-size: 28rpx;
+  flex-shrink: 0;
+  background: var(--neutral-color-white);
+}
+.serviceSkill .servicePage .left .tagBox.data-v-6ade5948 {
+  height: 112rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 32rpx;
+  color: var(--color-gray-59);
+  text-align: center;
+  line-height: 112rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceSkill .servicePage .left .tagBox .tag.data-v-6ade5948 {
+  height: 44rpx;
+  line-height: 41rpx;
+}
+.serviceSkill .servicePage .left .tagBox .tag .selectNum.data-v-6ade5948 {
+  color: var(--color-gray-59);
+  font-size: 24rpx;
+  font-weight: lighter;
+  position: relative;
+  bottom: 20rpx;
+}
+.serviceSkill .servicePage .left .active.data-v-6ade5948 {
+  font-family: PingFangSC-Medium;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  background-color: #fff !important;
+  position: relative;
+  color: var(--color-gray-19);
+}
+.serviceSkill .servicePage .left .active .tag.data-v-6ade5948:after {
+  content: "";
+  position: absolute;
+  width: 8rpx;
+  height: 44rpx;
+  left: 0;
+  background: #f74145;
+}
+.serviceSkill .servicePage .left .active .tag .selectNum.data-v-6ade5948 {
+  color: var(--color-red-bg);
+  font-size: 24rpx;
+  font-weight: lighter;
+}
+.serviceSkill .servicePage .serviceBox.data-v-6ade5948 {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 30rpx;
+}
+.serviceSkill .servicePage .serviceBox .cleanImg.data-v-6ade5948 {
+  width: 532rpx;
+  height: 200rpx;
+  margin-bottom: 32rpx;
+}
+.serviceSkill .servicePage .serviceBox .clean.data-v-6ade5948 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.serviceSkill .servicePage .serviceBox .clean .card.data-v-6ade5948 {
+  width: 217rpx;
+  box-sizing: border-box;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: var(--neutral-color-white);
+  margin-bottom: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: #151515;
+  border-radius: 16rpx;
+  border: 2rpx solid transparent;
+}
+.serviceSkill .servicePage .serviceBox .clean .card.data-v-6ade5948:nth-child(2n) {
+  margin-right: 0;
+}
+.serviceSkill .servicePage .serviceBox .clean .active.card.data-v-6ade5948 {
+  background: var(--color-red-ffeaea);
+  border: 2rpx solid var(--color-red-bg);
+  color: var(--color-red-bg);
+}
+.serviceSkill .footer.data-v-6ade5948 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 186rpx;
+  background-color: var(--neutral-color-white);
+  box-shadow: 0 0 12rpx 0 #0000001a;
+  display: flex;
+  align-items: center;
+}
+.serviceSkill .footer .btn.data-v-6ade5948 {
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  border-radius: 50rpx;
+}
+.serviceSkill .footer .btn-gray.data-v-6ade5948 {
+  width: 250rpx;
+  margin-left: 30rpx;
+  margin-right: 32rpx;
+}
+.serviceSkill .footer .btn-red.data-v-6ade5948 {
+  width: 408rpx;
+}

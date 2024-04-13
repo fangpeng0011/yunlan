@@ -1,0 +1,75 @@
+/* 水平间距 */
+/* 水平间距 */
+.serviceRange .address.data-v-a953d043 {
+  width: 598rpx;
+  height: 296rpx;
+  background-color: var(--neutral-color-white);
+  position: fixed;
+  bottom: 54rpx;
+  z-index: 9999;
+  border-radius: 16rpx;
+  left: 30rpx;
+  padding: 60rpx 46rpx 46rpx 46rpx;
+}
+.serviceRange .address .city .label.data-v-a953d043, .serviceRange .address .range .label.data-v-a953d043 {
+  display: inline-block;
+  font-size: 32rpx;
+  color: var(--color-gray-59);
+}
+.serviceRange .address .city .content.data-v-a953d043, .serviceRange .address .range .content.data-v-a953d043 {
+  align-items: center;
+  display: flex;
+  float: right;
+  white-space: nowrap;
+  position: relative;
+  z-index: 9999;
+}
+.serviceRange .address .city .content .rangeName.data-v-a953d043, .serviceRange .address .range .content .rangeName.data-v-a953d043 {
+  width: 350rpx;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.serviceRange .address .city .content .cityName.data-v-a953d043, .serviceRange .address .city .content .rangeName.data-v-a953d043, .serviceRange .address .range .content .cityName.data-v-a953d043, .serviceRange .address .range .content .rangeName.data-v-a953d043 {
+  font-size: 32rpx;
+  color: var(--color-black-19);
+  display: inline-block;
+  margin-right: 16rpx;
+}
+.serviceRange .address .city .content .icon.data-v-a953d043, .serviceRange .address .range .content .icon.data-v-a953d043 {
+  width: 32rpx;
+  height: 32rpx;
+  display: inline-block;
+}
+.serviceRange .address .city.data-v-a953d043 {
+  margin-bottom: 61rpx;
+}
+.serviceRange .address .btn-red.data-v-a953d043 {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 50rpx;
+  margin-top: 59rpx;
+}
+.serviceRange .address .btn-red .text.data-v-a953d043 {
+  margin-top: 22rpx;
+}
+.serviceRange .map.data-v-a953d043 {
+  position: relative !important;
+  z-index: -1 !important;
+  height: 100vh;
+  width: 100%;
+}
+.serviceRange .center.data-v-a953d043 {
+  height: 50rpx;
+  width: 50rpx;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

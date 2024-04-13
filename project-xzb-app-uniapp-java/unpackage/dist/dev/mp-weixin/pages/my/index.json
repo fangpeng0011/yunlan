@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "uni-footer": "../../components/uni-footer/index",
+    "base-info": "./commponents/BaseInfo",
+    "evaluate": "./commponents/Evaluate",
+    "history-scope": "./commponents/HistoryScope"
+  }
+}

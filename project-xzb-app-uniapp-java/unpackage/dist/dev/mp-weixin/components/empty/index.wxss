@@ -1,0 +1,16 @@
+/* 水平间距 */
+/* 水平间距 */
+.empty .content.data-v-c00e6953 {
+  font-size: 26rpx;
+  color: var(--color-black-15);
+}
+.empty .image.data-v-c00e6953 {
+  width: 320rpx;
+  height: 288rpx;
+  background-image: url("../../static/new/empty.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 114rpx !important;
+  margin-bottom: 43rpx !important;
+}

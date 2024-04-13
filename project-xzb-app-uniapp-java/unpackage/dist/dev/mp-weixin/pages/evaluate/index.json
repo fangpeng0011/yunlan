@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "我的评价",
+  "usingComponents": {
+    "uni-nav": "../../components/uni-nav/index",
+    "empty": "../../components/empty/index",
+    "home-list": "./components/homeList",
+    "uni-footer": "../../components/uni-footer/index",
+    "uni-tab": "../../components/uni-tab/index"
+  }
+}

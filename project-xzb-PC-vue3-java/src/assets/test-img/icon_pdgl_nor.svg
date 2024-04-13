@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>icon_pdgl_nor@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_pdgl_nor" stroke-width="1.3">
+            <g transform="translate(5.500000, 5.500000)">
+                <rect id="矩形" stroke="#999999" stroke-linejoin="round" x="0" y="2.14146584" width="16.20863" height="15.7292946" rx="1"></rect>
+                <rect id="矩形" stroke="#999999" fill="#FFFFFF" stroke-linejoin="round" x="3.75941123" y="0" width="8.68980752" height="3.90753838" rx="1.953769"></rect>
+                <line x1="3.96324264" y1="12.3419935" x2="7.02314331" y2="12.3419935" id="路径-3备份" stroke="#979797"></line>
+                <line x1="3.96324264" y1="8.10468884" x2="9.71552613" y2="8.10468884" id="路径-3" stroke="#979797"></line>
+                <circle id="椭圆形" stroke="#999999" fill="#FFFFFF" stroke-linejoin="round" cx="14.252249" cy="13.763482" r="4.63182916"></circle>
+                <polyline id="路径" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" points="14.9069277 12.3419935 16.7673336 14.2023994 11.7371644 14.2023994"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

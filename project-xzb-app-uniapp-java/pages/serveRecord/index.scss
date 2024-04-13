@@ -1,0 +1,98 @@
+.serveRecord{
+  .card{
+    margin-top: 30rpx;
+    background-color: var(--neutral-color-white);
+    padding: 40rpx 30rpx 40rpx 30rpx;
+    position: relative;
+  }
+
+  .title{
+    font-size: 32rpx;
+    color: var(--color-black-19);
+    font-weight: 600;
+    margin-bottom: 24rpx;
+  }
+  .remark{
+    position: relative;
+    padding-bottom: 66rpx;
+    .title{
+      margin-bottom: 36rpx;
+    }
+    .limit{
+      position: absolute;
+      font-size: 28rpx;
+      color: var(--color-gray-9);
+      right: 50rpx;
+      bottom: 80rpx;
+      .min{
+        color: var(--color-red-bg);
+      }
+      .max{
+        // color: var(--color-gray-9);
+      }
+    }
+  }
+  ::v-deep .uni-file-picker{
+    .icon-add{
+      background-color: var(--color-gray-96);
+      height: 4rpx;
+      width: 60rpx;
+    }
+  }
+  ::v-deep .file-picker__box-content{
+    background-color: var(--color-gray-eb);
+  }
+  ::v-deep .file-title{
+    visibility: hidden;
+  }
+  ::v-deep .uni-textarea-textarea{
+    background-color: var(--neutral-color-background);
+    padding: 28rpx;
+    height: calc(100% - 28rpx);
+    width: calc(100% - 56rpx);
+  }
+  .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 186rpx;
+    background: #ffffff;
+    box-shadow: 0 0 12rpx 0 #0000001a;
+    display: flex;
+    font-size: 32rpx;
+    justify-content: center;
+    .btn-red {
+      height: 88rpx;
+      width: 408rpx;
+      background-color: var(--color-red-bg);
+      color: var(--neutral-color-white);
+      border-radius: 50rpx;
+      text-align: center;
+      line-height: 88rpx;
+      margin-top: 30rpx;
+    }
+  }
+}
+::v-deep .uni-textarea-placeholder {
+  z-index: 100;
+  // padding: 28rpx;
+  top: 25rpx;
+  left: 30rpx;
+  background-color: var(--neutral-color-background);
+  width: auto;
+  height: 40rpx;
+}
+::v-deep uni-textarea{
+  width: 690rpx;
+  height: 260rpx;
+}
+.must{
+  color: #f74346;
+  font-size: 32rpx;
+  font-face: PingFangSC;
+  font-weight: 600;
+  line-height: 0;
+  letter-spacing: 0.32rpx;
+  paragraph-spacing: 0;
+  text-align: left;
+}

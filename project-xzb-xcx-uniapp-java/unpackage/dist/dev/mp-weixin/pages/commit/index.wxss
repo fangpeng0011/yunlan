@@ -1,0 +1,143 @@
+/* 水平间距 */
+/* 水平间距 */
+.commit.data-v-20907598 {
+  background-color: white;
+}
+.commit .cardsBox.data-v-20907598 {
+  margin: 40rpx 30rpx 0;
+  padding-top: 42rpx;
+  border-top: 2rpx solid #f4f4f4;
+}
+.commit .cardsBox .headBox.data-v-20907598 {
+  display: flex;
+  justify-content: space-between;
+}
+.commit .cardsBox .headBox .left.data-v-20907598 {
+  display: flex;
+}
+.commit .cardsBox .headBox .right.data-v-20907598 {
+  color: #151515;
+  font-size: 26rpx;
+  font-size: 400;
+}
+.commit .cardsBox .headBox .star.data-v-20907598 {
+  display: flex;
+  align-items: center;
+}
+.commit .cardsBox .headBox .star text.data-v-20907598 {
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #151515;
+  font-size: 400;
+}
+.commit .cardsBox .time.data-v-20907598 {
+  color: #151515;
+  font-size: 26rpx;
+  margin-right: 28rpx;
+  font-weight: 500;
+}
+.commit .cardsBox .bodyBox.data-v-20907598 {
+  margin-top: 32rpx;
+}
+.commit .cardsBox .bodyBox .evaluationText.data-v-20907598 {
+  font-size: 24rpx;
+  color: #404040;
+  line-height: 46rpx;
+}
+.commit .cardsBox .bodyBox .photoList.data-v-20907598 {
+  margin-top: 32rpx;
+  margin-bottom: 6rpx;
+}
+.commit .cardsBox .bodyBox .photoList .photo.data-v-20907598 {
+  width: 212rpx;
+  height: 212rpx;
+  margin-right: 24rpx;
+}
+.commit .cardsBox .bodyBox .photoList .photo.data-v-20907598:last-child {
+  margin-right: 0;
+}
+.commit .cardsBox .bodyBox .orderInfo.data-v-20907598 {
+  display: flex;
+  background-color: #f8f8f8;
+  margin-top: 32rpx;
+  padding-top: 0rpx;
+}
+.commit .cardsBox .bodyBox .orderInfo .orderLeft.data-v-20907598 {
+  margin-right: 22rpx;
+}
+.commit .cardsBox .bodyBox .orderInfo .orderLeft image.data-v-20907598 {
+  width: 150rpx;
+  height: 100%;
+}
+.commit .cardsBox .bodyBox .orderInfo .orderRight.data-v-20907598 {
+  font-size: 26rpx;
+  padding-bottom: 14rpx;
+}
+.commit .cardsBox .bodyBox .orderInfo .orderRight .serveName.data-v-20907598 {
+  color: #151515;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.commit .cardsBox .bodyBox .orderInfo .orderRight .address.data-v-20907598 {
+  color: #888;
+  margin-bottom: 10rpx;
+}
+.commit .cardsBox .bodyBox .orderInfo .orderRight .toOrderInfo.data-v-20907598 {
+  color: #EF4F3F;
+}
+.commit .cardsBox .bodyBox .footer.data-v-20907598 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40rpx;
+}
+.commit .cardsBox .bodyBox .operation.data-v-20907598 {
+  width: 152rpx;
+  height: 60rpx;
+  border: 2rpx solid #888888;
+  border-radius: 36rpx;
+  color: #151515;
+  font-size: 26rpx;
+  font-size: 400;
+  text-align: center;
+  line-height: 60rpx;
+}
+.commit .cardsBox .bodyBox .replay.data-v-20907598 {
+  margin-top: 28rpx;
+  padding: 33rpx 24rpx 43rpx 27rpx;
+  font-size: 24rpx;
+  color: #404040;
+  background: #f8f8f8;
+  border-radius: 16rpx;
+}
+.commit .cardsBox.data-v-20907598:nth-child(2) {
+  margin-right: 0rpx;
+  margin-left: 0rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 25rpx;
+}
+.commit .cardsBox.data-v-20907598:last-child {
+  padding-bottom: 40rpx !important;
+}
+.noMore.data-v-20907598 {
+  text-align: center;
+  padding: 10px 0;
+  color: #999;
+}
+.empty-box.data-v-20907598 {
+  padding-top: 300rpx;
+  height: 71vh;
+  background-color: #fff;
+}
+.empty-box image.data-v-20907598 {
+  width: 320rpx;
+  height: 288rpx;
+  display: block;
+  margin: 0 auto;
+}
+.empty-box view.data-v-20907598 {
+  font-size: 26rpx;
+  line-height: 36rpx;
+  margin-top: 43rpx;
+  text-align: center;
+}

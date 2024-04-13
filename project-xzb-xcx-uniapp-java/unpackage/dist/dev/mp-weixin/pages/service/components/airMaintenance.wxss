@@ -1,0 +1,500 @@
+/* 水平间距 */
+/* 水平间距 */
+.getTimePicker .uni-popup__wrapper {
+  height: 680rpx;
+  background-color: white !important;
+  border-radius: 24rpx 24rpx 0 0;
+}
+.getTimePicker .header {
+  display: flex;
+  height: 56rpx;
+  padding: 47rpx 38rpx 20rpx;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 24rpx 24rpx 0 0;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 32rpx;
+}
+.getTimePicker .header view {
+  color: #f74145;
+}
+.getTimePicker .time-select {
+  display: flex;
+  justify-content: space-between;
+}
+.getTimePicker .time-select .select-day {
+  width: 296rpx;
+}
+.getTimePicker .time-select .select-day .select-day-item {
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.getTimePicker .time-select .select-day .select-day-item.active {
+  color: #f74145;
+}
+.getTimePicker .time-select .select-day scroll-view {
+  height: 500rpx;
+}
+.getTimePicker .time-select .select-day ::-webkit-scrollbar {
+  display: none;
+}
+.getTimePicker .time-select .select-time .time-item {
+  display: flex;
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.getTimePicker .time-select .select-time .time-item .time-value {
+  padding-right: 108rpx;
+}
+.getTimePicker .time-select .select-time .time-item .time-select {
+  width: 40rpx;
+  height: 40rpx;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../../static/gouxuan.png");
+}
+.getTimePicker .time-select .select-time .active.time-item .time-value {
+  color: #f74145;
+}
+.getTimePicker .time-select .select-time scroll-view {
+  height: 500rpx;
+}
+.getTimePicker .time-select .select-time ::-webkit-scrollbar {
+  display: none;
+}
+/* 水平间距 */
+/* 水平间距 */
+.data-v-ecebff2e:root {
+	--essential-color-red:#F74346; 
+	--assist-color-green:#1DC779; 
+	--assist-color-orange:#FFB302; 
+	--assist-color-error:#F56C6C; 
+	--neutral-color-main:#151515; 
+	--neutral-color-border:#E5E4E4; 
+	--neutral-color-font:#888888; 
+	--neutral-color-segmentation:#EEEEEE; 
+	--neutral-color-white:#FFFFFF; 
+  --neutral-color-black:#000000; 
+	--neutral-color-placeholder:#888; 
+	--neutral-color-background:#F8F8F8; 
+  --neutral-color-line:#F4F4F4; 
+  --neutral-color-font2:#BDBDBD; 
+	--font-size-16:32rpx;
+	--font-size-14:28rpx;
+	--font-size-13:26rpx;
+	--font-size-12:24rpx;
+}
+.airMaintenance.data-v-ecebff2e {
+  background-color: #f8f8f8;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.airMaintenance .scroll-view-content.data-v-ecebff2e {
+  height: calc(100% - 81px);
+  /* 主内容区域的高度减去底部栏的高度 */
+  padding-bottom: 81px;
+  /* 底部栏的高度，确保内容不被底部栏遮挡 */
+}
+.airMaintenance .scroll-view-content.data-v-ecebff2e .NavBar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.airMaintenance .scroll-view-content .tabBar.data-v-ecebff2e {
+  width: 100%;
+  position: fixed;
+  top: 136rpx;
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff;
+  box-shadow: 0 4rpx 8rpx 0 #f6f6f6;
+  z-index: 10;
+}
+.airMaintenance .scroll-view-content .tabBar .tabBar-item.data-v-ecebff2e {
+  height: 82rpx;
+  line-height: 82rpx;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #151515;
+}
+.airMaintenance .scroll-view-content .tabBar .active.data-v-ecebff2e {
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #f74145;
+  position: relative;
+}
+.airMaintenance .scroll-view-content .tabBar .active.data-v-ecebff2e::before {
+  content: "";
+  position: absolute;
+  bottom: -2rpx;
+  left: 0;
+  width: 100%;
+  height: 4rpx;
+  background: #f74145;
+}
+.airMaintenance .scroll-view-content .banner.data-v-ecebff2e {
+  width: 100%;
+  height: 620rpx;
+  margin-top: 178rpx;
+}
+.airMaintenance .scroll-view-content .head.data-v-ecebff2e {
+  padding: 32rpx 29rpx 40rpx 32.3rpx;
+  background-color: #fff;
+  margin-top: -8rpx;
+  margin-bottom: 32rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.airMaintenance .scroll-view-content .head .title.data-v-ecebff2e {
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  font-size: 40rpx;
+  color: #151515;
+}
+.airMaintenance .scroll-view-content .head .title .price.data-v-ecebff2e {
+  margin-top: 11rpx;
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #f74145;
+  letter-spacing: 0;
+}
+.airMaintenance .scroll-view-content .head .title .price .num.data-v-ecebff2e {
+  font-size: 44rpx;
+}
+.airMaintenance .scroll-view-content .head .title .price .unit.data-v-ecebff2e {
+  font-size: 26rpx;
+}
+.airMaintenance .scroll-view-content .head .cardBox.data-v-ecebff2e {
+  margin-top: 22rpx;
+}
+.airMaintenance .scroll-view-content .head .cardBox .card.data-v-ecebff2e {
+  width: 220rpx;
+  height: 140rpx;
+  background: #ffffff;
+  border: 2rpx solid #e7eaee;
+  border-radius: 12rpx;
+  padding: 25.5rpx 15.32rpx;
+  box-sizing: border-box;
+}
+.airMaintenance .scroll-view-content .head .cardBox .card .cardTitle.data-v-ecebff2e {
+  color: #151515;
+  font-size: 28rpx;
+  font-weight: 500;
+  height: 40rpx;
+  line-height: 40rpx;
+  letter-spacing: 0;
+  margin-bottom: 17rpx;
+}
+.airMaintenance .scroll-view-content .head .cardBox .card .cardTitle text.data-v-ecebff2e {
+  color: #f74145;
+}
+.airMaintenance .scroll-view-content .head .cardBox .card .cardText.data-v-ecebff2e {
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 22rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  color: #888888;
+}
+.airMaintenance .scroll-view-content .head .cardBox .active.data-v-ecebff2e {
+  border: 2rpx solid #f74145;
+  position: relative;
+}
+.airMaintenance .scroll-view-content .head .cardBox .active.data-v-ecebff2e:after {
+  content: "";
+  position: absolute;
+  width: 34rpx;
+  height: 28rpx;
+  right: 1rpx;
+  bottom: 1rpx;
+  display: block;
+  background-image: url(data:image/png;base64,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);
+  background-size: 100% 100%;
+}
+.airMaintenance .scroll-view-content .body.data-v-ecebff2e {
+  padding: 32rpx 32rpx 23rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.airMaintenance .scroll-view-content .body .title.data-v-ecebff2e {
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  font-size: 16px;
+  color: #151515;
+  margin-bottom: 52rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox.data-v-ecebff2e {
+  padding-bottom: 32rpx;
+  border-bottom: 2rpx solid #F4F4F4;
+  margin-bottom: 27rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox.data-v-ecebff2e:last-child {
+  border: none;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox.data-v-ecebff2e {
+  display: flex;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .headSculptureImg.data-v-ecebff2e {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .nickName.data-v-ecebff2e {
+  width: 100%;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .nickName .top.data-v-ecebff2e {
+  height: 56rpx;
+  line-height: 56rpx;
+  padding-left: 14.8rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 25rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .nickName .top .name.data-v-ecebff2e {
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  font-size: 26rpx;
+  color: #404040;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .nickName .top .star.data-v-ecebff2e {
+  display: flex;
+  align-items: center;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .nickName .top .star text.data-v-ecebff2e {
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #151515;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .nickName .bottom.data-v-ecebff2e {
+  margin-top: 16.6rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .headBox .nickName .bottom .tag.data-v-ecebff2e {
+  padding: 7rpx 26rpx;
+  border-radius: 24rpx;
+  height: 48rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #f74145;
+  background: #ffe3e4;
+  text-align: center;
+  float: left;
+  margin-right: 20rpx;
+  box-sizing: border-box;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .time.data-v-ecebff2e {
+  color: #888888;
+  font-size: 22rpx;
+  padding-left: 70rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox.data-v-ecebff2e {
+  margin-top: 24rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .evaluationText.data-v-ecebff2e {
+  font-size: 24rpx;
+  color: #404040;
+  line-height: 46rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .photoList.data-v-ecebff2e {
+  margin-top: 29.7rpx;
+  margin-bottom: 32.8rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .photoList .photo.data-v-ecebff2e {
+  width: 212rpx;
+  height: 212rpx;
+  margin-right: 24rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .photoList .photo.data-v-ecebff2e:last-child {
+  margin-right: 0;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .operation.data-v-ecebff2e {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .operation image.data-v-ecebff2e {
+  width: 28rpx;
+  height: 28rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .operation .clickLike.data-v-ecebff2e {
+  display: flex;
+  align-items: center;
+  margin-right: 34rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .operation .clickLike .num.data-v-ecebff2e {
+  font-size: 24rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .operation .clickLike image.data-v-ecebff2e {
+  margin-right: 7rpx;
+}
+.airMaintenance .scroll-view-content .body .cardsBox .bodyBox .replay.data-v-ecebff2e {
+  margin-top: 28rpx;
+  padding: 33rpx 24rpx 43rpx 27rpx;
+  font-size: 24rpx;
+  color: #404040;
+  background: #f8f8f8;
+  border-radius: 16rpx;
+}
+.airMaintenance .scroll-view-content .devisor.data-v-ecebff2e {
+  height: 1rpx;
+}
+.airMaintenance .scroll-view-content .detailBanner.data-v-ecebff2e {
+  width: 100%;
+}
+.pageFoot.data-v-ecebff2e {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.reportBox.data-v-ecebff2e .header-title {
+  margin-left: 270rpx;
+}
+.reportBox .bodyList.data-v-ecebff2e {
+  padding: 0 22rpx;
+}
+.reportBox .bodyList .item.data-v-ecebff2e {
+  width: 100%;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  background-color: white;
+  border-radius: 49rpx;
+  margin-bottom: 28rpx;
+}
+.reportBox .bodyList .cancelBtn.data-v-ecebff2e {
+  margin-top: 92rpx;
+}
+.reservationBox.data-v-ecebff2e {
+  background-color: #fff;
+}
+.reservationBox.data-v-ecebff2e .uni-popup__wrapper {
+  min-height: 510rpx;
+  border-radius: 24rpx 24rpx 0 0;
+}
+.reservationBox.data-v-ecebff2e .uni-popup view uni-transition view {
+  border-radius: 24rpx 24rpx 0 0;
+}
+.reservationBox .header.data-v-ecebff2e {
+  display: flex;
+  height: 44rpx;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 41rpx;
+  padding: 41rpx 42rpx 0;
+  border-radius: 24rpx 24rpx 0 0;
+}
+.reservationBox .header .header-title.data-v-ecebff2e {
+  font-size: 32rpx;
+  color: #151515;
+}
+.reservationBox .header .close.data-v-ecebff2e {
+  width: 40rpx;
+  height: 40rpx;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAt5JREFUWEftmLmKFlEQhb9xQY1EQSMfY0J3BRHBRJ1IMDIwUwNxBxdcMNBYfALBMTVQFB/ATAwEM0FwCQRFceVgFRRNd9+69/+Twb+hYWa4t/rUqeVUzRxL5JlbIjiZAZ12pGaMzhhNMLAM+GNv4vjoEaWc3rS9lhz1O/pIy9N12AEXPct+bAvwBXgR2Mje9XMOag2wFXgDvM7YKzG6HPgFXAAuA7+B08AtoDYV3NY64D6wG/gA7DHnZU/2e58xoDHET4CdwE9gBXAWuG5gB42HLzoIgXwA7Ai2Tpnj7kg1UF3wy8eB22ZcDujvYvZmgtnI5CKwHfgBrATeGQGvSuEvhV5gPa+uAWcMrBjSW2K2j8nvwCrgE3AQeJqJTAZoBHsFOJ9kdoxJ5eaCgRwNeazCTOXKIbGjwsow61GIOdnHZAqkM5UB6mcFQMVzFTg3wKyKTUUnkN2cjEz6udT3s6GPERhjVuDF+HqrbhXOREzWhj567fLXZdYL7BIwD+wL1d3M5CRAPQ26zAq4O6Ez3nM/AodqCqcvF2pD32VWv0vzxeJF+9kFQIXyFjgMPDOhEPimZxKgURA2mAxuCmAF9B5w1ECqY7QOMhPtTLFPPgS2WfvyGcDTIIpCeqzr0t7KaJ/iiDGBlzwKkCTS87mkYMV0aAE6pjgqnAPAZuu1ykmfDSS/NxKzQdNQ0r2U1W7dyyhYkcmW9pTVboVcTCr8fQrWxGw29Fkm3Zna2aDIbAZoBFmj3UMK1jfPFofvElCfgtYCakGazGu0O8tsccErAfVQ3rXG/Q1YbbuOz5OlKajE7F7gUWl4zu5Mj4Fdlkgt2t3HrPfdE8CdsPY0tSfPz/22H2ldPgk8b9DuuCxq3zoGvASOAO+nsTO5h5oxFfqvpTCNlHBMg43AZ7M5laqXkbhzj+7fxS/+O+A2IsujV0vFNDTWJfGMHqv6B0YN0GmAa7YxA9pM3cDFGaP/LaN/AcVo+ytMR6mZAAAAAElFTkSuQmCC");
+}
+.reservationBox .title.data-v-ecebff2e {
+  padding: 52rpx 42rpx 17rpx;
+}
+.reservationBox .body.data-v-ecebff2e {
+  display: flex;
+  justify-content: space-between;
+  padding: 47rpx 42rpx 43rpx;
+  padding-bottom: 43rpx;
+  border-bottom: 1px solid #f4f4f4;
+}
+.reservationBox .body .left.data-v-ecebff2e {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reservationBox .body .left .fBox.data-v-ecebff2e {
+  height: 100%;
+  padding-top: 12rpx;
+}
+.reservationBox .body .left .icon.data-v-ecebff2e {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 27rpx;
+}
+.reservationBox .body .left .text.data-v-ecebff2e {
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #151515;
+}
+.reservationBox .body .left .address.data-v-ecebff2e {
+  font-size: 30rpx;
+  color: #151515;
+  font-weight: 500;
+}
+.reservationBox .body .left .address .addressInfo.data-v-ecebff2e {
+  max-width: 570rpx;
+}
+.reservationBox .body .left .address .nickname.data-v-ecebff2e {
+  margin-top: 16rpx;
+}
+.reservationBox .body .left .address .nickname test.data-v-ecebff2e {
+  margin-right: 4rpx;
+}
+.reservationBox .body .right.data-v-ecebff2e {
+  display: flex;
+  align-items: center;
+}
+.reservationBox .body .right .couponValue.data-v-ecebff2e {
+  color: #151515;
+  font-size: 28rpx;
+}
+.reservationBox .body .right .active.data-v-ecebff2e {
+  color: #f74145;
+}
+.reservationBox .body .right .nextIcon.data-v-ecebff2e {
+  margin-left: 14rpx;
+}
+.reservationBox .body .right .value.data-v-ecebff2e {
+  color: #888888;
+  font-size: 28rpx;
+}
+.reservationBox .body .right .value.active.data-v-ecebff2e {
+  color: #f74145;
+}
+.reservationBox .foot.data-v-ecebff2e {
+  padding: 47rpx 42rpx 35rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reservationBox .foot .left.data-v-ecebff2e {
+  font-family: PingFangSC-SNaNpxibold;
+  font-weight: 600;
+  font-size: 46rpx;
+  color: #f74145;
+  letter-spacing: 0.26px;
+}
+.reservationBox .foot .right.data-v-ecebff2e {
+  height: 88rpx;
+  width: 268rpx;
+  border-radius: 45rpx;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.data-v-ecebff2e .emptyBox {
+  padding-top: 80rpx;
+}

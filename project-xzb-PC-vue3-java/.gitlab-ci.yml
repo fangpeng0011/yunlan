@@ -1,0 +1,29 @@
+stages:
+  - build
+  - docs
+build:
+  stage: build
+  tags:
+    - aliyun-kubernetes
+  script: 
+    - node -v
+    - npm -v
+    - npm install --registry=http://registry.npm.taobao.org
+ 
+    # - sudo rm -rf /data/nginx/html/${CI_PROJECT_NAME}/*
+    # - sudo cp -rf ./dist/* /data/nginx/html/${CI_PROJECT_NAME}/
+    # - sudo chown nginx.nginx -R /data/nginx/html/${CI_PROJECT_NAME}
+  only:
+    - master
+
+# docs:
+#   stage: docs
+#   tags:
+#     - aliyun-kubernetes
+#   script: 
+#     - sudo rm -rf /data/nginx/html/${CI_PROJECT_NAME}-docs/*
+#     - sudo cp -rf ./docs/* /data/nginx/html/${CI_PROJECT_NAME}-docs/
+#     - sudo chown nginx.nginx -R /data/nginx/html/${CI_PROJECT_NAME}-docs
+#   only:
+#     - master
+

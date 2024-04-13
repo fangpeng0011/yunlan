@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "订单列表",
+  "usingComponents": {
+    "delete-popup": "../../components/Operate/index",
+    "list": "./components/list"
+  }
+}

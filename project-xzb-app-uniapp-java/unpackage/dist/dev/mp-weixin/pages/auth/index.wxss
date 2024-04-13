@@ -1,0 +1,120 @@
+/* 水平间距 */
+/* 水平间距 */
+.auth.data-v-3f748249 {
+  background-color: var(--neutral-color-white);
+  min-height: 100vh;
+}
+.auth .idCard.data-v-3f748249 {
+  margin-top: 50rpx;
+}
+.auth .name.data-v-3f748249, .auth .idCard.data-v-3f748249, .auth .idCardPhoto.data-v-3f748249, .auth .data.data-v-3f748249 {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid var(--color-gray-e8);
+  padding-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.auth .name.data-v-3f748249 .uni-easyinput__content, .auth .idCard.data-v-3f748249 .uni-easyinput__content, .auth .idCardPhoto.data-v-3f748249 .uni-easyinput__content, .auth .data.data-v-3f748249 .uni-easyinput__content {
+  border: none;
+}
+.auth .name .label.data-v-3f748249, .auth .idCard .label.data-v-3f748249, .auth .idCardPhoto .label.data-v-3f748249, .auth .data .label.data-v-3f748249 {
+  margin-right: 40rpx;
+  font-size: 32rpx;
+  color: var(--color-black-19);
+}
+.auth .name .label.data-v-3f748249::before, .auth .idCard .label.data-v-3f748249::before, .auth .idCardPhoto .label.data-v-3f748249::before, .auth .data .label.data-v-3f748249::before {
+  content: "*";
+  color: var(--color-red-bg);
+  display: inline-block;
+  vertical-align: middle;
+}
+.auth .name.data-v-3f748249 .uni-input-input, .auth .idCard.data-v-3f748249 .uni-input-input, .auth .idCardPhoto.data-v-3f748249 .uni-input-input, .auth .data.data-v-3f748249 .uni-input-input {
+  font-size: 32rpx;
+}
+.auth .name.data-v-3f748249 .uniui-clear:before, .auth .idCard.data-v-3f748249 .uniui-clear:before, .auth .idCardPhoto.data-v-3f748249 .uniui-clear:before, .auth .data.data-v-3f748249 .uniui-clear:before {
+  font-size: 36rpx;
+}
+.auth .active.data-v-3f748249 {
+  border-bottom-color: var(--color-black-19) !important;
+}
+.auth .idCardPhoto.data-v-3f748249, .auth .countryPhoto.data-v-3f748249, .auth .data.data-v-3f748249 {
+  border-bottom: none;
+  margin-top: 72rpx;
+  display: block;
+}
+.auth .idCardPhoto .label.data-v-3f748249, .auth .countryPhoto .label.data-v-3f748249, .auth .data .label.data-v-3f748249 {
+  white-space: nowrap;
+  margin-bottom: 67rpx;
+}
+.auth .idCardPhoto .content.data-v-3f748249, .auth .countryPhoto .content.data-v-3f748249, .auth .data .content.data-v-3f748249 {
+  display: flex;
+}
+.auth .idCardPhoto .content .photoItem.data-v-3f748249, .auth .countryPhoto .content .photoItem.data-v-3f748249, .auth .data .content .photoItem.data-v-3f748249 {
+  flex: 1;
+  margin-left: 69rpx;
+}
+.auth .idCardPhoto .content .photoItem.data-v-3f748249 .uni-file-picker .icon-add, .auth .countryPhoto .content .photoItem.data-v-3f748249 .uni-file-picker .icon-add, .auth .data .content .photoItem.data-v-3f748249 .uni-file-picker .icon-add {
+  background-color: var(--color-gray-96);
+  height: 4rpx;
+  width: 60rpx;
+}
+.auth .idCardPhoto .content .photoItem.data-v-3f748249 .uni-file-picker__container, .auth .countryPhoto .content .photoItem.data-v-3f748249 .uni-file-picker__container, .auth .data .content .photoItem.data-v-3f748249 .uni-file-picker__container {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0px;
+}
+.auth .idCardPhoto .content .photoItem.data-v-3f748249 .file-picker__box-content, .auth .countryPhoto .content .photoItem.data-v-3f748249 .file-picker__box-content, .auth .data .content .photoItem.data-v-3f748249 .file-picker__box-content {
+  background-color: var(--color-gray-eb);
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0px;
+}
+.auth .idCardPhoto .content .photoItem.data-v-3f748249 .file-count, .auth .countryPhoto .content .photoItem.data-v-3f748249 .file-count, .auth .data .content .photoItem.data-v-3f748249 .file-count {
+  display: none;
+}
+.auth .idCardPhoto .content .photoItem .photoLabel.data-v-3f748249, .auth .countryPhoto .content .photoItem .photoLabel.data-v-3f748249, .auth .data .content .photoItem .photoLabel.data-v-3f748249 {
+  font-size: 28rpx;
+  color: var(--color-gray-59);
+  text-align: center;
+  margin-top: 20rpx;
+}
+.auth .idCardPhoto .content .forImg.data-v-3f748249, .auth .countryPhoto .content .forImg.data-v-3f748249, .auth .data .content .forImg.data-v-3f748249 {
+  width: 316rpx;
+  height: 200rpx;
+  display: block;
+  margin-right: 64rpx;
+}
+.auth .idCardPhoto .content .photoItem:last-child .photoLabel.data-v-3f748249, .auth .countryPhoto .content .photoItem:last-child .photoLabel.data-v-3f748249, .auth .data .content .photoItem:last-child .photoLabel.data-v-3f748249 {
+  margin-right: 64rpx;
+}
+.auth .countryPhoto.data-v-3f748249 {
+  margin-top: 40rpx;
+}
+.auth .data.data-v-3f748249 {
+  padding-bottom: 44rpx;
+}
+.auth .data .content .photoLabel.data-v-3f748249 {
+  text-align: left !important;
+  margin-left: 44rpx;
+}
+.auth .footer.data-v-3f748249 {
+  width: 100%;
+  height: 186rpx;
+  background: #ffffff;
+  box-shadow: 0 0 12rpx 0 #0000001a;
+  display: flex;
+  font-size: 32rpx;
+  justify-content: center;
+  left: 0;
+}
+.auth .footer .btn-red.data-v-3f748249 {
+  height: 88rpx;
+  width: 408rpx;
+  background-color: var(--color-red-bg);
+  color: var(--neutral-color-white);
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin-top: 30rpx;
+}

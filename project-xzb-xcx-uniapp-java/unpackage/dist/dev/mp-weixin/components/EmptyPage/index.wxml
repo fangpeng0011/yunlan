@@ -1,0 +1,1 @@
+<view class="emptyBox"><image src="/static/zwnr2x.png" class="emptyImage" mode=""></image><view><text>{{a}}</text></view></view>

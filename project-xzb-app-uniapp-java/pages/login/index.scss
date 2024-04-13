@@ -1,0 +1,206 @@
+body,
+uni-page-body,
+uni-page-head,
+.uni-page-head {
+	background-color: var(--neutral-color-white) !important;
+}
+.navBox{
+	position: static;
+}
+.loginBox {
+	padding: 140rpx 75rpx 0 80rpx;
+	.tit {
+		line-height: 66rpx;
+		font-weight: 600;
+		font-size: 48rpx;
+		color: var(--neutral-color-main);
+		letter-spacing: 0;
+		display: flex;
+		padding-bottom: 52rpx;
+		text {
+			flex: 1;
+		}
+		.text {
+			font-weight: 500;
+			font-size: 32rpx;
+			color: var(--essential-color-red);
+			text-align: right;
+			line-height: 50rpx;
+			padding-top: 14rpx;
+			icon {
+				background: url(../../static/icon01.png) no-repeat;
+				background-size: contain;
+				width: 20rpx;
+				height: 20rpx;
+				margin-left: 14rpx;
+				vertical-align: unset;
+			}
+		}
+	}
+	.loginMain {
+		::v-deep .uni-input-input{
+			color: var(--neutral-color-main);
+		}
+		padding-right: 32rpx;
+		.item {
+			::v-deep .is-input-border {
+				padding: 36rpx 0;
+				font-weight: 400;
+				font-size: 32rpx;
+				line-height: 40rpx;
+				color: #797979;
+				letter-spacing: 0.36rpx;
+				border: 0 none;
+				border-bottom: 1px solid var(--neutral-color-background);
+				position: relative;
+				border-radius: 0;
+				.uni-easyinput__placeholder-class {
+					font-size: 32rpx;
+					color: var(--color-gray-9);
+					letter-spacing: 0.36rpx;
+				}
+				.uni-easyinput__content-input {
+					padding-left: 0 !important;
+					font-size: 32rpx;
+				}
+			}
+			::v-deep .is-input-error-border {
+				border-bottom: 1px solid var(--essential-color-red);
+				margin-bottom: 44rpx;
+			}
+			::v-deep .content-clear-icon{
+				padding: 0;
+				font-size: 28rpx !important;
+				line-height: 46rpx;
+			}
+			::v-deep .uniui-eye-filled{
+				
+				background: url(@/static/icon-close.png) 50% 50% no-repeat;
+				background-size: contain;
+				&:before{
+					color:transparent;
+				}
+			}
+			::v-deep .uniui-eye-slash-filled{
+				background: url(@/static/icon-open.png) 50% 50% no-repeat;
+				background-size: contain;
+				&:before{
+					color:transparent;
+				}
+			}
+		}
+		::v-deep .uni-forms-item__inner {
+			padding-bottom: 0;
+		}
+		::v-deep .uni-error-message {
+			bottom: -10rpx;
+		}
+		::v-deep .content-clear-icon {
+			margin-right: 30rpx;
+		}
+		.inputW{
+			::v-deep .is-input-border{
+				padding-right: 200rpx;
+			}
+		}
+		.codeBox {
+			position: absolute;
+			right: 40rpx;
+			top:40rpx;
+			font-size: 28rpx;
+		}
+		.setUrl{
+				font-size: 24rpx;
+				color: #ccc;
+				line-height: 48rpx;
+				text-align: center;
+				margin-top: 40rpx;
+			}
+	}
+	.btn-default{
+		height: 88rpx;
+		line-height: 88rpx;
+		border-radius: 50rpx;
+		&.disabled{
+			background-color: var(--assist-color-logbtn) !important;
+		}
+	}
+	.btnBox{
+		padding: 100rpx 0 0;
+	}
+	
+}
+.pwdBox {
+	position: relative;
+	text {
+		&.clearIcon {
+			position: absolute;
+			width: auto;
+			height: 32rpx;
+			right: 0rpx;
+			top: 40rpx;
+			font-size: 32rpx;
+			line-height: 1.4375rem;
+			color: rgb(192, 196, 204);
+			color: var(--color-black-19);
+			font-family: uniicons;
+			    text-decoration: none;
+			    text-align: center;
+		}
+	}
+}
+.fontCol {
+	color: var(--neutral-color-font);
+}
+.gentleReminder{
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #FD3333;
+    text-align: justify;
+  }
+.logo{
+	width:310rpx;
+	height: 122rpx;
+	margin: 0 auto;
+	display: block;
+}
+
+//冻结弹窗提示
+.dialog{
+  width:556rpx ;
+  height: 392rpx;
+  background-color: var(--neutral-color-white);
+  border-radius: 24rpx;
+  position: relative;
+  .content{
+    // height: 225rpx;
+    text-align: center;
+    font-size: 36rpx;
+    color: var(--color-black-19);
+    padding-top: 38rpx;
+    padding-bottom: 40rpx;
+  }
+  .reason{
+    padding-bottom: 20rpx;
+    color: var(--color-gray-59);
+    padding-left: 63rpx;
+    
+  }
+  .phone{
+    padding-bottom: 29rpx;
+    color: var(--color-gray-59);
+    padding-left: 63rpx;
+  }
+  .phoneLabel{
+    color: var(--color-gray-59);
+    padding-left: 63rpx;
+  }
+  .footer{
+    font-size: 32rpx ;
+    color: var(--color-red-bg);
+    text-align: center;
+    border-top: 2rpx solid var(--color-gray-e8);
+    line-height: 99rpx;
+  }
+}

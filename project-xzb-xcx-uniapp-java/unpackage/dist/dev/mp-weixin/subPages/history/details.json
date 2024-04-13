@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "历史订单详情",
+  "usingComponents": {
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "uni-popup-dialog": "../../uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog"
+  }
+}

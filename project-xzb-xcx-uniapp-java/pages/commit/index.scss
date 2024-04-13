@@ -1,0 +1,125 @@
+.commit{
+    background-color: white;
+
+  .cardsBox {
+    margin: 40rpx 30rpx 0;
+    padding-top: 42rpx;
+    // margin-bottom: 88rpx;
+    border-top: 2rpx solid #f4f4f4;
+    .headBox {
+      display: flex;
+      justify-content: space-between;
+      .left{
+        display: flex;
+      }
+      .right{
+        color: #151515;
+        font-size: 26rpx;
+        font-size: 400;
+      }
+      .star {
+        display: flex;
+        align-items: center;
+        text {
+          margin-left: 10rpx;
+          font-size: 24rpx;
+          color: #151515;
+          font-size: 400;
+        }
+      }
+    }
+    .time {
+      color: #151515;
+      font-size: 26rpx;
+      margin-right: 28rpx;
+      font-weight: 500;
+      // padding-left: 70rpx;
+    }
+    .bodyBox {
+      margin-top: 32rpx;
+      .evaluationText {
+        font-size: 24rpx;
+        color: #404040;
+        line-height: 46rpx;
+      }
+      .photoList {
+        margin-top: 32rpx;
+        margin-bottom: 6rpx;
+        .photo {
+          width: 212rpx;
+          height: 212rpx;
+          margin-right: 24rpx;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .orderInfo{
+        display: flex;
+        background-color: #f8f8f8;
+        margin-top: 32rpx;
+        padding-top: 0rpx;
+        .orderLeft{
+          image{
+            width: 150rpx;
+            height: 100%;
+          }
+          margin-right: 22rpx;
+        }
+        .orderRight{
+          font-size: 26rpx;
+          padding-bottom: 14rpx;
+          .serveName{
+            color: #151515;
+            margin-top: 10rpx;
+            margin-bottom: 10rpx;
+          }
+          .address{
+            color: #888;
+            margin-bottom: 10rpx;
+          }
+          .toOrderInfo{
+            color:#EF4F3F ;
+          }
+        }
+      }
+      .footer{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40rpx;
+      }
+      .operation {
+        width: 152rpx;
+        height: 60rpx;
+        border: 2rpx solid #888888;
+        border-radius: 36rpx;
+        color: #151515;
+        font-size: 26rpx;
+        font-size: 400;
+        text-align: center;
+        line-height: 60rpx;
+
+      }
+      .replay {
+        margin-top: 28rpx;
+        padding: 33rpx 24rpx 43rpx 27rpx;
+        font-size: 24rpx;
+        color: #404040;
+        background: #f8f8f8;
+        border-radius: 16rpx;
+       
+      }
+    }
+  }
+  .cardsBox:nth-child(2){
+    // border-top: none;
+    margin-right: 0rpx;
+    margin-left: 0rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-top: 25rpx;
+  }
+  .cardsBox:last-child{
+    padding-bottom: 40rpx!important;
+  }
+}

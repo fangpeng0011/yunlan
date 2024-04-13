@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/start/index",
+    "pages/login/user",
+    "pages/index/index",
+    "pages/serviceSkill/index",
+    "pages/getOrder/index",
+    "pages/serviceRange/index",
+    "pages/city/index",
+    "pages/setting/index",
+    "pages/history/index",
+    "pages/pickup/index",
+    "pages/orderInfo/index",
+    "pages/cancel/index",
+    "pages/serveRecord/index",
+    "pages/delivery/index",
+    "pages/my/index",
+    "pages/evaluate/index",
+    "pages/account/index",
+    "pages/auth/index",
+    "pages/authFail/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "云岚到家",
+    "backgroundColor": "#F8F8F8",
+    "onReachBottomDistance": 50
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": ""
+    }
+  },
+  "usingComponents": {}
+}

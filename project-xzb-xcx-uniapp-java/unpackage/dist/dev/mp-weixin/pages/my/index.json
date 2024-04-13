@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "fast-menu": "./components/FastMenu",
+    "my-menu": "./components/MyMenu"
+  }
+}

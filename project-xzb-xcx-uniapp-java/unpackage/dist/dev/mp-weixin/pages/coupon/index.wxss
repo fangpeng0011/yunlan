@@ -1,0 +1,27 @@
+/* 水平间距 */
+/* 水平间距 */
+/* 水平间距 */
+/* 水平间距 */
+.scroll-view-content.data-v-59672890 {
+  height: calc(100% - 81px);
+  /* 主内容区域的高度减去底部栏的高度 */
+  padding-top: 259rpx;
+  /* 底部栏的高度，确保内容不被底部栏遮挡 */
+}
+.scroll-view-content.data-v-59672890 .NavBar {
+  background: #fff !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.scroll-view-content.data-v-59672890 .itemTab .tabBox {
+  box-sizing: border-box;
+  background: #fff !important;
+  position: fixed;
+  top: 166rpx;
+  width: 100%;
+  z-index: 999;
+  font-size: 28rpx;
+  justify-content: space-evenly;
+}

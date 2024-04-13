@@ -1,0 +1,122 @@
+:deep(.t-card__title) {
+  font-size: 20px;
+  font-weight: 500;
+}
+.user-left-greeting {
+  padding: 28px 32px;
+  line-height: 28px;
+  font-size: 20px;
+  background: var(--td-bg-color-container);
+  color: var(--td-text-color-primary);
+  text-align: left;
+  border-radius: var(--td-radius-default);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-left-greeting .regular {
+  margin-right: 15px;
+  font-size: 14px;
+}
+.user-left-greeting .logo {
+  width: 180px;
+}
+.user-info-list {
+  margin-top: 16px;
+}
+.user-info-list .content {
+  width: 90%;
+}
+.user-info-list .contract {
+  width: 340px;
+  height: 88px;
+  border-radius: var(--td-radius-default);
+  margin: 8px 0;
+}
+.user-info-list .contract-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 24px;
+  margin: 20px 0 6px;
+  font-size: 14px;
+  color: var(--td-text-color-placeholder);
+}
+.user-info-list .contract-detail {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 40px;
+  font-size: 14px;
+  color: var(--td-text-color-secondary);
+}
+.user-info-list .contract:last-child {
+  margin-bottom: 0;
+}
+.user-intro {
+  padding: 32px 24px;
+  background: var(--td-brand-color);
+  border-radius: var(--td-radius-default);
+  color: var(--td-text-color-primary);
+}
+.user-intro .name {
+  line-height: 37px;
+  font-size: 20px;
+  margin-top: 36px;
+  color: #fff;
+}
+.user-intro .position {
+  line-height: 24px;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #fff;
+}
+.user-intro .user-info {
+  line-height: 24px;
+  font-size: 14px;
+  color: var(--td-text-color-primary);
+}
+.user-intro .user-info .hiredate,
+.user-intro .user-info .del,
+.user-intro .user-info .mail {
+  display: flex;
+}
+.user-intro .user-info .t-icon {
+  height: 24px;
+  margin-right: 8px;
+}
+.user-intro .user-info .del {
+  margin: 16px 0;
+}
+.product-container {
+  margin-top: 16px;
+  border-radius: var(--td-radius-default);
+}
+.product-container .content {
+  width: 100%;
+  margin: 24px 0 12px;
+}
+.product-container .logo {
+  width: 48px;
+}
+.content-container {
+  margin-top: 16px;
+  background: var(--td-bg-color-container);
+  border-radius: var(--td-radius-default);
+}
+.user-team {
+  margin-top: 16px;
+}
+.user-team .t-list-item {
+  padding: 15px 0;
+}
+.user-team .t-list-item .t-list-item__meta-avatar {
+  height: 50px;
+  width: 50px;
+  margin: 0 24px 0 0;
+}
+.user-team .t-list-item .t-list-item__meta-description {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}

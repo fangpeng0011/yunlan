@@ -1,0 +1,130 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-02dc2ad2:root {
+	--essential-color-red:#F74346; 
+	--assist-color-green:#1DC779; 
+	--assist-color-orange:#FFB302; 
+	--assist-color-error:#F56C6C; 
+	--neutral-color-main:#151515; 
+	--neutral-color-border:#E5E4E4; 
+	--neutral-color-font:#888888; 
+	--neutral-color-segmentation:#EEEEEE; 
+	--neutral-color-white:#FFFFFF; 
+  --neutral-color-black:#000000; 
+	--neutral-color-placeholder:#888; 
+	--neutral-color-background:#F8F8F8; 
+  --neutral-color-line:#F4F4F4; 
+  --neutral-color-font2:#BDBDBD; 
+	--font-size-16:32rpx;
+	--font-size-14:28rpx;
+	--font-size-13:26rpx;
+	--font-size-12:24rpx;
+}
+.main .headBox.data-v-02dc2ad2 {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.main .headBox .time.data-v-02dc2ad2 {
+  background-color: #F9F2BF;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #8E714F;
+  font-size: 28rpx;
+}
+.main .headBox .time text.data-v-02dc2ad2 {
+  color: var(--essential-color-red);
+}
+.main .headBox .tag.data-v-02dc2ad2 {
+  padding: 19.5rpx 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.main .headBox .tag view.data-v-02dc2ad2 {
+  display: flow-root;
+}
+.main .payBox.data-v-02dc2ad2 {
+  background-color: #fff;
+  display: flex;
+  padding: 34rpx;
+  justify-content: space-between;
+}
+.main .payBox .wxImg.data-v-02dc2ad2 {
+  display: flex;
+  align-items: center;
+}
+.main .payBox .wxImg image.data-v-02dc2ad2 {
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 15rpx;
+}
+.main .payBox .check.data-v-02dc2ad2 {
+  width: 40rpx;
+  height: 40rpx;
+}
+.main .pageFoot.data-v-02dc2ad2 {
+  padding-left: 44rpx;
+  padding-right: 16rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.main .pageFoot .btn.data-v-02dc2ad2 {
+  width: 268rpx;
+  margin-right: 60rpx;
+}
+.main .pageFoot view.data-v-02dc2ad2 {
+  font-size: 28rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.main .pageFoot view text.data-v-02dc2ad2 {
+  color: var(--essential-color-red);
+  font-size: 36rpx;
+}
+/* 水平间距 */
+/* 水平间距 */
+.loginBox .logo-box.data-v-02dc2ad2 {
+  padding-left: 91rpx;
+  padding-right: 91rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 228rpx;
+}
+.loginBox .logo-box image.data-v-02dc2ad2 {
+  width: 130rpx;
+  height: 130rpx;
+  margin-bottom: 38rpx;
+}
+.loginBox .logo-box .title.data-v-02dc2ad2 {
+  font-size: 42rpx;
+  color: #151515;
+  font-weight: 500;
+  margin-bottom: 22rpx;
+}
+.loginBox .logo-box .tips.data-v-02dc2ad2 {
+  font-size: 24rpx;
+  color: #888;
+  margin-bottom: 40rpx;
+}
+.loginBox .logo-box .foot.data-v-02dc2ad2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.loginBox .logo-box .foot .btn.data-v-02dc2ad2 {
+  width: 268rpx;
+  border: 1px solid #151515;
+}
+.loginBox .logo-box .foot .btn.data-v-02dc2ad2::after {
+  display: none;
+  border: none;
+}
+.loginBox .logo-box .foot .agree-btn.data-v-02dc2ad2 {
+  border: none;
+}

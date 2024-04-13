@@ -1,0 +1,159 @@
+{
+	"pages": [
+    {
+			"path": "pages/start/index",
+			"style": {
+				"navigationStyle": "custom" 
+			}
+		},
+		{
+			"path": "pages/login/user",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "登录"
+			}
+		},
+    {
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "云岚到家",
+        "app-plus": {
+          "pullToRefresh": {
+              "support": true,
+              "color": "#ff3333",
+              "style": "default",
+              "height":"50px"
+          }
+        }
+			}
+		},
+    {
+			"path": "pages/serviceSkill/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "选择服务技能"
+			}
+		},
+    {
+			"path": "pages/getOrder/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "接单设置"
+			}
+		},
+    {
+			"path": "pages/serviceRange/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "请选择工作地点"
+			}
+		},
+    {
+			"path": "pages/city/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "选择服务城市"
+			}
+		},
+    {
+			"path": "pages/setting/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "基础配置"
+			}
+		},
+    {
+			"path": "pages/history/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "历史订单"
+			}
+		},
+		{
+			"path": "pages/pickup/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "订单"
+			}
+		},
+    {
+			"path": "pages/orderInfo/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+    {
+			"path": "pages/cancel/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "取消原因"
+			}
+		},
+    {
+			"path": "pages/serveRecord/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "服务记录"
+			}
+		},
+		{
+			"path": "pages/delivery/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的"
+			}
+		},
+    {
+			"path": "pages/evaluate/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的评价"
+			}
+		},
+    {
+			"path": "pages/account/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "账户设置"
+			}
+		},
+    {
+			"path": "pages/auth/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "实名认证"
+			}
+		},
+    {
+			"path": "pages/authFail/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "实名认证"
+			}
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "云岚到家",
+		"backgroundColor": "#F8F8F8",
+		"onReachBottomDistance": 50
+	},
+	"condition": { 
+		"current": 0,
+		"list": [{
+			"name": "", 
+			"path": "", 
+			"query": "" 
+		}]
+	}
+}

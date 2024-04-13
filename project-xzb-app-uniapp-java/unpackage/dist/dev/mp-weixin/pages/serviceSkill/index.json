@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "选择服务技能",
+  "usingComponents": {
+    "uni-nav": "../../components/uni-nav/index"
+  }
+}

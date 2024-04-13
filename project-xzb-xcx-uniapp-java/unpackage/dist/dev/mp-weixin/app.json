@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/my/index",
+    "pages/service/index",
+    "pages/message/index",
+    "pages/city/index",
+    "pages/service/components/airMaintenance",
+    "pages/commit/index",
+    "pages/address/index",
+    "pages/pay/index",
+    "pages/pay/components/paySuccessful",
+    "pages/search/index",
+    "pages/coupon/index",
+    "pages/coupon/coupon",
+    "components/Foot/index"
+  ],
+  "subPackages": [
+    {
+      "root": "subPages",
+      "pages": [
+        "order/index",
+        "order/details",
+        "order/cancelRule",
+        "order/cancel",
+        "order/components/evaluate",
+        "address-info/index",
+        "history/index",
+        "history/details"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "云岚到家",
+    "backgroundColor": "#F8F8F8",
+    "onReachBottomDistance": 50,
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的位置信息"
+    }
+  },
+  "usingComponents": {
+    "nav-bar": "/components/Navbar/index",
+    "net-fail": "/components/NetFail/index",
+    "uni-footer": "/components/Foot/index"
+  }
+}

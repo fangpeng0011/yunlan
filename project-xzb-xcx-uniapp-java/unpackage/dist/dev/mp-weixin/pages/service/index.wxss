@@ -1,0 +1,101 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-f6ccea2d:root {
+	--essential-color-red:#F74346; 
+	--assist-color-green:#1DC779; 
+	--assist-color-orange:#FFB302; 
+	--assist-color-error:#F56C6C; 
+	--neutral-color-main:#151515; 
+	--neutral-color-border:#E5E4E4; 
+	--neutral-color-font:#888888; 
+	--neutral-color-segmentation:#EEEEEE; 
+	--neutral-color-white:#FFFFFF; 
+  --neutral-color-black:#000000; 
+	--neutral-color-placeholder:#888; 
+	--neutral-color-background:#F8F8F8; 
+  --neutral-color-line:#F4F4F4; 
+  --neutral-color-font2:#BDBDBD; 
+	--font-size-16:32rpx;
+	--font-size-14:28rpx;
+	--font-size-13:26rpx;
+	--font-size-12:24rpx;
+}
+.service.data-v-f6ccea2d {
+  min-height: 100vh;
+}
+.service .servicePage.data-v-f6ccea2d {
+  display: flex;
+  min-height: 89.4vh;
+  padding-top: 22rpx;
+}
+.service .servicePage .left.data-v-f6ccea2d {
+  width: 164rpx;
+  font-size: 28rpx;
+  flex-shrink: 0;
+  background: #f8f8f8;
+}
+.service .servicePage .left .active.data-v-f6ccea2d {
+  font-family: PingFangSC-Medium;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: #f74145 !important;
+  background-color: #fff !important;
+  position: relative;
+}
+.service .servicePage .left .active .tag.data-v-f6ccea2d {
+  color: #f74145 !important;
+}
+.service .servicePage .left .active .tag.data-v-f6ccea2d:after {
+  content: "";
+  position: absolute;
+  width: 4rpx;
+  height: 40rpx;
+  left: 0;
+  background: #f74145;
+}
+.service .servicePage .left .tagBox.data-v-f6ccea2d {
+  height: 112rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #151515;
+  text-align: center;
+  line-height: 112rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service .servicePage .left .tagBox .tag.data-v-f6ccea2d {
+  height: 44rpx;
+  line-height: 41rpx;
+}
+.service .servicePage .serviceBox.data-v-f6ccea2d {
+  padding-left: 28rpx;
+  padding-right: 26rpx;
+}
+.service .servicePage .serviceBox .cleanImg.data-v-f6ccea2d {
+  width: 532rpx;
+  height: 200rpx;
+  margin-bottom: 32rpx;
+}
+.service .servicePage .serviceBox .clean.data-v-f6ccea2d {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.service .servicePage .serviceBox .clean .card.data-v-f6ccea2d {
+  width: 164rpx;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 14rpx 10rpx;
+  background: #f4f4f4;
+  margin-bottom: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  margin-right: 20rpx;
+  font-size: 29rpx;
+  color: #151515;
+}
+.service .servicePage .serviceBox .clean .card.data-v-f6ccea2d:nth-child(3n) {
+  margin-right: 0;
+}

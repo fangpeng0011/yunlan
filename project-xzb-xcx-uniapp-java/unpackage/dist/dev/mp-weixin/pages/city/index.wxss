@@ -1,0 +1,200 @@
+/* 水平间距 */
+/* 水平间距 */
+.fsmall.data-v-5a18b3c9 {
+  font-size: 26rpx;
+}
+.fmiddle.data-v-5a18b3c9 {
+  font-size: 28rpx;
+}
+.flex.data-v-5a18b3c9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mask.data-v-5a18b3c9 {
+  position: fixed;
+  z-index: 3;
+  top: 40%;
+  left: 40%;
+}
+.mask-r.data-v-5a18b3c9 {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 60rpx;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  color: #ffffff;
+}
+.content.data-v-5a18b3c9 {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+.header.data-v-5a18b3c9 {
+  width: 100%;
+  position: relative;
+  z-index: 8;
+  background-color: #ffffff;
+}
+.back_div.data-v-5a18b3c9 {
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back_img.data-v-5a18b3c9 {
+  width: 35rpx;
+  height: 35rpx;
+}
+.input.data-v-5a18b3c9 {
+  font-size: 26rpx;
+  width: 600rpx;
+  height: 60rpx;
+  max-height: 60rpx;
+  border-radius: 10rpx;
+  background-color: #f5f5f5;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.title.data-v-5a18b3c9 {
+  font-size: 30rpx;
+  color: white;
+}
+.show.data-v-5a18b3c9 {
+  left: 0;
+  width: 100%;
+  transition: left 0.3s ease;
+}
+.hide.data-v-5a18b3c9 {
+  left: 100%;
+  width: 100%;
+  transition: left 0.3s ease;
+}
+.title.data-v-5a18b3c9 {
+  font-size: 30rpx;
+  color: white;
+}
+.letters.data-v-5a18b3c9 {
+  position: absolute;
+  right: 0;
+  color: #151515;
+  top: 14%;
+  right: 12rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 400;
+  font-family: PingFangSC-Regular;
+}
+.position.data-v-5a18b3c9 {
+  margin-top: 60rpx;
+  box-sizing: border-box;
+}
+.position .hot.data-v-5a18b3c9 {
+  margin-bottom: 32rpx !important;
+}
+.position .grey.data-v-5a18b3c9 {
+  margin-bottom: 40rpx;
+  margin-left: 37rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #888888;
+}
+.position .position_city.data-v-5a18b3c9 {
+  width: 100%;
+  height: 44rpx;
+  line-height: 44rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding-left: 47rpx;
+  padding-right: 48rpx;
+}
+.position .position_city .position_city_one.data-v-5a18b3c9 {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.position .position_city .WarpWeft.data-v-5a18b3c9 {
+  display: flex;
+  align-items: center;
+  margin-right: 15rpx;
+}
+.position .position_city .WarpWeft image.data-v-5a18b3c9 {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 9rpx;
+}
+.position .position_city .WarpWeft text.data-v-5a18b3c9 {
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #151515;
+}
+.position .position_city .position_city_tag.data-v-5a18b3c9 {
+  width: 148rpx;
+  height: 64rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 34rpx;
+  margin-right: 24rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+.position .position_city .position_city_tag.data-v-5a18b3c9:last-child {
+  margin-right: 0;
+}
+.position .position_city .position_city_tag_active.data-v-5a18b3c9 {
+  background-color: #fff;
+  border: 2rpx solid #f74145;
+}
+.position .position_city_hot.data-v-5a18b3c9 {
+  height: auto;
+  line-height: auto;
+  justify-content: start;
+}
+.cityList.data-v-5a18b3c9 {
+  display: flex;
+}
+.cityList .letter-header.data-v-5a18b3c9 {
+  font-size: 28rpx;
+  padding-left: 37rpx;
+  box-sizing: border-box;
+  color: #888888;
+  padding-top: 38rpx;
+}
+.cityList .contents.data-v-5a18b3c9 {
+  /* display: flex; */
+  width: 100%;
+  background-color: #fff;
+}
+.cityList .contents .city-div.data-v-5a18b3c9 {
+  margin: auto;
+  width: 100%;
+  padding: 32rpx 0;
+  align-items: center;
+  border-bottom: 2rpx solid #f4f4f4;
+}
+.cityList .contents .city-div .city.data-v-5a18b3c9 {
+  font-size: 28rpx;
+  color: #000000;
+  padding-left: 37rpx;
+}
+.data-v-5a18b3c9 .NavBar {
+  background-color: #fff !important;
+}
+.data-v-5a18b3c9 scroll-view {
+  background-color: #fff;
+}

@@ -1,0 +1,28 @@
+/* 水平间距 */
+/* 水平间距 */
+.authFail.data-v-14a9d75c {
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--neutral-color-white);
+}
+.authFail .bImg.data-v-14a9d75c {
+  width: 280rpx;
+  height: 280rpx;
+  margin-top: 146rpx;
+  margin-bottom: 36rpx;
+}
+.authFail .content.data-v-14a9d75c {
+  font-size: 28rpx;
+  color: var(--color-black-19);
+}
+.authFail .btn-red.data-v-14a9d75c {
+  height: 88rpx;
+  width: 408rpx;
+  background-color: var(--color-red-bg);
+  color: var(--neutral-color-white);
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin: 0 auto;
+  margin-top: 74rpx;
+}

@@ -1,0 +1,109 @@
+/* 水平间距 */
+/* 水平间距 */
+.data-v-d7fd7b38:root {
+	--essential-color-red:#F74346; 
+	--assist-color-green:#1DC779; 
+	--assist-color-orange:#FFB302; 
+	--assist-color-error:#F56C6C; 
+	--neutral-color-main:#151515; 
+	--neutral-color-border:#E5E4E4; 
+	--neutral-color-font:#888888; 
+	--neutral-color-segmentation:#EEEEEE; 
+	--neutral-color-white:#FFFFFF; 
+  --neutral-color-black:#000000; 
+	--neutral-color-placeholder:#888; 
+	--neutral-color-background:#F8F8F8; 
+  --neutral-color-line:#F4F4F4; 
+  --neutral-color-font2:#BDBDBD; 
+	--font-size-16:32rpx;
+	--font-size-14:28rpx;
+	--font-size-13:26rpx;
+	--font-size-12:24rpx;
+}
+.main .headBox.data-v-d7fd7b38 {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.main .headBox .time.data-v-d7fd7b38 {
+  background-color: #F9F2BF;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #8E714F;
+  font-size: 28rpx;
+}
+.main .headBox .time text.data-v-d7fd7b38 {
+  color: var(--essential-color-red);
+}
+.main .headBox .tag.data-v-d7fd7b38 {
+  padding: 19.5rpx 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.main .headBox .tag view.data-v-d7fd7b38 {
+  display: flow-root;
+}
+.main .payBox.data-v-d7fd7b38 {
+  background-color: #fff;
+  display: flex;
+  padding: 34rpx;
+  justify-content: space-between;
+}
+.main .payBox .wxImg.data-v-d7fd7b38 {
+  display: flex;
+  align-items: center;
+}
+.main .payBox .wxImg image.data-v-d7fd7b38 {
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 15rpx;
+}
+.main .payBox .check.data-v-d7fd7b38 {
+  width: 40rpx;
+  height: 40rpx;
+}
+.main .pageFoot.data-v-d7fd7b38 {
+  padding-left: 44rpx;
+  padding-right: 16rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.main .pageFoot .btn.data-v-d7fd7b38 {
+  width: 268rpx;
+  margin-right: 60rpx;
+}
+.main .pageFoot view.data-v-d7fd7b38 {
+  font-size: 28rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.main .pageFoot view text.data-v-d7fd7b38 {
+  color: var(--essential-color-red);
+  font-size: 36rpx;
+}
+/* 水平间距 */
+/* 水平间距 */
+.img.data-v-d7fd7b38 {
+  width: 498rpx;
+  height: 498rpx;
+  border-radius: 24rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img image.data-v-d7fd7b38 {
+  width: 460rpx;
+  height: 460rpx;
+}
+.paySuccess.data-v-d7fd7b38 {
+  margin-top: 40rpx;
+}
+.cheap.data-v-d7fd7b38 {
+  color: #F74145;
+}

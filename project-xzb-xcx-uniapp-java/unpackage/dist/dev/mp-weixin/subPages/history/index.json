@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "历史订单",
+  "usingComponents": {
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "home-list": "../order/components/list",
+    "gscosmos-date-select": "../../components/gscosmosDateSelect/index"
+  }
+}

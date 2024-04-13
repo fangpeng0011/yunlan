@@ -1,0 +1,15 @@
+/* 水平间距 */
+/* 水平间距 */
+.starPage .page[data-v-255b53b3] {
+  background: #fff url(../../static/new/start.jpg) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: calc(100vh - 11.25rem);
+}
+.starPage .bottom[data-v-255b53b3] {
+  background: #fff url(../../static/new/img_logo@2x.png) no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 11.25rem;
+  background-size: 9.6875rem 3.8125rem;
+}

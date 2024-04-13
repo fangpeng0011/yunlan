@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      server-addr: 192.168.231.25:8848
+      config:
+        namespace: 0feba030-b9d4-415b-b83e-e6fdd5e2a641
+        file-extension: yaml
+      discovery:
+        namespace: 0feba030-b9d4-415b-b83e-e6fdd5e2a641
+        ip: ${ACCESS_IP:}
+
+#################     日志配置     #################
+logging:
+  level:
+    com.jzo2o: debug
+    org.mongodb.driver: info

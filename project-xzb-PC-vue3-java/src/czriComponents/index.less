@@ -1,0 +1,460 @@
+// 穿梭框重置样式
+.t-transfer {
+    .t-transfer__operations {
+        margin: auto 12px;
+        gap:0;
+        min-width: 25px;
+        .t-button{
+            margin-bottom: 16px;
+        }
+    }
+
+    // 宽度
+    .t-transfer__list {
+        width: 500px;
+        height: 300px;
+    }
+
+    .t-transfer__list-source,
+    .t-transfer__list-target {
+        border: 1px solid var(--color-border); //边框线
+        border-radius: 3px; //圆角
+    }
+
+    // 标题的宽度与高度
+    .t-transfer__list-header {
+        width: calc(100% - var(--td-comp-margin-s) * 2);
+    }
+
+    .t-transfer__list-header+ :not(.t-transfer__list--with-search) {
+        border-top: 1px solid var(--color-border); //内容上边框线
+    }
+
+
+    //当前选中的背景底色
+    .t-transfer__list-item {
+        border-radius: 2px;
+        height: 32px;
+        line-height: 32px;
+
+        &:hover {
+            background: var(--color-bk9);
+            .t-checkbox__input{
+                border: 1px solid var(--color-main);
+            }
+        }
+
+        &.t-is-checked {
+            background: var(--color-bk9);
+
+            .t-checkbox__label {
+                color: var(--color-main);
+            }
+        }
+
+        .t-checkbox__label,
+        .t-checkbox__label span {
+            max-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    // 向左向右箭头背景色
+    .t-button--variant-outline {
+
+        &:hover {
+            border: 1px solid var(--color-main);
+            background: var(--color-main);
+            color: var(--color-white);
+        }
+
+        &.t-is-disabled {
+            background: #eee;
+            border-color: var(--color-border);
+            color: #ccc;
+        }
+
+    }
+
+    // 点击左右箭头没有松开鼠标的样式
+    .t-button:not(.t-is-disabled):not(.t-button--ghost) {
+        --ripple-color: var(--color-main);
+    }
+}
+
+// 自定义卡片列表
+.cradList {
+    .itemCon {
+        margin-top: 6px;
+
+        .headTitle {
+            height: 54px;
+            line-height: 54px;
+            background: var(--color-aux3);
+            border: 1px solid #DBE4F2;
+            color: var(--color-bk2);
+            border-radius: 2px;
+            font-weight: 600;
+            padding: 0 18px 0 12px;
+            margin-bottom: 24px;
+            display: flex;
+        }
+
+        .item {
+            li {
+                min-height: 64px;
+                max-height: 100px;
+                line-height: 20px;
+                padding: 12px 18px 12px 12px;
+                background: var(--color-white);
+                color: var(--color-bk3);
+                box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.07);
+                border-radius: 2px;
+                margin-bottom: 24px;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+
+                .con {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .textDefault {
+                        margin: 0 9px;
+                    }
+
+                    .upload-demo {
+                        display: inline-block;
+
+                        .el-button--primary {
+                            background: none;
+                            border: 0 none;
+                            color: var(--color-main);
+                            padding: 0;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .el-switch__label.is-active {
+                color: var(--color-font1);
+            }
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 4px;
+                vertical-align: middle;
+
+            }
+
+            .tdesign-demo-image-viewer__ui-image {
+                margin-right: 10px;
+            }
+        }
+
+        .headTitle,
+        .item li .con {
+
+            &>span,
+            &>div {
+                padding: 0 20px;
+                text-align: left;
+
+                &.padl {
+                    padding-left: 100px;
+                }
+
+                &:nth-child(1) {
+                    min-width: 68px;
+
+                }
+
+                &:nth-child(2) {
+                    min-width: 200px;
+                    width: 20%;
+                }
+
+                &:nth-child(3) {
+                    width: 320px;
+                }
+
+                &:nth-child(4) {
+                    min-width: 150px;
+                    width: 25%;
+                    // flex: 1;
+                }
+
+                &:nth-child(5) {
+                    min-width: 180px;
+                    width: 25%;
+                    // flex: 1;
+                }
+
+                &:nth-child(6) {
+                    min-width: 80px;
+                    // flex: 1;
+                    float: right;
+                    padding-right: 9px;
+                    padding-left: 0;
+
+                    span {
+                        padding: 0 5px;
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sortIcon {
+    display: flex;
+    align-items: center;
+
+    // justify-content: center;
+    span {
+        display: inline-block;
+        width: 21px;
+        height: 20px;
+        margin: 0 16px 0 0;
+
+        &.up {
+            background: url(./assets/btn-up.png) no-repeat;
+            background-size: contain;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        &.upforbid {
+            background: url(./assets/btn-upforbid.png) no-repeat;
+            background-size: contain;
+            cursor: no-drop;
+        }
+
+        &.down {
+            background: url(./assets/btn-down.png) no-repeat;
+            background-size: contain;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        &.downforbid {
+            background: url(./assets/btn-downforbid.png) no-repeat;
+            background-size: contain;
+            cursor: no-drop;
+        }
+    }
+}
+
+.editIcon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    background: url(./assets/editIcon.png) no-repeat;
+    background-size: contain;
+}
+
+.t-dialog__ctx .t-dialog {
+    .t-dialog__body {
+        .t-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .t-form:not(.t-form-inline) .t-form__item:last-of-type {
+        // position: relative;
+        // right: -155px;
+    }
+}
+
+.dialogTable {
+    .t-dialog__ctx .t-dialog {
+
+        .t-form:not(.t-form-inline) .t-form__item:last-of-type {
+            position: static;
+        }
+    }
+    .dialog-footer {
+        padding-right: 18px;
+        padding-top: 32px;
+    }
+}
+.sortBox{
+    .dialog-footer{
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+}
+.t-table__async-loading{
+    padding-top: 8px;
+}
+// 弹框样式
+.dialogBox {
+    .t-dialog {
+        position: absolute;
+        width: 764px;
+        max-height: 700px;
+        left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        .t-form {
+            padding-bottom: 24px;
+
+            .bt {
+                margin-left: 16px;
+            }
+        }
+
+        .t-dialog__body {
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 0;
+            .t-form{
+                display: block;
+            }
+        }
+
+        .t-table {
+            min-width: auto;
+            height: 434px;
+            ::-webkit-scrollbar {
+                width: 4px;
+            }
+
+
+
+        }
+
+        .footTip {
+            margin: 0 -14px 0 -32px;
+            height: 5px;
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(99, 97, 96, 0.10) 100%);
+        }
+
+        .footInfo {
+            text-align: center;
+            color: var(--color-bk4);
+            height: 50px;
+            line-height: 50px;
+            // line-height: 22px;
+            // padding: 15px 0 14px;
+            position: relative;
+        }
+
+    }
+
+    .headBox {
+        margin-bottom: 24px;
+    }
+
+    &.dialogTable {
+        .t-dialog .t-dialog__body {
+            padding-right: 14px;
+        }
+
+        .t-table__content {
+            padding-right: 14px;
+        }
+    }
+    .dialog-footer{
+        padding-top: 32px;
+    }
+    .t-table__pagination{
+        padding: 20px 11px 0 0;
+    }
+    .t-dialog__ctx .t-dialog__position.t-dialog--top{
+        padding-top: 8vh;
+    }
+}
+
+.scrollTable {
+    .t-dialog {
+        .t-table {
+            tr {
+                &:last-child {
+                    &:hover {
+                        background: none;
+                    }
+                }
+
+                &:last-child td {
+                    border: 0 none;
+
+                }
+            }
+        }
+
+        
+    }
+
+}
+
+
+//   动态加input
+.addInput {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .t-input__wrap {
+        margin-right: 10px;
+    }
+
+    .input-w {
+        width: 332px;
+    }
+
+    .t-icon-minus-rectangle {
+        color: var(--color-error);
+    }
+
+    .t-icon-add-rectangle {
+        color: var(--color-main);
+    }
+
+    .t-icon {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+}
+
+.dialogHeight {
+    height: 433px;
+    // .t-table__content{
+    //     height: 400px;
+    // }
+}
+
+.heighta {
+    height: 383px;
+    // .t-table__content{
+    //     height:350px;
+    // }
+}

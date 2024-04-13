@@ -1,0 +1,70 @@
+@import url('@/styles/theme.scss');
+
+.main{
+  .headBox{
+    background: #fff;
+    margin-bottom: 20rpx;
+    .time{
+      background-color: #F9F2BF;
+      height: 100rpx;
+      line-height: 100rpx;
+      text-align: center;
+      color: #8E714F;
+      font-size: 28rpx;
+      text{
+        color: var(--essential-color-red);
+      }
+    }
+    .tag{
+      padding: 19.5rpx 28rpx;
+      display: flex;
+      justify-content: space-between;
+      view{
+        display: flow-root;
+      }
+    }
+  }
+  .payBox{
+    background-color: #fff;
+    display: flex;
+    padding: 34rpx;
+    justify-content: space-between;
+    .wxImg{
+      display: flex;
+      align-items: center;
+      image{
+        width: 52rpx;
+        height: 52rpx;
+        margin-right: 15rpx;
+      }
+    }
+    .check{
+      width: 40rpx;
+      height: 40rpx;
+    }
+  }
+  .pageFoot {
+    padding-left: 44rpx;
+    padding-right: 16rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    .btn{
+      width: 268rpx;
+      margin-right: 60rpx;
+    }
+    view{
+      font-size: 28rpx;
+      height: 88rpx;
+      line-height: 88rpx;
+      text{
+        color: var(--essential-color-red);
+        font-size: 36rpx;
+      }
+    }
+  }
+}

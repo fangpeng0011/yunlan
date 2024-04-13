@@ -1,0 +1,151 @@
+//默认正常风格
+.normal.side{
+  .t-menu__logo{
+    margin-top: 20px;
+    height: 100px-;
+    //收起之前
+    .czri-side-nav-logo-tdesign-logo{
+      height: 40px;
+      width: 100%;
+      padding-left: 30px;
+    }
+    //收起之后
+    .czri-side-nav-logo-t-logo{
+      width: auto;
+      height: 40px;
+      padding-left: 10px;
+    }
+  }
+  //左侧边栏
+  .t-layout__sider{
+    .czri-side-nav::before{
+      border-radius: 0px;
+      top: -5px;
+      left: 1px;
+    }
+    //最下侧功能栏
+    .navUserCont{
+      // border-top: 1px solid var(--color-border2);
+      height: 64px;
+      box-sizing: border-box;
+      line-height: 28px;
+      padding: 12.5px 12px 15.5px 21px;
+      .header-user-account {
+        font-size: 14px;
+        color: var(--color-bk3);
+        display: flex;
+        align-items: center;
+        .baseInfo{
+          padding: 2px 6px;
+            // 头像大小
+          .header-user-avatar {
+            width: 21px;
+            height: 21px;
+            // 对齐
+            vertical-align: text-bottom;
+            margin-right: 6px;
+          }
+        }
+        .splitLine {
+          height: 12px;
+          width: 1px;
+          background-color: var(--color-bk3);
+          display: inline-block;
+          margin: 0 7px 0 4px;
+          position: relative;
+        }
+        .logoutBox {
+          width: 36px;
+          height: 36px;
+          display: flex;
+             // 退出
+          .header-user-logout{
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .icon{
+              position: relative;
+              bottom: 3px;
+            }
+          }
+        }
+      }
+      .header-user-list{
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .header-user-list>span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .collapsed-icon {
+        width: 20px;
+        height: 20px;
+        vertical-align: initial;
+        cursor: pointer;
+      }
+    }
+    .put {
+      border-top: 0;
+      width: 64px;
+      height: 90px;
+      margin: 10px 12px 10px 21px;
+      padding: 0;
+      .header-user-logout {
+        padding: 2px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        flex-direction: column;
+        div {
+          margin-bottom: 10px;
+          height: 100%;
+          line-height: normal;
+        }
+      }
+    }
+    .t-default-menu__inner .t-menu--scroll{
+      padding-bottom: 0px;
+      padding-left: 0;
+      padding-right: 0;
+      // padding-top: 36px;
+    }
+  }
+  //折叠后下方图标区域样式调整
+  .czri-sidebar-compact{
+    .t-menu__item{
+      padding: 0px;
+    }
+
+    .navUserCont{
+      margin-left: 0px;
+      // height: 102px;
+      border:none;
+      padding-top: 5px;
+      .fx-sb{
+        align-items: center;
+        .header-user-account{
+          .header-user-avatar {
+            width: 32px;
+            height: 32px;
+            padding: 6px;
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}

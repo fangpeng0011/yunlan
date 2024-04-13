@@ -1,0 +1,185 @@
+@import url('../../styles/theme.scss');
+
+.address-info {
+  background-color: #f8f8f8 !important;
+  height: 85vh;
+  .approve-tips {
+    height: 90rpx;
+    background: #faf4de;
+    padding: 5rpx 18rpx 8rpx 24rpx;
+    display: flex;
+    align-items: center;
+    .circle {
+      width: 10rpx;
+      height: 10rpx;
+      background-color: #e88649;
+      border-radius: 50%;
+      margin-right: 20rpx;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .content {
+      font-size: 22rpx;
+      color: #ea8a57;
+      display: inline-block;
+      vertical-align: middle;
+      width: 515rpx;
+      margin-right: 20rpx;
+    }
+    .content.active {
+      width: 650rpx;
+    }
+    .btn {
+      width: 132rpx;
+      height: 44rpx;
+      background: #ea8a57;
+      border-radius: 22rpx;
+      color: white;
+      text-align: center;
+      line-height: 44rpx;
+      font-size: 22rpx;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .approve-tips.isRealNameAuth {
+    height: 60rpx;
+    .content {
+      width: 100%;
+    }
+  }
+  .address-box {
+    height: 535rpx;
+    background: #ffffff;
+    border-radius: 20rpx;
+    margin: 32rpx 18rpx 0rpx 18rpx;
+    padding: 34rpx 28rpx 0rpx;
+    box-sizing: border-box;
+    .address-title {
+      font-size: 32rpx;
+      font-weight: bold;
+    }
+    .name-number {
+      .uni-input {
+        // width: 400rpx;
+        width: 50%;
+      }
+    }
+
+    .uni-input.active {
+      font-weight: 500;
+      font-size: 28rpx;
+      font-family: PingFangSC-Medium;
+      color: var(--neutral-color-main);
+    }
+    .send-get-title {
+      display: flex;
+      align-items: center;
+      .toAddress {
+        width: 104rpx;
+        height: 46rpx;
+        border: 2rpx solid #888888;
+        border-radius: 22rpx;
+        text-align: center;
+        line-height: 46rpx;
+        margin-left: 20rpx;
+        font-size: 22rpx;
+      }
+      .send,
+      .get {
+        width: 38rpx;
+        height: 38rpx;
+        border-radius: 50%;
+        font-size: 24rpx;
+        color: white;
+        text-align: center;
+        margin-right: 20rpx;
+      }
+      .send {
+        background-color: #000000;
+      }
+      .get {
+        background-color: #e63e32;
+      }
+      .subTitle {
+        font-weight: 500;
+      }
+    }
+    .name-number {
+      display: flex;
+      margin-top: 56rpx;
+      border-bottom: 2rpx solid #f4f4f4;
+      padding-bottom: 29rpx;
+    }
+    .city-area {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2rpx solid #f4f4f4;
+      padding: 36rpx 0;
+      .label {
+        font-size: 26rpx;
+        color: #888;
+      }
+      .icon {
+        font-size: 26rpx;
+        color: #151515;
+        display: flex;
+        align-items: center;
+      }
+      .active.label {
+        color: #151515;
+        font-weight: bold;
+      }
+      .arrow {
+        width: 12rpx;
+        height: 20rpx;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../../static/icon15.png');
+      }
+    }
+    .address-detail {
+      border-bottom: 2rpx solid #f4f4f4;
+      padding: 36rpx 0;
+    }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 35rpx;
+      .save-address {
+        display: flex;
+        align-items: center;
+        .label {
+          font-size: 30rpx;
+          color: #888;
+        }
+        .active,
+        .checkbox {
+          width: 40rpx;
+          height: 40rpx;
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-right: 10rpx;
+        }
+        .checkbox {
+          background-image: url('../../static/btn-gouxuan-nor@2x.png');
+        }
+        .active {
+          background-image: url('../../static/btn-gouxuan-sei@2x.png');
+        }
+      }
+      .reset-btn {
+        font-size: 30rpx;
+        color: #888;
+      }
+      .reset-btn.active {
+        color: #151515;
+      }
+    }
+  }
+}
+:deep(.NavBar) {
+  background-color: #fff !important;
+}

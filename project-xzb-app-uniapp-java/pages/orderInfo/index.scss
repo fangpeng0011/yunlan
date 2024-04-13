@@ -1,0 +1,219 @@
+.order-info{
+  padding-bottom: 400rpx;
+  //公共样式页面
+  .title{
+      font-size: 32rpx;
+      color: var(--color-black-19);
+      font-weight: bold;
+      margin-bottom: 24rpx;
+  }
+  .card{
+    margin-top: 30rpx;
+    background-color: var(--neutral-color-white);
+    padding: 40rpx 31rpx 40rpx 44rpx;
+    .info{
+      font-size: 28rpx;
+      display: flex;
+      justify-content: space-between;
+      .label{
+        color:var(--color-gray-8) ;
+      }
+      .content{
+        color: var(--color-black-19);
+      }
+    }
+    .first{
+      margin-bottom: 10rpx;
+    }
+  }
+  //订单状态
+  .serveStatus{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40rpx 0rpx 40rpx 44rpx;
+  }
+  .successStatus{
+    background-image: linear-gradient(269deg, #F75E43 22%, #F74346 72%);
+  }
+  .failStatus{
+    background-image: linear-gradient(269deg, #D6D6D6 22%, #EBEBEB 72%);
+    .status{
+      color: #191919;
+    }
+  }
+  .status,.serveTime{
+    color: var(--neutral-color-white);
+  }
+  .status{
+    font-size: 36rpx;
+    margin-bottom: 14rpx;
+  }
+  .status.failStatus{
+    color: var(--color-black-19);
+  }
+  .serveTime{
+    font-size: 28rpx;
+  }
+  //客户信息
+  .customerInfo{
+    background-color: var(--neutral-color-white);
+    color: var(--color-black-19);
+    font-size: 28rpx;
+    margin-top: 30rpx;
+    padding: 24rpx 29rpx 30rpx 30rpx;
+    .nameAndPhone{
+      display: flex;
+      align-items: center;
+      margin-bottom: 22rpx;
+      .name{
+        margin-right: 18rpx;
+        margin-left: 54rpx;
+      }
+      .phone{
+        display: flex;
+        align-items: center;
+      }
+      .phone::after{
+        content: '';
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../../static/new/btn_tel@2x.png');
+        width: 48rpx;
+        height: 48rpx;
+      }
+    }
+    .address{
+      display: flex;
+      .addressInfo{
+        
+      }
+      .location{
+        margin-right: 22rpx;
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../../static/new/icon_weizhi@2x.png');
+        width: 32rpx;
+        height: 36rpx;
+      }
+    }
+  }
+  //服务信息
+  .serveInfo{
+    background-color: var(--neutral-color-white);
+    .content{
+      display: flex;
+      margin-bottom: 30rpx;
+      .serveImg{
+        width: 140rpx;
+        height: 114rpx;
+        border-radius: 6rpx;
+        margin-right: 26rpx;
+      }
+      .serveTypeBox{
+        .serveType{
+          font-size: 32rpx;
+          color: var(--color-black-19);
+          margin-bottom: 20rpx;
+        }
+        .serveItem{
+          font-size: 28rpx;
+          color: var(--color-gray-59);
+        }
+      }
+    }
+    .fee{
+      font-size: 28rpx;
+      color: var(--color-gray-59);
+      .feeText{
+        color:var(--color-red-bg) ;
+        font-weight: 600;
+        margin-left: 22rpx;
+      }
+    }
+  }
+  //服务记录
+  .serveRecord{
+    .serveBefore{
+      margin-bottom: 23rpx;
+    }
+    .serveBefore,.serveAfter{
+      .subTitle{
+        font-size: 28rpx;
+        color: var(--color-black-19);
+        margin-bottom: 22rpx;
+      }
+      .imgList{
+        display: flex;
+        .img{
+          width: 206rpx;
+          height: 206rpx;
+          border-radius: 6rpx;
+          margin-right: 30rpx;
+        }
+      }
+      .tips{
+        margin-top: 28rpx;
+        margin-bottom: 10rpx;
+      }
+      .time{
+        font-size: 28rpx;
+        color: var(--color-gray-9);
+      }
+    }
+  }
+  .footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 186rpx;
+    background: #FFFFFF;
+    box-shadow: 0 0 12rpx 0 #0000001a;
+    display: flex;
+    font-size: 32rpx;
+    justify-content: center;
+    .btn-gray{
+      line-height: 88rpx;
+      height: 88rpx;
+      width: 250rpx;
+      background-color:var(--color-gray-eb) ;
+      color: var(--color-black-19);
+      border-radius: 50rpx;
+      margin-right: 32rpx;
+      text-align: center;
+      margin-top: 30rpx;
+    }
+    .btn-red{
+      height: 88rpx;
+      width: 408rpx;
+      background-color:var(--color-red-bg) ;
+      color: var(--neutral-color-white);
+      border-radius: 50rpx;
+      text-align: center;
+      line-height: 88rpx;
+      margin-top: 30rpx;
+    }
+  }
+  .end{
+    justify-content: flex-end;
+  }
+  .phone-button {
+    width: 720rpx;
+    height: 112rpx;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 24rpx;
+    font-size: 36rpx;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+    color: #f74c50;
+    line-height: 112rpx;
+    &:last-child {
+      color: #151515;
+    }
+  }
+}

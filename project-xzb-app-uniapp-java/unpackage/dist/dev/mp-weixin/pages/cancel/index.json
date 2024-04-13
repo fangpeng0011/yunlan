@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "取消原因",
+  "usingComponents": {
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "uni-popup-dialog": "../../uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog",
+    "uni-nav": "../../components/uni-nav/index"
+  }
+}

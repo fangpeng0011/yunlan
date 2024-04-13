@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "实名认证",
+  "usingComponents": {
+    "uni-nav": "../../components/uni-nav/index"
+  }
+}

@@ -1,0 +1,62 @@
+/* 水平间距 */
+/* 水平间距 */
+.serachList.data-v-33a7a5e4 {
+  padding: 0 0 0 30rpx;
+}
+.serachList .item.data-v-33a7a5e4 {
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #e5e4e4;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: var(--neutral-color-main);
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0.32rpx;
+}
+.serachList .item.data-v-33a7a5e4 uni-icons {
+  color: #cbcbcb !important;
+  margin-right: 14rpx;
+}
+.historyBox.data-v-33a7a5e4 {
+  padding-top: 60rpx;
+}
+.historyBox .tit.data-v-33a7a5e4 {
+  color: var(--neutral-color-placeholder);
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+}
+.historyBox .tit view.data-v-33a7a5e4 {
+  flex: 1;
+}
+.historyBox .tit.data-v-33a7a5e4 .uni-icons {
+  color: var(--neutral-color-placeholder) !important;
+}
+.historyBox .tit .input-uni-delect.data-v-33a7a5e4 {
+  display: flex;
+  align-items: center;
+}
+.historyBox .tit .input-uni-delect.data-v-33a7a5e4 text {
+  background-size: contain;
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 14rpx;
+}
+.historyBox .item.data-v-33a7a5e4 {
+  padding: 20rpx 24rpx 0;
+}
+.historyBox .item text.data-v-33a7a5e4 {
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 14rpx 24rpx;
+  background: var(--neutral-color-background);
+  border-radius: 2rpx;
+  font-size: var(--font-size-14);
+  margin: 0 6rpx 6rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300rpx;
+}

@@ -1,0 +1,2065 @@
+@import '../font-family.less';
+@import 'reset.less';
+
+li.t-menu__item {
+  margin-bottom: 14px !important;
+
+
+}
+
+.menuBox li.t-menu__item:first-child {
+  margin-top: 14px !important
+}
+
+
+// 组件库的布局重写 layout rewrite
+.t-layout__sider {
+  //左侧导航栏统一改为208px
+  width: 208px;
+  background-color: var(--color-bk10) !important;
+
+  .czri-sidebar-layout {
+    .czri-side-nav {
+      width: 208px !important;
+    }
+  }
+
+}
+
+////折叠后依然为64px
+.compact {
+  .t-layout__sider {
+    width: 64px;
+  }
+
+  .czri-sidebar-compact {
+    .czri-side-nav {
+      width: 64px !important;
+    }
+  }
+
+  //折叠状态下top和normal风格增加active和hover状态
+  .normal,
+  .top {
+
+    .t-menu__item.t-is-active,
+    .t-menu__item:hover {
+      background-color: var(--color-bk12) !important;
+    }
+  }
+}
+
+.czri-content-layout {
+  padding-bottom: 16px !important;
+}
+
+.czri-content-layout>div:last-child {
+  // height: 100%;
+}
+
+//底部公司标识部分
+.companyFooter {
+  background-color: var(--color-bk10);
+  color: var(--color-bk4);
+  text-align: center;
+  padding-bottom: 16px;
+  font-size: 12px;
+}
+
+.@{starter-prefix}-link {
+  color: var(--td-brand-color);
+  text-decoration: none;
+  margin-right: 24px;
+  cursor: pointer;
+  transition: color 0.2s cubic-bezier(0.38, 0, 0.24, 1);
+}
+
+.@{starter-prefix} {
+
+  // 布局元素调整
+  &-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-main-wrapper {
+    height: 500px;
+    overflow: scroll;
+  }
+
+  &-side-nav-layout {
+    &-relative {
+      height: 100%;
+    }
+  }
+
+  &-content-layout {
+    background-color: var(--color-bk10);
+    padding: 24px;
+    padding-bottom: 52px;
+  }
+
+  &-layout {
+    height: calc(100vh);
+    overflow-y: scroll;
+    position: relative;
+
+    &-tabs-nav {
+      max-width: 100%;
+      position: fixed;
+      overflow: visible;
+      z-index: 100;
+    }
+
+    &-tabs-nav+.@{starter-prefix}-content-layout {
+      padding-top: var(--td-comp-paddingTB-xxl);
+    }
+
+    // 滚动条样式
+    &::-webkit-scrollbar {
+      width: 8px;
+      background: var(--color-bk10);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+      background-color: var(--color-border);
+    }
+  }
+
+  &-footer-layout {
+    padding: 0;
+    margin-bottom: var(--td-comp-margin-xxl);
+  }
+
+  // slideBar
+  &-sidebar-layout {
+    height: 100%;
+  }
+
+  &-sidebar-compact {
+    width: 64px;
+  }
+
+  &-sidebar-layout-side {
+    z-index: 100;
+  }
+
+  &-side-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+    transition: all 0.3s;
+    min-height: 100%;
+
+
+
+    &-mix {
+      top: var(--td-comp-size-xxxl);
+
+      &-fixed {
+        top: var(--td-comp-size-xxxl);
+        z-index: 0;
+      }
+    }
+
+    &-no-fixed {
+      position: relative;
+      z-index: 1;
+    }
+
+    &-no-logo {
+      z-index: 1;
+    }
+
+    &-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-logo-t-logo {
+      height: 32px;
+      width: 100%;
+    }
+
+    &-logo-tdesign-logo {
+      padding: 0 24px;
+      height: 32px;
+      width: 100%;
+      color: var(--td-text-color-primary);
+    }
+
+    &-logo-normal {
+      color: var(--td-brand-color);
+      font: var(--td-font-body-large);
+      transition: all 0.3s;
+    }
+  }
+
+  // 暗黑模式
+  .modeStyle &-side-nav {
+    background-color: #000000 !important;
+    color: #fff;
+
+
+    &-mix {
+      top: var(--td-comp-size-xxxl);
+
+      &-fixed {
+        top: var(--td-comp-size-xxxl);
+        z-index: 0;
+      }
+    }
+
+    &-no-fixed {
+      position: relative;
+      z-index: 1;
+    }
+
+    &-no-logo {
+      z-index: 1;
+    }
+
+    &-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-logo-t-logo {
+      height: 32px;
+      width: 100%;
+    }
+
+    &-logo-tdesign-logo {
+      padding: 0 24px;
+      height: 32px;
+      width: 100%;
+      color: var(--td-text-color-primary);
+    }
+
+    &-logo-normal {
+      color: var(--td-brand-color);
+      font: var(--td-font-body-large);
+      transition: all 0.3s;
+    }
+
+    .t-menu__item {
+      .t-menu__content {
+        color: rgba(#fff, 0.8);
+      }
+
+      .t-fake-arrow path {
+        stroke: rgba(#fff, 0.8);
+      }
+
+      // 一级菜单hover状态
+      &:hover {
+        .t-menu__content {
+          color: var(--color-bk2);
+
+        }
+
+        .t-icon {
+          path {
+            fill: var(--color-bk2);
+          }
+
+        }
+
+        .t-fake-arrow path {
+          stroke: var(--color-bk2);
+        }
+      }
+
+      // 一级菜单当前样式设置
+      &.t-is-active {
+        .t-menu__content {
+          color: var(--color-bk2);
+        }
+
+        .t-icon {
+          path {
+            fill: var(--color-bk2);
+          }
+        }
+
+        .t-fake-arrow path {
+          stroke: var(--color-bk2);
+        }
+      }
+    }
+
+    // 二级菜单
+    .menuBox {
+      .t-icon {
+        path {
+          fill: rgba(#fff, 0.8);
+        }
+      }
+    }
+
+    // 二级菜单选中的当前样式
+    .t-menu__sub {
+      .t-is-active {
+        .t-menu__content {
+          color: var(--color-white);
+        }
+      }
+
+      .t-menu__item {
+        &:hover {
+          .t-menu__content {
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+
+  .modeStyle &-header-menu-fixed {
+    background-color: #000000 !important;
+  }
+
+  // 暗黑模式 - end
+  &-side-nav-placeholder {
+    flex: 1 1 232px;
+    min-width: 232px;
+    transition: all 0.3s;
+
+    &-hidden {
+      flex: 1 1 72px;
+      min-width: 72px;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.route-tabs-dropdown {
+  .t-icon {
+    margin-right: 8px;
+  }
+}
+
+.logo-container {
+  cursor: pointer;
+  display: inline-flex;
+  height: 64px;
+  margin-left: 24px;
+}
+
+.version-container {
+  color: var(--td-text-color-primary);
+  opacity: 0.4;
+}
+
+.t-menu__popup {
+  z-index: 1000;
+}
+
+.container-base-margin-top {
+  margin-top: 16px;
+}
+
+//表格最大宽度
+.t-table {
+  // max-width: calc(100vw - 305px);
+}
+
+.t-layout.t-layout--with-sider>.t-layout {
+  min-width: 1000px;
+  flex: 1;
+}
+
+//左侧菜单收起后列表自适应
+.czri-content-compact {
+  .t-table {
+    max-width: initial;
+  }
+}
+
+// 表格顶部
+.t-table th {
+  font-family: PingFangSC;
+  color: var(--color-bk1);
+  font-weight: 500;
+  background-color: var(--color-tableHeader-bg) !important;
+  padding-left: var(--space-main);
+}
+
+.t-table td {
+  padding-left: var(--space-main);
+}
+
+.t-table--column-resizable:not(.t-table--bordered) thead.t-table__header:hover th:not(:last-child) {
+  border-right: none;
+}
+
+.t-table--column-resizable:not(.t-table--bordered) thead.t-table__header:hover th {
+  border-top: none;
+}
+
+// 表格行hover
+.t-table--hoverable tbody tr:hover {
+  background-color: var(--color-bk10);
+}
+
+.tableBoxs .t-table__body tr.t-table__empty-row:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.t-table td {
+  color: var(--color-bk3);
+  border-color: var(--color-border);
+}
+
+.t-table__ellipsis {
+  width: auto;
+}
+
+// 表格顶栏
+.t-table__header {
+  height: 49px;
+  border-radius: 4px 4px 0 0;
+
+  tr {
+    border-radius: 4px 4px 0 0;
+  }
+}
+
+.tableBoxs {
+  margin: var(--space-main-min) var(--space-main);
+  // min-width: 1000px;
+}
+
+.statistics-wapper {
+  .newBox {
+    padding-top: 20px;
+  }
+
+  .formBox {
+    border-bottom: 0 none;
+  }
+}
+
+// 删除操作按钮
+.btn-dl {
+  color: var(--color-error);
+  cursor: pointer;
+
+  &:hover {
+    // 透明度
+    color: var(--color-error1);
+  }
+
+  // 点击后改变颜色
+  &:active {
+    color: var(--color-error2);
+  }
+
+  // 禁用的颜色
+  &.disabled {
+    color: var(--color-error3);
+    cursor: not-allowed;
+  }
+}
+
+.status-dot {
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    // 居中
+    vertical-align: middle;
+  }
+}
+
+// 状态0
+.status-dot-0 {
+  &::before {
+    background-color: #0398FF;
+  }
+}
+
+// 状态1
+.status-dot-1 {
+  &::before {
+    background-color: var(--color-error);
+  }
+}
+
+.status-dot-2 {
+  &::before {
+    background-color: var(--color-success);
+  }
+}
+
+.status-dot-3 {
+  &::before {
+    background-color: var(--color-bk4);
+  }
+}
+
+.t-date-range-picker {
+  width: 100%;
+}
+
+// 操作区域文字按钮右分割线
+.btn-split-right {
+  border-right: 1px solid #e8e8e8;
+}
+
+// 操作区域文字按钮左分割线
+.btn-split-left {
+  border-left: 1px solid #e8e8e8;
+}
+
+// 排序箭头
+
+// 上箭头
+// .t-table__double-icons .t-table-sort-asc {
+//   background-image: url(@/assets/test-img/Shape.svg);
+//   width: 11px;
+//   height: 11px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: 100% 100%;
+//   // 背景旋转180度
+//   transform: rotate(0deg);
+
+//   .t-icon {
+//     display: none;
+//   }
+
+//   &:hover {
+//     background-image: url(@/assets/test-img/Shapehover.svg);
+//   }
+
+//   // 点击后改变颜色
+//   &:active {
+//     background-image: url(@/assets/test-img/Shapehover.svg);
+//   }
+
+//   &:focus {
+//     background-image: url(@/assets/test-img/Shapehover.svg);
+//   }
+// }
+
+// 选中状态颜色
+// .t-table__sort-icon--active {
+//   background-image: url(@/assets/test-img/Shapehover.svg) !important;
+// }
+
+// 下箭头
+// .t-table__double-icons .t-table-sort-desc {
+//   background-image: url(@/assets/test-img/Shape.svg);
+//   width: 11px;
+//   height: 11px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: 100% 100%;
+//   // 背景旋转180度
+//   transform: rotate(180deg);
+
+//   .t-icon {
+//     display: none;
+//   }
+
+//   &:hover {
+//     background-image: url(@/assets/test-img/Shapehover.svg);
+//   }
+
+//   // 点击后改变颜色
+//   &:active {
+//     background-image: url(@/assets/test-img/Shapehover.svg) !important;
+//   }
+
+//   &:focus {
+//     background-image: url(@/assets/test-img/Shapehover.svg);
+//   }
+// }
+
+
+// 筛选按钮
+.t-table__filter-icon {
+
+  // hover时改变颜色
+  &:hover,
+  &.active {
+    color: var(--color-main);
+  }
+}
+
+// 表头标签
+.t-form__label {
+  color: var(--color-bk2);
+  padding-right: 0;
+}
+
+// 表单输入框
+.t-input__inner {
+  color: var(--color-bk1);
+}
+
+// 表单placeholder颜色
+.t-input__inner::-webkit-input-placeholder {
+  color: var(--color-bk4);
+}
+
+// 整体按钮
+button {
+  // 去除按钮的边框
+  border: none;
+  // 文字上下左右居中
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageInfo {
+  color: var(--color-bk4);
+  margin-top: -28px;
+  padding: 0 20px 7px 0;
+}
+
+.paginationBox {
+  padding: 16px 0 20px;
+}
+
+// 分页器选中状态
+.t-table__pagination {
+  padding: var(--space-main) 0 var(--space-main) var(--space-main);
+}
+
+.t-pagination__number.t-is-current {
+  border: 1px solid var(--color-main);
+  color: var(--color-white);
+  background-color: var(--color-main);
+}
+
+// 分页器边框
+.t-pagination__number {
+  border: 1px solid #dcdcdc;
+  color: var(--color-bk1);
+
+  &:hover {
+    color: var(--color-main);
+    border-color: var(--color-main);
+  }
+
+  &:active {
+    color: var(--color-white);
+    background-color: var(--color-main);
+  }
+
+  &.t-is-current {
+    color: var(--color-white);
+  }
+}
+
+// 翻页前进后退按钮
+.t-pagination__btn {
+  color: var(--color-bk1);
+}
+
+// 日期选择器选中状态
+.t-date-picker__cell--active .t-date-picker__cell-inner {
+  color: rgba(255, 255, 255, 0.9) !important;
+  background-color: var(--color-main);
+  border-radius: 3px;
+}
+
+.t-date-picker__cell:hover .t-date-picker__cell-inner {
+  box-shadow: inset 0 0 0 1px var(--color-main) !important;
+}
+// hover时区间颜色
+.t-date-picker__cell--hover-highlight::after{
+  background-color: #fff0ed;
+}
+
+// 日期选择器当日样式
+.t-date-picker__cell--now .t-date-picker__cell-inner {
+  color: var(--color-main);
+  background-color: #fff0ed;
+}
+
+// 日期区间背景样式
+.t-date-picker__cell--highlight::before {
+  background-color: #fff0ed;
+}
+// 选中后
+.t-date-picker__cell--highlight{
+  .t-date-picker__cell--hover-highlight::after{
+    background-color: #0000000f;
+  }
+.t-date-picker__cell-inner{
+  color: var(--color-bk1);
+}
+}
+
+// 日期区间选择器tag
+.t-button .t-button__text {
+  color: var(--color-main);
+}
+
+// 日期时间选择器日期
+.t-date-picker__cell-inner {
+  color: var(--color-bk1);
+}
+
+// 日期时间选择器日期未上月和下月
+.t-date-picker__cell--additional .t-date-picker__cell-inner {
+  color: var(--color-bk6);
+}
+
+// 日期时间选择器日期hover时框线颜色
+.t-date-picker__cell--active .t-date-picker__cell-inner {
+  box-shadow: inset 0 0 0 1px var(--color-main);
+}
+
+// 列表筛选框按钮
+.t-table__filter--bottom-buttons {
+  .t-button {
+    .t-button__text {
+      color: var(--color-bk1);
+      // 设置最后一个按钮的颜色
+    }
+  }
+
+  // 设置第二个t-button下的t-button__text的颜色
+  .t-button:nth-child(2) .t-button__text {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+// 弹窗底部按钮
+.t-dialog__footer {
+  .t-button {
+    .t-button__text {
+      color: var(--color-bk1);
+      // 设置最后一个按钮的颜色
+    }
+  }
+
+  // 设置第二个t-button下的t-button__text的颜色
+  .t-button:nth-child(2) .t-button__text {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.formFooter {
+  .t-form__controls-content {
+    display: block;
+    text-align: right;
+
+    button {
+      display: inline-block;
+      margin-left: 16px;
+    }
+  }
+}
+
+// 弹窗标题
+.t-dialog--default {
+  padding: 0;
+}
+
+// 弹窗头部
+.t-dialog__header {
+  height: 60px;
+  background: var(--color-bk10);
+  border-radius: 8px 8px 0 0;
+  padding: 19.5px 25px 19.5px 24px;
+
+  // 通知提示框标题
+  .t-dialog__header-content {
+    font-family: PingFangSC-SNaNpxibold;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-black);
+  }
+
+  .t-dialog__close {
+    color: var(--color-bk3);
+    width: 28px;
+    height: 28px;
+
+    // 将svg的宽高设置为24px
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      background: #e1e6f0;
+    }
+
+    &:active {
+      background: #cdd3e0;
+    }
+  }
+}
+
+//弹层底部按钮
+.t-dialog__footer {
+  padding: 0 40px 40px;
+}
+
+.dialog-footer {
+  padding: 8px 0 32px;
+  text-align: right;
+
+  &.scrollFooter {
+    padding-top: 32px;
+  }
+
+  button {
+    display: inline-block;
+    margin-left: 16px;
+  }
+}
+
+// 删除警告弹窗样式
+.baseDialog {
+  .t-dialog__header {
+    height: auto;
+    background: none;
+    padding: 28px 32px 0;
+  }
+
+  .t-dialog__close {
+    margin: -6px -9px 0 0;
+  }
+
+  .t-dialog__body {
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+
+  .dialog-footer {
+    padding: 24px 0 32px;
+  }
+}
+
+.t-dialog__body {
+  padding: 32px;
+  color: var(--color-bk3);
+}
+
+.t-form-item__description {
+  margin-bottom: 32px;
+}
+
+.t-form__item.t-form__item-with-extra {
+  margin-bottom: 32px;
+}
+
+// 通知提示框内容
+.t-dialog__body__icon {
+  padding: 8px 24px 24px 56px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-bk3);
+}
+
+// 上传图片框
+.t-upload__card-content,
+.t-upload__card-container {
+  width: 120px;
+  height: 120px;
+}
+
+.t-upload__card-content {
+  border: 0 none;
+}
+
+// 图片内容物
+.t-upload__card-image {
+  max-width: 112%;
+  max-height: 112%;
+}
+
+// 文本输入框
+.t-textarea__inner {
+  color: var(--color-bk1);
+}
+
+// 文本输入框placeholder
+.t-textarea__inner::-webkit-input-placeholder {
+  color: var(--color-bk4);
+}
+.t-textarea .t-resize-none{
+  // 禁止左右拖拽，允许上下拖拽
+  resize: vertical;
+}
+.t-textarea__limit{
+  bottom: auto;
+  right: 0;
+}
+
+// 上传图片按钮样式
+.upbtn {
+  width: 112px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  color: var(--color-bk1);
+  padding: 5px 16px;
+  margin-top: 10px;
+  // 文字上下居中
+  line-height: 32px;
+  margin-left: 18.5px;
+  margin-top: auto;
+            bottom: 63px;;
+  cursor: pointer;
+  outline: transparent;
+
+  &:hover {
+    color: var(--color-main);
+    border-color: var(--color-main);
+
+    span {
+      svg {
+        width: 16px;
+
+        // 修改svg的颜色
+        path {
+          fill: var(--color-main);
+        }
+      }
+    }
+  }
+
+  // 按下时
+  &:active {
+    color: var(--color-active);
+    border-color: var(--color-active);
+
+    span {
+      svg {
+        width: 16px;
+
+        // 修改svg的颜色
+        path {
+          fill: var(--color-active);
+        }
+      }
+    }
+  }
+
+  span {
+    // 居中
+    display: block;
+    vertical-align: middle;
+    line-height: 12px;
+    margin-right: 8px;
+
+    svg {
+      width: 16px;
+
+      // 修改svg的颜色
+      path {
+        fill: var(--color-bk1);
+      }
+    }
+  }
+}
+
+// 输入框
+// 输入框hover
+.t-input:hover {
+  border-color: var(--color-main);
+}
+
+// 输入框focus
+.t-input--focused {
+  border-color: var(--color-main);
+  box-shadow: 0 0 0 2px #FFD8D2;
+  &:hover{
+    border-color: #F54247;
+  }
+}
+
+// 下拉选择器
+// 下拉选择器选中状态
+.t-select-option.t-is-selected {
+  background: #FFEFEC;
+  color: var(--color-main);
+  &:hover{
+    background: #FFEFEC;
+  }
+}
+// 下拉选择器hover状态
+.t-select-option:not(.t-is-disabled):not(.t-is-selected):hover {
+  background: #f3f3f3;
+}
+
+// 组件iconfont颜色
+.t-input .t-input__prefix>.t-icon {
+  color: var(--color-main);
+}
+
+// 步骤条组件颜色
+// 头部圆头颜色
+.t-steps .t-steps-item--process .t-steps-item__icon--number {
+  background: var(--color-main);
+  border-color: var(--color-main);
+  width: 24px;
+  height: 24px;
+}
+
+.t-steps .t-steps-item__icon {
+  margin-right: 14px;
+}
+
+// 头部文字颜色
+.t-steps .t-steps-item--process .t-steps-item__title {
+  color: var(--color-main);
+}
+
+// 未选中状态文字提示颜色
+.t-steps .t-steps-item__description {
+  color: var(--color-bk4);
+}
+
+// 步骤条未选中状态标题颜色
+.t-steps .t-steps-item__title {
+  color: var(--color-bk4);
+}
+
+// 步骤条选中状态文字提示颜色
+.t-steps .t-steps-item--process .t-steps-item__description {
+  color: var(--color-bk3);
+}
+
+.t-steps--vertical.t-steps--dot-anchor .t-steps-item--finish .t-steps-item__icon {
+  border-color: var(--color-main);
+}
+
+.t-steps--vertical.t-steps--dot-anchor.t-steps--positive .t-steps-item--finish:not(:last-child)::before {
+  border-right-color: var(--color-main);
+  color: var(--color-main);
+}
+
+.t-steps--vertical.t-steps--dot-anchor .t-steps-item--process .t-steps-item__icon {
+  border-color: var(--color-main);
+  background: var(--color-main);
+}
+
+// 折叠
+// 折叠默认背景色
+.t-collapse {
+  border: 0 none;
+  background: none;
+
+  .t-collapse-panel__wrapper .t-collapse-panel__body {
+    background: none;
+    border: 0 none;
+  }
+}
+
+// layout侧边栏图标大小
+.t-default-menu .t-menu__item .t-icon {
+  width: 28px;
+  height: 28px;
+}
+
+// 侧边栏选中状态
+.t-default-menu .t-menu__item.t-is-opened.t-is-active {
+  color: var(--color-black);
+  // background-color: var(--color-bk11);
+}
+
+.t-default-menu .t-menu__item.t-is-opened {
+  margin-bottom: 0;
+
+  &:hover {
+    // background-color: transparent !important;
+    color: var(--color-main);
+  }
+}
+
+// 侧边栏未选中状态
+.t-menu__item {
+  color: rgba(0, 0, 0, 0.55);
+
+  div {
+    display: none !important;
+  }
+}
+
+// 下层被选中状态(二级菜单)
+.t-default-menu .t-menu__item.t-submenu__item.t-is-active:not(.t-is-opened) {
+  background: var(--color-bk12);
+  color: var(--color-main);
+  border-right: 4px solid var(--color-main) !important;
+}
+.czri-sidebar-compact .t-default-menu .t-menu__item.t-is-active:not(.t-is-opened){
+  border-right: none;
+}
+.t-default-menu .t-menu__item.t-is-active:not(.t-is-opened){
+  background: var(--color-bk12);
+  color: var(--color-main);
+  border-right: 4px solid var(--color-main);
+  .t-menu__content {
+    font-weight: 500;
+    color: var(--color-main) !important;
+  }
+
+  .t-icon {
+    rect{
+      stroke: var(--color-main);
+      fill: #fff;
+    }
+    path {
+      stroke: var(--color-main);
+      fill: #fff;
+      &:nth-child(5){
+        stroke: none;
+        fill: var(--color-main);
+      }
+    }
+    circle{
+      stroke: var(--color-main);
+    }
+  }
+}
+.t-default-menu .t-submenu .menuBox .t-menu__item.t-is-active:not(.t-is-opened) {
+  background: var(--color-bk12);
+}
+// 下层被选中状态(一级菜单)
+.t-default-menu .t-submenu .t-menu__item.t-is-active:not(.t-is-opened) {
+  background-color: transparent;
+  border-right: none;
+
+  .t-menu__content {
+    font-weight: 500;
+    color: var(--color-main) !important;
+  }
+
+  .t-icon {
+    path {
+      fill: white;
+      stroke: var(--color-main);
+    }
+    circle{
+      stroke: var(--color-main);
+    }
+  }
+}
+
+.menuBox>li.t-menu__item.t-is-active:not(.t-submenu__item) .t-menu__content {
+  color: var(--color-black);
+}
+
+
+// 添加侧边线
+.t-submenu .t-is-opened {
+  div {
+    li {
+      position: relative;
+    }
+  }
+}
+
+.t-default-menu .t-menu__item:hover:not(.t-is-active):not(.t-is-disabled) {
+  background-color: transparent;
+  .t-menu__content{
+    color: var(--color-main);
+  }
+
+
+  svg {
+    rect{
+      stroke: var(--color-main);
+      fill: #fff;
+    }
+    path {
+      stroke: var(--color-main);
+      fill: #fff;
+    }
+    g{
+      path {
+        &:nth-child(5){
+          stroke: none;
+          fill: var(--color-main);
+        }
+      }
+    }
+    circle{
+      stroke: var(--color-main);
+    }
+  }
+
+  .t-fake-arrow {
+    path {
+      color: var(--color-main);
+      fill: none;
+    }
+  }
+}
+
+.t-default-menu .t-menu__item.t-is-opened {
+  &::before {
+    display: none;
+  }
+}
+
+// 收起状态下的侧边栏
+.t-menu .t-submenu {
+  margin-bottom: 14px;
+}
+
+// 侧边栏选中样式
+.t-menu__popup .t-menu__item.t-is-active {
+  background-color: var(--color-bk12);
+  height: 28px;
+  color: var(--color-main);
+  .t-menu__content{
+    color: var(--color-main);
+  }
+}
+
+.t-menu__item.t-menu__item-spacer.t-menu__item-spacer--right.t-is-opened.t-is-active {
+  // background-color: var(--color-white);
+  color: var(--color-main);
+
+  .t-menu__content {
+    color: var(--color-main);
+  }
+
+  .t-icon {
+    path {
+      stroke: var(--color-main);
+      fill: white;
+    }
+    rect{
+      stroke: var(--color-main);
+      fill: white;
+    }
+  }
+}
+
+// 侧边栏未选中样式
+.t-menu__popup .t-menu__item {
+  color: var(--color-bk1);
+}
+
+.t-menu__popup.t-is-vertical .t-menu__item {
+  height: 28px;
+  margin: 0;
+  padding-left: 6px;
+  margin-bottom: 2px;
+}
+
+.t-menu__popup.t-is-vertical.t-is-opened {
+  margin-left: 8px !important;
+}
+
+.t-menu__item:hover:not(.t-is-active):not(.t-is-opened):not(.t-is-disabled) {
+  background-color: transparent;
+  .t-menu__content{
+    color: var(--color-main);
+  }
+}
+
+.t-default-menu .t-menu__item:first-child {
+  margin-top: 4px;
+}
+
+.t-default-menu .t-menu__item {
+  padding-left: 22px;
+}
+
+// 表格操作栏最小宽
+// .t-table--column-fixed .t-table__cell--fixed-right {
+//   min-width: 157px;
+// }
+
+// 多选项当前色和背景色
+.t-checkbox__input {
+  border: 1px solid var(--color-border); //多选框边框线
+
+  &:hover {
+    border-color: var(--color-main);
+  }
+}
+
+.t-checkbox {
+  .t-checkbox__input {
+    &:hover {
+      border-color: #0698FF;
+    }
+  }
+}
+
+.t-checkbox.t-is-checked .t-checkbox__input {
+  border-color: #0698FF;
+  background-color: #0698FF;
+}
+
+// 选中多选框颜色
+.t-checkbox.t-is-indeterminate .t-checkbox__input {
+  border-color: var(--color-main);
+  background-color: var(--color-main);
+}
+
+// 提示语样式
+.t-tooltip--default .t-popup__content {
+  width: 334px;
+  font-size: 12px;
+  color: var(--color-bk1);
+  padding: 14px 16px;
+  line-height: 17px;
+  background: var(--color-white);
+  box-shadow: 0 0 8px 1px rgba(34, 40, 51, 0.12);
+}
+
+.t-tooltip--default[data-popper-placement^='bottom'] .t-popup__arrow:before {
+  box-shadow: -1px 0 20px 1px rgba(34, 40, 51, 0.12);
+}
+
+.t-tooltip--default[data-popper-placement^='top'] .t-popup__arrow:before {
+  box-shadow: -1px 0 20px 1px rgba(34, 40, 51, 0.12);
+}
+
+//tab切换样式
+.t-tabs {
+  padding-bottom: 24px;
+
+  .t-tabs__nav-container {
+    &.t-is-top {
+      &::after {
+        background-color: var(--color-border);
+      }
+    }
+  }
+
+  .t-tabs__bar {
+    background-color: var(--color-main);
+    height: 2px;
+  }
+
+  .t-tabs__nav-item.t-is-active {
+    color: var(--color-main);
+    text-shadow: none;
+  }
+
+  .t-tabs__nav-item {
+    color: var(--color-bk2);
+  }
+
+  .t-tabs__nav-item-wrapper {
+    padding: 0 10px;
+
+    &>div {
+      display: none;
+    }
+  }
+
+  .t-tabs__nav-scroll {
+    z-index: 9;
+  }
+}
+
+.t-tabs__nav-item:not(.t-is-disabled):not(.t-is-active):hover .t-tabs__nav-item-wrapper {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+// 字数控制
+// 每10字
+.ellipsisHidden2,
+.ellipsisHidden2 span {
+  max-height: 52px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsisHidden2,
+.ellipsisHidden2 .span {
+  max-height: 120px;
+  -webkit-line-clamp: 2;
+}
+
+// 正常禁用小标识
+.iconTip {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+// 正常
+.normalIcon {
+  background: var(--color-success);
+}
+
+// 禁用
+.forbidIcon {
+  background: var(--color-error2);
+}
+
+// 小图点击放大
+.tdesign-demo-image-viewer-wrapper {
+  display: flex;
+}
+
+.tdesign-demo-image-viewer__ui-image {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--td-radius-small);
+  overflow: hidden;
+}
+
+.tdesign-demo-image-viewer__ui-image--hover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--td-text-color-anti);
+  line-height: 22px;
+  transition: 0.2s;
+}
+
+.tdesign-demo-image-viewer__ui-image:hover .tdesign-demo-image-viewer__ui-image--hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tdesign-demo-image-viewer__ui-image--img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.tdesign-demo-image-viewer__ui-image--footer {
+  padding: 0 16px;
+  height: 56px;
+  width: 100%;
+  line-height: 56px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  color: var(--td-text-color-anti);
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  box-sizing: border-box;
+}
+
+.tdesign-demo-image-viewer__ui-image--title {
+  flex: 1;
+}
+
+.tdesign-demo-popup__reference {
+  margin-left: 16px;
+}
+
+.tdesign-demo-image-viewer__ui-image--icons .tdesign-demo-icon {
+  cursor: pointer;
+}
+
+.tdesign-demo-image-viewer__error {
+  background-color: var(--td-bg-color-component-disabled);
+  border-radius: 4px;
+  color: var(--td-text-color-disabled);
+  cursor: inherit;
+}
+
+.tdesign-demo-image-viewer__error--content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 14px;
+}
+
+// 新增按钮布局
+.newBox {
+  margin-bottom: 16px;
+  display: flex;
+
+  .newBoxbutton {
+    margin-left: auto;
+    min-width: 88px !important;
+  }
+}
+
+.t-table .t-table__sort-column {
+  // 取消背景色
+  background-color: transparent;
+}
+
+// 弹窗
+.t-dialog__ctx .t-dialog__wrap {
+  overflow: initial;
+}
+
+// 步进条颜色
+.t-steps--horizontal.t-steps--default-anchor .t-steps-item--finish:not(:last-child) .t-steps-item__title:after {
+  border-bottom-color: var(--color-main);
+  color: var(--color-main);
+}
+
+.demo-select-base {
+  min-width: 90px;
+  width: 18.7%;
+
+  .t-input.t-is-readonly {
+    // 取消右侧两角的圆角
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+  }
+}
+
+.account {
+  min-width: 390px;
+  height: 32px;
+  width: 81.3%;
+
+  .t-input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+// 整体列表搜索
+.formBox {
+  padding: 0 12px var(--space-main);
+  margin-bottom: 24px;
+
+  .t-form__item {
+    width: 100%;
+  }
+
+  .t-form:not(.t-form-inline) .t-form__item:last-of-type {
+    margin-top: var(--space-main);
+    padding: 0 15px !important;
+  }
+
+  .t-form .searchBtn {
+    margin-top: var(--space-main);
+  }
+
+  .t-col {
+    button {
+      margin: 0 8px;
+      &:first-child {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .searchBtn {
+
+    button {
+      display: inline-block;
+    }
+  }
+
+  .t-row {
+    &>div.t-col {
+      max-width: 33.3%;
+      display: inline-block;
+    }
+  }
+}
+
+.formBox,
+.searchBox {
+  .t-select__wrap {
+    height: 32px;
+  }
+}
+
+// 新增按钮布局
+.newAdd {
+  padding: var(--space-main-min) var(--space-main);
+}
+
+// 统计信息
+.dataBox {
+  padding: 32px 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+
+    li {
+      display: flex;
+      flex: 1;
+      padding-left: 20px;
+      justify-content: center;
+
+      .img {
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        margin-right: 16px;
+        margin: 6px 16px 0 0;
+      }
+
+      .text {
+        line-height: 22px;
+        color: var(--color-bk4);
+        min-width: 140px;
+
+        p {
+          &:first-child {
+            font-size: 34px;
+            line-height: 48px;
+            color: var(--color-black);
+            font-weight: 600;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        .img {
+          background: url(@/assets/icon-shangjia1.png) no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:nth-child(2) {
+        .img {
+          background: url(@/assets/icon-shangjia2.png) no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:nth-child(3) {
+        .img {
+          background: url(@/assets/icon-shangjia3.png) no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:nth-child(4) {
+        .img {
+          background: url(@/assets/icon-shangjia4.png) no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:nth-child(5) {
+        .img {
+          background: url(@/assets/icon-shangjia5.png) no-repeat;
+          background-size: contain;
+        }
+      }
+      &:nth-child(6) {
+        .img {
+          background: url(@/assets/icon-shangjia6.png) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+// 树状图选中样式
+.t-tree--hoverable .t-tree__label:not(.t-is-active):not(.t-is-checked):hover,
+.t-is-active .t-tree__label {
+  background-color: transparent;
+
+  span {
+    span {
+      color: var(--color-main) !important;
+    }
+  }
+}
+
+// 去除时间选择器选择时的底色
+// .t-range-input-popup--visible .t-range-input .t-input.t-is-focused,
+// .t-range-input__inner .t-input:hover {
+//   background-color: transparent;
+// }
+
+// 
+.t-card--bordered {
+  border: 0 none;
+}
+
+.t-card,
+.secondary-notification {
+  border-radius: 2px !important;
+}
+
+//按钮点击，hover样式
+.btn-hover-active {
+  cursor: pointer;
+
+  &:hover {
+    background: #eaeaea;
+    border-radius: 3px;
+  }
+
+  &:active {
+    background: #eaeaea;
+    border-radius: 3px;
+  }
+}
+
+//列表空白内容高度自适应
+.t-table__empty {
+  height: 100%;
+}
+
+// 筛选弹框样式
+.t-popup[data-popper-placement^="bottom"] .t-popup__content--arrow {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.10), 0 8px 10px 1px rgba(0, 0, 0, 0.06), 0 3px 14px 2px rgba(0, 0, 0, 0.05);
+
+  .t-button--variant-base:not(.t-is-disabled):not(.t-button--ghost) {
+    display: block;
+    width: 100%;
+    color: var(--color-bk1);
+    background: var(--color-bk7);
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    div {
+      display: none !important;
+    }
+
+    &:hover {
+      background-color: var(--color-bk8);
+    }
+
+    &:active {
+      background-color: var(--color-bk8);
+    }
+  }
+
+  .t-button--variant-base.t-button--theme-primary:not(.t-is-disabled):not(.t-button--ghost) {
+    background: var(--color-main);
+    border-color: var(--color-main);
+
+    div {
+      display: none !important;
+    }
+
+    &:hover {
+      background-color: var(--color-error1);;
+    }
+
+    &:active {
+      background-color: var(--color-error2);;
+    }
+  }
+}
+
+.t-default-menu .t-menu__sub .t-menu__item {
+  padding-left: 63px;
+
+  div {
+    display: none;
+  }
+}
+
+.t-input .t-input__suffix>.t-icon:hover {
+  color: var(--td-text-color-placeholder);
+}
+
+// 右侧固定的阴影
+.t-table__content--scrollable-to-right .t-table__cell--fixed-right-first::after {
+  left: -10px;
+  border: none;
+  width: 10px;
+  height: 100%;
+  transform: scaleX(-1);
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(99, 97, 96, 0.10) 100%);
+}
+
+//重置左侧菜单收起后hover菜单右侧出现的子菜单popup样式
+.t-menu__popup {
+  width: auto !important;
+
+  .t-menu__item {
+    padding: 0 20px !important;
+  }
+}
+
+// 媒体查询
+
+/* 当页面宽度是最小1580.最大1740的时候例表的搜索表单改变列表宽度，暂时一行最多4个 + 按钮 */
+@media screen and (min-width:1705px) and (max-width:2051px) {
+  .formBox {
+    .t-row {
+      &>div.t-col {
+        max-width: calc(25% - 40.5px) !important;
+
+        &:last-child {
+          max-width: 159px !important;
+        }
+      }
+    }
+  }
+}
+
+/* 当页面宽度是最小1741.最大2051的时候例表的搜索表单改变列表宽度，暂时一行最多5个 + 按钮 */
+// @media screen and (min-width:1741px) and (max-width:2051px) {
+//   .formBox {
+//     .t-row {
+//       &>div.t-col {
+//         max-width: calc(25% - 38px) !important;
+//         &:last-child {
+//           max-width: 152px !important;
+//         }
+//       }
+//     }
+//   }
+// }
+
+/* 当页面宽度是最小2052.最大2362的时候例表的搜索表单改变列表宽度，暂时一行最多6个 */
+@media screen and (min-width:2052px) and (max-width:2673px) {
+  .formBox {
+    .t-row {
+      &>div.t-col {
+        max-width: calc(20% - 30.4px) !important;
+
+        &:last-child {
+          max-width: 159px !important;
+        }
+      }
+    }
+  }
+}
+
+/* 当页面宽度是最小2363.最大2673的时候例表的搜索表单改变列表宽度，暂时一行最多7个 */
+// @media screen and (min-width:2363px) and (max-width:2673px) {
+//   .formBox {
+//     .t-row {
+//       &>div.t-col {
+//         max-width: calc(14.29% - 21.81px) !important;
+//         &:last-child {
+//           max-width: 152px !important;
+//         }
+//       }
+//     }
+//   }
+// }
+// 修改hover状态下的颜色
+.t-tree__icon:not(:empty):hover {
+  background-color: transparent;
+}
+
+// radio框选中的颜色
+.t-radio.t-is-checked .t-radio__input {
+  border-color: #0398FF;
+
+  &:after {
+    background-color: #0398FF;
+  }
+}
+
+// radio框hover的颜色
+.t-radio:hover .t-radio__input {
+  border-color: #0398FF;
+}
+
+// 表单内的带单位的输入框的文字位置样式
+.company {
+  margin-right: 2px;
+  z-index: 100;
+  color: var(--color-black);
+}
+
+// 日期框hover的颜色
+.t-range-input:hover {
+  border-color: var(--color-main);
+}
+
+.t-range-input-popup--visible .t-range-input {
+  border-color: var(--color-main);
+}
+
+.t-breadcrumb--text-overflow .t-breadcrumb__inner {
+  &:hover {
+    color: var(--color-main);
+  }
+
+  &:active {
+    color: var(--color-active);
+    animation: none;
+  }
+}
+
+.t-textarea__inner:hover {
+  border-color: var(--color-main);
+}
+
+.t-textarea__inner:focus {
+  border-color: var(--color-main);
+  box-shadow: none;
+}
+
+.t-message.t-is-success>.t-icon,
+.t-message.t-is-success>[data-t-icon]>.t-icon,
+.t-message.t-is-success .t-loading {
+  color: var(--color-success);
+
+  path {
+    fill-opacity: 1;
+  }
+}
+
+.t-message.t-is-warning>.t-icon,
+.t-message.t-is-warning>[data-t-icon]>.t-icon,
+.t-message.t-is-warning .t-loading {
+  color: var(--color-warning);
+
+  path {
+    fill-opacity: 1;
+  }
+}
+
+.t-message.t-is-error>.t-icon,
+.t-message.t-is-error>[data-t-icon]>.t-icon,
+.t-message.t-is-error .t-loading {
+  color: var(--color-error);
+
+  path {
+    fill-opacity: 1;
+  }
+}
+
+// 步骤条目前无点击功能，先不出小手
+.t-steps .t-steps-item__inner.t-steps-item--clickable,
+.t-steps .t-steps-item {
+  cursor: default;
+}
+
+// 次级联选框的样式
+.t-cascader__item.t-is-expanded {
+  color: var(--color-main);
+  background-color: var(--color-bk12);
+}
+
+.t-cascader__item.t-is-expanded .t-icon-chevron-right {
+  color: var(--color-main);
+}
+
+.t-select .t-fake-arrow--active {
+  color: var(--color-main);
+}
+
+.t-input:focus {
+  border-color: var(--color-main);
+  box-shadow: none;
+}
+
+
+.t-range-input-popup--visible .t-range-input {
+  border-color: var(--color-main);
+  box-shadow: none;
+}
+
+.t-range-input-popup--visible .t-range-input .t-icon-time,
+.t-range-input-popup--visible .t-range-input .t-icon-calendar {
+  color: var(--color-main);
+}
+
+.t-menu__popup-wrapper {
+  padding-left: 0;
+  overflow-y: auto;
+}
+
+.t-menu__content {
+  color: var(--color-bk3);
+}
+.t-table__filter-icon-wrap{
+  .t-is-focus{
+    path{
+      fill: var(--color-main);
+    }
+  }
+}
+.t-table__sort-icon--active{
+  color: var(--color-main);
+}
+.t-table__sort-icon .t-is-focus, .t-table__sort-icon.t-is-focus, .t-table__sort-icon:hover{
+  color: var(--color-main);
+}
+.t-cascader__item:hover:not(.t-is-expanded):not(.t-is-disabled){
+  background-color: var(--color-bk12);
+}
+.t-select__wrap{
+  height: 32px;
+}
+.t-upload__card-container:hover{
+  border-color: var(--color-main);
+}
+// 去除底部数据数量
+.t-pagination__total{
+  display: none;
+}
+.t-cascader__item.t-is-selected{
+  color: var(--color-main);
+}
+.t-dialog__header .t-dialog__close:hover{
+  background-color: #eaeaea;
+}
+// 两个radio框的间距
+.t-radio-group .t-radio{
+  margin-right: 16px;
+}
+.czri-side-nav-logo-wrapper{
+  height: 130px;
+}
+// 下拉框展开
+.t-cascader .t-fake-arrow--active{
+  color: var(--color-main);
+}
+
+//switch样式
+.t-switch.t-is-checked,.t-switch.t-is-checked:hover{
+  background-color: var(--color-main);
+}

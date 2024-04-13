@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "请选择工作地点",
+  "usingComponents": {
+    "uni-nav": "../../components/uni-nav/index"
+  }
+}

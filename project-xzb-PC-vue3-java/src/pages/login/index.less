@@ -1,0 +1,303 @@
+.login-wrapper {
+  background-image: url('@/assets/test-img/background-login.png');
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  .loginVideo{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.tips{
+  line-height: 20px;
+  font-size: 14px;
+  color: #fd3333;
+}
+.login-container {
+  background: rgba(255,255,255,0.86);
+  backdrop-filter: blur(10px);
+  border-radius: 44px;
+  padding: 37px 50px 48px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 500px;
+  line-height: 22px;
+  // 注册账户文字按钮
+  .sub-title{
+    // 文字右对齐
+    text-align: right;
+    font-size: 14px;
+  }
+}
+
+.title-container {
+  margin-bottom: 43.6px;
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--td-text-color-primary);
+    margin-top: 4px;
+    text-align: center;
+    &.margin-no {
+      margin-top: 0;
+    }
+  }
+
+  .sub-title {
+    margin-top: 16px;
+    .tip {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 14px;
+
+      &:first-child {
+        color: var(--td-text-color-secondary);
+      }
+
+      &:last-child {
+        color: var(--td-text-color-primary);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.item-container {
+  width: 368px;
+  margin-top: 34px;
+  .t-icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .phone{
+    background-image: url('../../assets/default/user@2x.png');
+  }
+  .verifyCode{
+    background-image: url('../../assets/default/verifyCode@2x.png');
+  }
+  .password{
+    background-image: url('../../assets/default/password@2x.png');
+  }
+  // 按钮内文字颜色
+  :deep(.t-button .t-button__text) {
+    color: var(--color-bk3);
+  }
+  // 输入框文字颜色
+  :deep(.t-input__inner){
+    &::placeholder{
+      color: var(--color-bk6);
+    }
+  }
+  &.login-qrcode {
+    .tip-container {
+      width: 192px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+
+      .tip {
+        color: var(--td-text-color-primary);
+      }
+
+      .refresh {
+        display: flex;
+        align-items: center;
+        color: var(--td-brand-color);
+
+        .t-icon {
+          font-size: 14px;
+          margin-left: 4px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .bottom-container {
+      margin-top: 32px;
+    }
+  }
+
+  &.login-phone {
+    .bottom-container {
+      margin-top: 66px;
+    }
+  }
+
+  .check-container {
+    display: flex;
+    align-items: center;
+
+    &.remember-pwd {
+      margin-bottom: 24px;
+      justify-content: space-between;
+    }
+
+    :deep(.t-checkbox__label) {
+      color: var(--td-text-color-secondary);
+    }
+
+    span {
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .verification-code {
+    display: flex;
+    align-items: center;
+
+    :deep(.t-form__controls) {
+      width: 100%;
+
+      button {
+        flex-shrink: 0;
+        width: 102px;
+        height: 40px;
+        margin-left: 11px;
+      }
+    }
+  }
+}
+.footer{
+  margin-bottom: 0px;
+}
+.switch-container {
+  margin-top: 24px;
+
+  .tip {
+    font-size: 16px;
+    color: var(--color-bk3);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 14px;
+    &:hover {
+      color: var(--color-main);
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 12px;
+      background: var(--td-gray-color-3);
+      margin-left: 14px;
+    }
+  }
+}
+// 下划线
+.line{
+  &::before {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    content: '';
+    width: 33px;
+    height: 4px;
+    border-radius: 4px;
+    bottom: -10px;
+    background: var(--color-main);
+  }
+}
+
+.check-container {
+  font-size: 14px;
+  color: var(--td-text-color-secondary);
+
+  .tip {
+    float: right;
+    font-size: 14px;
+  }
+}
+
+.copyright {
+  font-size: 14px;
+  position: absolute;
+  bottom: 64px;
+  color: var(--td-text-color-secondary);
+}
+
+@media screen and (max-height: 700px) {
+  .copyright {
+    display: none;
+  }
+}
+// 登录按钮
+.bt{
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.load{
+  background-color: conic-gradient(from 90deg at 50% 50%, rgba(0, 82, 217, 0) 0deg, rgb(255, 255, 255) 360deg);
+}
+
+:deep(.toRegister){
+  .t-form__controls-content{
+    display: flex;
+    justify-content: space-between;
+  }
+  div:last-child{
+    span{
+      cursor: pointer;
+    }
+  }
+  .btn{
+    color: var(--color-main);
+    cursor: pointer;
+  }
+}
+.forgetPwdDialog{
+  .t-form__label{
+    padding-right: 24px;
+  }
+  .t-input__wrap{
+    width: 404px;
+  }
+  .verificationCode{
+    .t-input__wrap{
+      width: 273px;
+      margin-right: 15px;
+    }
+    :deep(.t-button){
+      background: #E7E7E7;
+      .t-button__text{
+        color: #191919;
+      }
+    }
+    :deep(.t-button:hover){
+      border: none;
+    }
+    .t-button{
+      width: 118px;
+    }
+  }
+  .dialog-footer{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+}

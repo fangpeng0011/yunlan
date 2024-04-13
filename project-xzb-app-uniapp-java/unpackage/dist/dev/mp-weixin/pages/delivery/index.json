@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "消息",
+  "usingComponents": {
+    "uni-footer": "../../components/uni-footer/index"
+  }
+}

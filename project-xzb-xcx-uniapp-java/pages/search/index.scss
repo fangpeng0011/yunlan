@@ -1,0 +1,100 @@
+@import url('@/styles/theme.scss');
+:deep(page) {
+	background-color: var(--neutral-color-white) !important;
+}
+.searchBox {
+	padding: 14rpx 30rpx 20rpx;
+	position: relative;
+	display: flex;
+	align-items: center;
+	.input-view {
+		position: relative;
+		flex: 1;
+	}
+	:deep(.uniui-search){
+		position: absolute;
+		left: 18rpx;
+		top: 50%;
+		transform: translateY(-50%);
+		color:var(--neutral-color-main) !important;
+	}
+	.nav-bar-input {
+		height: 60rpx;
+		line-height: 60rpx;
+		background: #f3f4f7;
+		border-radius: 15.5px;
+		padding: 0 18rpx 0 58rpx;
+		font-size: var(--font-size-13);
+	}
+	:deep(.uniui-clear){
+		position: absolute;
+		right: 0rpx;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #CBCBCB !important;
+		z-index: 9;
+		padding: 10rpx 16rpx 10rpx;
+	}
+	.cancel{
+		padding-left: 28rpx;
+    font-size: 26rpx;
+	}
+}
+.serachList{
+	padding: 0 0 0 30rpx;
+		.item{
+			padding: 30rpx 0;
+			border-bottom: 2rpx solid #F4F4F4;
+			display: flex;
+			align-items: center;
+			:deep(.uni-icons){
+				color: #CBCBCB !important;
+				margin-right: 14rpx;
+				
+			}
+		}
+	}
+	.historyBox{
+		padding-top: 60rpx;
+		.tit{
+			color: var(--neutral-color-placeholder);
+			padding: 0 30rpx;
+			display: flex;
+			align-items: center;
+			view {
+				flex:1;
+			}
+			:deep(.uni-icons){
+				color: var(--neutral-color-placeholder) !important;
+			}
+			.input-uni-delect{
+				display: flex;
+				align-items: center;
+				:deep(text){
+					background: url(@/static/del.png) no-repeat;
+					background-size: contain;
+					display: inline-block;
+					width: 30rpx;
+					height: 30rpx;
+					margin-right: 14rpx;
+				}
+			}
+		}
+		.item{
+			padding: 20rpx 24rpx 0;
+			text{
+				display: inline-block;
+				height: 40rpx;
+				line-height: 40rpx;
+				padding: 14rpx 24rpx;
+				background: var(--neutral-color-background);
+				border-radius: 2rpx;
+				font-size: var(--font-size-14);
+				margin:0 6rpx 6rpx;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				max-width: 300rpx;
+			}
+		}
+	}

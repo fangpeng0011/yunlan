@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "接单设置",
+  "usingComponents": {
+    "uni-nav": "../../components/uni-nav/index"
+  }
+}

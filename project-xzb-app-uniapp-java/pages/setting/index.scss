@@ -1,0 +1,88 @@
+
+.setting{
+  background-color: var(--neutral-color-white);
+  height: 100vh;
+  
+  ::v-deep .uni-navbar__header {
+    height: 0rpx !important;
+  }
+  .guide{
+    text-align: center;
+    margin-bottom: 66rpx;
+    image{
+      width: 574rpx;
+      height: 280rpx;
+      margin-top: 60rpx;
+      margin-bottom: 23rpx;
+    }
+    .content{
+      font-size: 32rpx;
+      color: var(--color-black-19);
+    }
+  }
+  .step{
+    padding: 0 30rpx 68rpx 41rpx;
+    .stepItem{
+      display: flex;
+      // height: 174rpx;
+      align-items: center;
+      
+      image{
+        width: 56rpx;
+        height: 56rpx;
+        margin-right: 39rpx;
+        margin-bottom: 35rpx;
+      }
+      .stepBox{
+        border-top: 2rpx solid var(--color-gray-e8);
+        display: flex;
+        padding: 30rpx 0;
+        width: 574rpx;
+        justify-content: space-between;
+        .stepContent{
+          .setpTitle{
+            font-size: 32rpx;
+            color: var(--color-black-19);
+            margin-bottom: 8rpx;
+          }
+          .setpIntroduce{
+            font-size: 28rpx;
+            color: var(--color-gray-9);
+          }
+        }
+        .btn{
+          border-radius: 32rpx;
+          width: 146rpx;
+          height: 56rpx;
+          text-align: center;
+          line-height: 56rpx;
+          font-size: 24rpx;
+          margin-top: 20rpx;
+        }
+        ::v-deep uni-switch{
+          // margin-left: 40rpx;
+          position: relative;
+          left: 20rpx;
+        }
+      }
+
+    }
+    .stepItem:last-child{
+      .stepBox{
+        border-bottom: 2rpx solid var(--color-gray-e8);
+      }
+    }
+  }
+  .footerBtn{
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    width: 408rpx;
+    border-radius: 50rpx;
+    margin: 0 auto;
+    margin-bottom: 68rpx;
+  }
+  .notSetting{
+    background-color:var(--color-red-ffdbdc) ;
+  }
+}

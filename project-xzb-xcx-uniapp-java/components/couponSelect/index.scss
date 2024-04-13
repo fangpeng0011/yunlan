@@ -1,0 +1,148 @@
+.getCouponPicker {
+  ::v-deep .uni-popup__wrapper {
+    height: 1062rpx;
+    background-color: white !important;
+    border-radius: 24rpx 24rpx 0 0;
+  }
+
+  .header {
+    display: flex;
+    height: 44rpx;
+    align-items: center;
+    justify-content: space-between;
+    // margin-bottom: 41rpx;
+    padding: 41rpx 42rpx;
+    border-radius: 24rpx 24rpx 0 0;
+    background-color: #fff;
+    .header-title {
+      font-size: 32rpx;
+      color: #151515;
+    }
+
+    .close {
+      width: 40rpx;
+      height: 40rpx;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('../../static/guanbi.png');
+    }
+  }
+  .body {
+    max-height: 727rpx;
+    background: #f8f8f8;
+    .couponList {
+      padding: 31rpx 25rpx 7rpx;
+      .item {
+        padding: 0;
+        height: 208rpx;
+        display: flex;
+        background-color: transparent;
+        position: relative;
+        margin-bottom: 24rpx;
+        .ysy {
+          position: absolute;
+          width: 168rpx;
+          height: 128rpx;
+          right: -11rpx;
+          top: -7.4rpx;
+        }
+        .grey {
+          background-image: url('../../static/yhjsy@2x.png') !important;
+        }
+        .left {
+          min-width: 234rpx;
+          width: 234rpx;
+          height: 100%;
+          background-image: url('../../static/quan@2x.png');
+          background-size: 100% 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .price {
+            font-family: PingFangSC-SNaNpxibold;
+            font-weight: 600;
+            color: #ffffff;
+            .unit {
+              font-size: 40rpx;
+            }
+            .money {
+              font-size: 80rpx;
+              text{
+                font-size: 40rpx;
+              }
+            }
+          }
+          .button {
+            margin-top: 12rpx;
+            width: 140rpx;
+            height: 44rpx;
+            line-height: 44rpx;
+            font-size: 24rpx;
+            color: #f64747;
+            background-color: #fff;
+            border-radius: 40rpx;
+            text-align: center;
+            font-weight: 500;
+          }
+        }
+        .right {
+          width: 100%;
+          background-color: #fff;
+          padding-left: 40rpx;
+          padding-top: 31rpx;
+          border: 1px solid #eeeeee;
+          border-top-right-radius: 16rpx;
+          border-bottom-right-radius: 16rpx;
+          border-left: none;
+          .title {
+            font-weight: 500;
+            font-size: 32rpx;
+            color: #19232b;
+            margin-bottom: 8rpx;
+            // 限制10个字，出省略号
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            width: 348rpx;
+          }
+          .select{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 35rpx;
+          }
+          .time {
+            padding: 0;
+            font-size: 24rpx;
+            color: #19232b;
+            line-height: 56rpx;
+            height: 56rpx;
+            text {
+              color: #80878c;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pageFoot {
+    margin-top: 0;
+  }
+}
+.active,
+.checkbox {
+  width: 40rpx;
+  height: 40rpx;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10rpx;
+}
+.checkbox {
+  background-image: url('../../static/btn-gouxuan-nor@2x.png');
+}
+.active {
+  background-image: url('../../static/btn-gouxuan-sei@2x.png');
+}

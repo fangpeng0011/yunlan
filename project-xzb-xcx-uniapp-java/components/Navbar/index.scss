@@ -1,0 +1,41 @@
+.NavBar{
+	position: relative;
+	background-color: transparent;
+  z-index: 10;
+	.title{
+		font-weight: bold;
+		font-size: 36rpx;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+  .back{
+    width: 90rpx;
+    height: 64rpx;
+    display: flex;
+    line-height: 64rpx;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    image{
+      width: 18rpx;
+      height: 36rpx;
+    }
+  }
+  .history{
+    width: 90rpx;
+    height: 64rpx;
+    display: flex;
+    line-height: 64rpx;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 200rpx;
+    image{
+      width: 42rpx;
+      height: 44rpx;
+    }
+  }
+}
